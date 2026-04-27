@@ -1,0 +1,11 @@
+Given a recipe, please convert the recipe to the following JSON format: 
+{
+"name": [recipe name],
+"servings": [serving size],
+"ingredients": [{"name": [ingredient], "proportion": [ingredient measurement including unit]},...],
+"instructions": [...],
+"copper_per_serving_mg": [copper content per serving]
+}
+
+Recipe: [enter recipe here]
+

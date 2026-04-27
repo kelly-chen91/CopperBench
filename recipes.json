@@ -1,0 +1,786 @@
+[
+    {
+        "recipe_type": "breakfast",
+        "recipes": [
+            {
+                "name": "Scrambled Egg & Black Bean Burritos",
+                "servings": "2 servings",
+                "ingredients": [
+                    {
+                        "name": "extra virgin olive oil, divided",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "bell pepper, any color, cut into 1/2-inch dice",
+                        "proportion": "1/2 bell pepper"
+                    },
+                    {
+                        "name": "large eggs",
+                        "proportion": "2"
+                    },
+                    {
+                        "name": "2%-reduced fat milk",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "canned black beans, drained and rinsed",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "shredded reduced-fat Mexican blend or Cheddar cheese",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "smoked paprika",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "8-inch flour tortillas, warmed",
+                        "proportion": "2"
+                    },
+                    {
+                        "name": "low-fat plain Greek yogurt",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "salsa",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "chopped fresh cilantro or parsley",
+                        "proportion": "2 tablespoons"
+                    }
+                ],
+                "instructions": [
+                    "Heat 2 teaspoons of the oil in a large nonstick skillet over medium-low heat. Add the bell pepper and cook, stirring often, until softened and lightly browned, about 5 minutes. If the peppers begin to brown too quickly, reduce the heat to low to prevent burning.",
+                    "Place the eggs and milk in a mixing bowl and whisk until combined. Stir in the beans, cheese, and smoked paprika.",
+                    "When the peppers are done, add the remaining 1 teaspoon oil. Add the egg mixture and cook, stirring often, until the eggs are set and the cheese melts, 1 to 2 minutes. Remove from heat.",
+                    "Place the warmed tortillas on plates or a work surface. Divide the egg mixture between the tortillas. Top each with the yogurt, salsa, and cilantro.",
+                    "Fold in the sides and roll up burrito-style. Slice in half and serve warm."
+                ],
+                "copper_per_serving_mg": 0.15
+            },
+            {
+                "name": "Cranberry Carrot Muffins",
+                "servings": "6 muffins",
+                "ingredients": [
+                    {
+                        "name": "dried cranberries",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "all-purpose white flour, divided",
+                        "proportion": "1 teaspoon plus 1 cup"
+                    },
+                    {
+                        "name": "baking powder",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "ground cinnamon",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "large egg, beaten",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "medium carrot, shredded",
+                        "proportion": "1, about 1/2 cup"
+                    },
+                    {
+                        "name": "unpeeled apple, shredded",
+                        "proportion": "1/4 apple, about 1/4 cup"
+                    },
+                    {
+                        "name": "canola or other neutral oil",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "2% reduced-fat milk",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "granulated sugar",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "brown sugar",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "brown sugar, for topping",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "ground cinnamon, for topping",
+                        "proportion": "1/4 teaspoon"
+                    }
+                ],
+                "instructions": [
+                    "Place the dried cranberries in a small bowl and cover with warm water. Let soak for 5 to 10 minutes, then drain and pat dry. Toss with 1 teaspoon of the flour.",
+                    "Preheat the oven to 350°F. Line 6 muffin cups with parchment or foil cupcake liners and set aside.",
+                    "Place the remaining 1 cup flour, baking powder, cinnamon, and salt in a medium bowl and whisk until well combined.",
+                    "Place the egg, carrot, apple, oil, milk, granulated sugar, brown sugar, and vanilla extract in a separate medium bowl and whisk until combined.",
+                    "Add the wet ingredients to the dry ingredients and stir with a silicone spatula until just combined. Fold in the cranberries.",
+                    "For the topping, place the brown sugar and cinnamon in a small bowl and stir to combine. Spoon the batter evenly into the prepared muffin cups and add topping. Bake for 18 to 20 minutes, or until golden and a toothpick inserted in the center comes out clean.",
+                    "Let cool in the pan for 5 minutes, then transfer the muffins to a wire rack to cool completely."
+                ],
+                "copper_per_serving_mg": 0.06
+            },
+            {
+                "name": "Blueberry Banana Pancakes",
+                "servings": "2 servings",
+                "ingredients": [
+                    {
+                        "name": "all-purpose white flour",
+                        "proportion": "3/4 cup"
+                    },
+                    {
+                        "name": "quick cooking or old-fashioned oats",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "baking powder",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "ground cinnamon",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "pinch"
+                    },
+                    {
+                        "name": "large egg",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "2% reduced-fat milk",
+                        "proportion": "3/4 cup"
+                    },
+                    {
+                        "name": "ripe medium-size banana, mashed",
+                        "proportion": "1/2"
+                    },
+                    {
+                        "name": "maple syrup, plus more for drizzling",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "fresh or frozen blueberries, plus more for topping",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "nonstick cooking spray or oil",
+                        "proportion": "as needed"
+                    }
+                ],
+                "instructions": [
+                    "Place the flour, oats, baking powder, cinnamon, and salt in a large bowl and whisk to combine.",
+                    "Place the egg, milk, banana, and maple syrup in a separate medium bowl and whisk until combined. Pour the wet ingredients over the dry ingredients and stir until just combined. Stir in the blueberries.",
+                    "Lightly oil or coat a large nonstick skillet or griddle with nonstick cooking spray and heat over medium-low heat. Pour the batter onto the skillet using a generous 1/4-cup measuring cup, forming 3 1/2- to 4-inch pancakes.",
+                    "Cook until bubbles begin to appear on the surface of the pancakes and the bottoms turn golden brown, 2 to 3 minutes. Flip and cook until the other side is golden, an additional 2 to 3 minutes. Adjust the heat if the skillet gets too hot. Repeat with the remaining cooking spray and batter.",
+                    "Top with additional maple syrup and blueberries, as desired."
+                ],
+                "copper_per_serving_mg": 0.17
+            },
+            {
+                "name": "Cheesy Egg, Bacon & Broccoli Muffins",
+                "servings": "6 servings",
+                "ingredients": [
+                    {
+                        "name": "large eggs",
+                        "proportion": "10"
+                    },
+                    {
+                        "name": "frozen broccoli florets, thawed, drained, squeezed dry, and finely chopped",
+                        "proportion": "2 cups"
+                    },
+                    {
+                        "name": "turkey bacon, cooked and finely chopped",
+                        "proportion": "4 slices"
+                    },
+                    {
+                        "name": "reduced-fat shredded Cheddar cheese, divided",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "green onion, trimmed and finely chopped",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "dried Italian seasoning or dried basil",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "cherry or grape tomatoes, halved",
+                        "proportion": "6"
+                    },
+                    {
+                        "name": "nonstick cooking spray",
+                        "proportion": "as needed"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 325°F. Spray a 12-cup muffin tin with nonstick cooking spray, making sure to coat the bottoms and sides well.",
+                    "Place the eggs in a large bowl and whisk until well combined and slightly frothy. Add the broccoli, turkey bacon, 1/2 cup of the shredded cheese, green onion, Italian seasoning, salt, and pepper. Stir to combine.",
+                    "Divide the mixture evenly among the muffin cups, about 1/4 cup per muffin. You should have approximately 3 cups total egg mixture.",
+                    "Sprinkle the remaining 1/2 cup of cheese evenly over the tops of the muffins. Top each with half a cherry tomato, cut-side up or down.",
+                    "Bake for 18 to 20 minutes, or until puffed, lightly golden, and set in the center.",
+                    "Let cool in the pan for 5 minutes, then run a thin knife around the edges to loosen. Transfer the muffins to a wire rack to cool completely or serve while still warm."
+                ],
+                "copper_per_serving_mg": 0.08
+            },
+            {
+                "name": "Glorious Green Smoothie Bowl",
+                "servings": "1 serving",
+                "ingredients": [
+                    {
+                        "name": "100% orange juice",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "medium-size ripe banana, sliced and frozen",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "baby spinach",
+                        "proportion": "1/2 packed cup"
+                    },
+                    {
+                        "name": "low-fat vanilla Greek yogurt",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "unpeeled English cucumber, sliced",
+                        "proportion": "1-inch piece"
+                    },
+                    {
+                        "name": "optional toppings: whole grain O-shaped oat cereal, chopped apple, dried cranberries, blueberries, or fresh mint",
+                        "proportion": "1/4 to 1/2 cup combined"
+                    }
+                ],
+                "instructions": [
+                    "Place the orange juice, banana, spinach, yogurt, and cucumber in a high-speed blender and blend until smooth.",
+                    "Pour into a bowl, add toppings as desired, and serve."
+                ],
+                "copper_per_serving_mg": 0.17
+            }
+        ]
+    },
+    {
+        "recipe_type": "anytime_meals",
+        "recipes": [
+            {
+                "name": "Sesame-Ginger Turkey Meatballs",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "medium carrot, shredded",
+                        "proportion": "1, about 1/2 cup"
+                    },
+                    {
+                        "name": "green onions, trimmed and finely chopped",
+                        "proportion": "3"
+                    },
+                    {
+                        "name": "finely chopped fresh cilantro or mint",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "sesame oil",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "grated fresh ginger",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "large garlic clove, minced",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "crushed red pepper flakes",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "lean ground turkey breast",
+                        "proportion": "1 pound"
+                    },
+                    {
+                        "name": "panko breadcrumbs, plus more if needed",
+                        "proportion": "1/3 cup plus 1 to 2 tablespoons"
+                    },
+                    {
+                        "name": "less-sodium teriyaki sauce or Gyoza dipping sauce",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "cornstarch",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "orange zest",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "nonstick cooking spray",
+                        "proportion": "as needed"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 375°F. Line a baking sheet with aluminum foil and spray well with nonstick cooking spray to prevent the turkey meatballs from sticking.",
+                    "Place the grated carrot, green onions, cilantro, sesame oil, ginger, garlic, salt, and red pepper flakes in a large bowl, and mix well to combine.",
+                    "Add the ground turkey and panko. Mix gently until just combined. If the mixture feels too wet to roll, add 1 to 2 tablespoons of additional panko. Form into 16 meatballs, about 2 inches in diameter.",
+                    "Arrange the meatballs on the prepared baking sheet. Bake for 15 to 17 minutes, turning once halfway through, until cooked through and no longer pink in the center.",
+                    "Meanwhile, whisk the teriyaki sauce and cornstarch in a small bowl. Pour into a small saucepan or nonstick skillet over low heat and stir constantly until bubbling and thickened, 1 to 2 minutes.",
+                    "Transfer the cooked meatballs to a serving bowl. Top with the sauce and gently stir to coat. Garnish with the orange zest, and serve."
+                ],
+                "copper_per_serving_mg": 0.04
+            },
+            {
+                "name": "Chicken and Broccoli Piccata",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "cornstarch, divided",
+                        "proportion": "3 tablespoons plus 2 teaspoons"
+                    },
+                    {
+                        "name": "garlic powder",
+                        "proportion": "3/4 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "1/8 teaspoon"
+                    },
+                    {
+                        "name": "chicken breast tenderloins",
+                        "proportion": "1 pound"
+                    },
+                    {
+                        "name": "extra virgin olive oil, divided",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "butter",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "medium red onion, diced",
+                        "proportion": "1/3"
+                    },
+                    {
+                        "name": "water",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "bite-size broccoli florets",
+                        "proportion": "5 cups"
+                    },
+                    {
+                        "name": "chicken broth",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "lemon juice",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "capers, drained",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "lemon zest",
+                        "proportion": "zest of 1/2 lemon"
+                    }
+                ],
+                "instructions": [
+                    "Place 3 tablespoons of the cornstarch, garlic powder, salt, and pepper in a shallow bowl and stir to combine. Coat the chicken tenders in the mixture, pressing gently so the cornstarch adheres to all sides. Set aside on a plate.",
+                    "Heat 1 tablespoon of the oil and the butter in a large nonstick skillet over medium-high heat. Add the chicken and cook for 3 minutes, or until golden. Flip and cook for an additional 2 minutes, adjusting the heat if the chicken browns too quickly. Work in batches if needed. Transfer the chicken to a clean plate.",
+                    "Reduce the heat to medium-low. Add the remaining 1 tablespoon olive oil, stir in the red onion, and cook, stirring often, until softened, about 3 minutes.",
+                    "Raise the heat to medium. Add the water and broccoli, cover with a lid, and steam for 2 minutes, just until the broccoli is crisp-tender.",
+                    "Stir the remaining 2 teaspoons of cornstarch into the broth until well combined. Add the broth mixture, lemon juice, and capers to the skillet. Raise the heat to medium-high and cook, stirring often, until the sauce gently simmers and begins to thicken, about 1 minute.",
+                    "Return the chicken to the skillet. Cook for 3 minutes, turning the chicken halfway through, until heated through and the sauce reduces slightly. Sprinkle with lemon zest and serve warm."
+                ],
+                "copper_per_serving_mg": 0.13
+            },
+            {
+                "name": "Chicken Fajitas with Lime Sauce",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "chili powder",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "ground cumin",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "dried oregano",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "garlic powder",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "boneless, skinless chicken breast halves, cut into 1/2-inch strips",
+                        "proportion": "1 pound"
+                    },
+                    {
+                        "name": "medium bell peppers, cut into 1/2-inch strips",
+                        "proportion": "2"
+                    },
+                    {
+                        "name": "medium red onion, cut into 1/2-inch wedges",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "6-inch flour tortillas",
+                        "proportion": "8"
+                    },
+                    {
+                        "name": "low-fat plain Greek yogurt",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "packed fresh cilantro, plus more for garnish",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "olive oil",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "honey",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "lime juice",
+                        "proportion": "juice of 1 lime"
+                    },
+                    {
+                        "name": "chili powder, for sauce",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "salt, for sauce",
+                        "proportion": "to taste"
+                    },
+                    {
+                        "name": "nonstick cooking spray",
+                        "proportion": "as needed"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 425°F. Line a large rimmed baking sheet with aluminum foil and lightly coat with nonstick spray. Set aside.",
+                    "Place the chili powder, cumin, oregano, salt, and garlic powder in a small bowl and stir to combine.",
+                    "Place the chicken, bell peppers, and onion in a separate large bowl and toss to combine. Add the olive oil and spice blend and stir until everything is evenly coated.",
+                    "Spread the mixture in a single layer on the prepared baking sheet. Bake for 15 to 18 minutes, stirring once halfway through, until the chicken is cooked through and the vegetables are tender. For added char, switch to broil during the last 2 to 3 minutes, if desired.",
+                    "Before serving, stack the tortillas loosely on a microwave-safe plate, cover with a slightly damp paper towel, and microwave for 30 to 45 seconds, or until warm. Or, wrap in foil and warm in the oven for 5 minutes.",
+                    "To make the sauce, place all sauce ingredients in a mini food processor or blender and blend until smooth. Season with salt to taste.",
+                    "To assemble, place the cooked chicken, vegetables, and sauce on each tortilla. Garnish with extra cilantro and a squeeze of lime, as desired."
+                ],
+                "copper_per_serving_mg": 0.12
+            },
+            {
+                "name": "One-Pot Beef & Mushroom Lasagna",
+                "servings": "6 servings",
+                "ingredients": [
+                    {
+                        "name": "extra virgin olive oil, divided",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "shiitake mushrooms, thinly sliced",
+                        "proportion": "4 ounces"
+                    },
+                    {
+                        "name": "large carrots, shredded",
+                        "proportion": "2, about 2 cups"
+                    },
+                    {
+                        "name": "lean ground beef, 90% lean or higher",
+                        "proportion": "1 pound"
+                    },
+                    {
+                        "name": "garlic powder",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "onion powder",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "marinara sauce",
+                        "proportion": "1 24-ounce jar"
+                    },
+                    {
+                        "name": "water, divided, plus more as needed",
+                        "proportion": "2 1/2 cups"
+                    },
+                    {
+                        "name": "dry no-boil lasagna noodles, broken into 1-inch pieces",
+                        "proportion": "5 ounces, about 8 sheets"
+                    },
+                    {
+                        "name": "roughly chopped fresh basil, plus more to taste",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "red pepper flakes, plus more to taste",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "part-skim shredded mozzarella cheese, divided",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "grated Parmesan cheese",
+                        "proportion": "1/4 cup"
+                    }
+                ],
+                "instructions": [
+                    "Heat 1 tablespoon of the oil in a large saucepan over low heat. Add the mushrooms and a pinch of salt and pepper and cook, stirring often, until softened, 3 to 4 minutes.",
+                    "Add the remaining oil. Raise the heat to medium and stir in the carrots, beef, garlic powder, and onion powder. Cook, breaking the beef into small pieces, until no longer pink, 3 to 5 minutes.",
+                    "Raise the heat to high. Stir in the marinara sauce. Add 1 1/2 cups water to the pot. Pour the remaining 1 cup water into the empty sauce jar and shake to loosen any remaining sauce. Pour into the pot and stir to combine.",
+                    "Cover and bring the mixture to a boil. Gradually stir in the broken lasagna noodles to prevent sticking.",
+                    "Reduce the heat to low, cover, and simmer until the pasta is tender, 20 to 25 minutes. Stir every 3 to 5 minutes to prevent sticking to the bottom and ensure even cooking. For a saucier consistency, stir in an additional 1/4 cup water during the final minutes.",
+                    "Remove from the heat and stir in the basil and red pepper flakes. Stir in 3/4 cup of the mozzarella and the Parmesan. Sprinkle the remaining 1/4 cup mozzarella on top. Cover for 1 to 2 minutes until the cheese melts.",
+                    "Serve warm and add additional basil or red pepper flakes, as desired."
+                ],
+                "copper_per_serving_mg": 0.09
+            },
+            {
+                "name": "Pork Tenderloin with Dijon Gravy",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "olive oil",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "pork tenderloin",
+                        "proportion": "1 pound"
+                    },
+                    {
+                        "name": "dried rosemary",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "1/8 teaspoon"
+                    },
+                    {
+                        "name": "chicken broth",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "Dijon mustard",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "minced garlic",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "dried thyme",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "butter",
+                        "proportion": "2 tablespoons"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 450°F. Heat the oil in a large non-stick skillet over medium-high heat.",
+                    "Season all sides of the pork with the rosemary, salt, and pepper, and add to the hot skillet, browning for 2 to 3 minutes on all sides.",
+                    "Transfer pork to a rimmed baking sheet, and bake until a meat thermometer registers 145°F, 12 to 15 minutes. Remove to a clean plate. Cover with aluminum foil, and let rest for 10 minutes before slicing.",
+                    "Meanwhile, return the skillet to medium heat. Add the broth, scraping up any browned bits from the bottom of the pan.",
+                    "Add the mustard, garlic, and thyme, and let the sauce reduce by about a third, stirring often.",
+                    "Remove the sauce from heat, and stir in the butter until slightly thickened.",
+                    "Cut the pork into slices, and serve with the sauce."
+                ],
+                "copper_per_serving_mg": 0.14
+            },
+            {
+                "name": "Fish Tacos with Crunchy Slaw",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "dried oregano",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "chili powder",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "garlic powder",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "paprika",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "kosher salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "white fish, such as cod or tilapia",
+                        "proportion": "1 1/4 pounds"
+                    },
+                    {
+                        "name": "bagged coleslaw mix",
+                        "proportion": "4 cups"
+                    },
+                    {
+                        "name": "fresh cilantro or parsley, roughly chopped",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "mayonnaise",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "lime juice",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "sriracha",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "salt and pepper",
+                        "proportion": "to taste"
+                    },
+                    {
+                        "name": "6-inch flour tortillas",
+                        "proportion": "8"
+                    },
+                    {
+                        "name": "avocado, sliced",
+                        "proportion": "1"
+                    },
+                    {
+                        "name": "optional toppings: diced tomato, plain Greek yogurt or sour cream, cilantro",
+                        "proportion": "as desired"
+                    },
+                    {
+                        "name": "nonstick cooking spray or parchment paper",
+                        "proportion": "as needed"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 400°F. Line a rimmed baking sheet or shallow baking dish with aluminum foil and lightly coat with nonstick cooking spray, or line with parchment paper. Set aside.",
+                    "Place the oregano, chili powder, garlic powder, paprika, and salt in a small bowl and stir to combine.",
+                    "Pat the fish dry with paper towels. Place on the prepared baking sheet and brush evenly with the olive oil. Top with the spice mixture.",
+                    "Bake for 15 to 20 minutes, or until the fish flakes and is cooked through.",
+                    "For the slaw, place all the ingredients in a large bowl and stir to combine. Season with salt and pepper to taste.",
+                    "Before serving, stack the tortillas loosely on a microwave-safe plate, cover with a slightly damp paper towel, and microwave for 30 to 45 seconds, or until warm. Or, wrap in foil and warm in the oven for 5 minutes.",
+                    "To assemble, place the cooked fish, slaw, avocado, and optional toppings, as desired, on each tortilla."
+                ],
+                "copper_per_serving_mg": 0.14
+            },
+            {
+                "name": "Chicken Sausage Garden Pasta",
+                "servings": "4 servings",
+                "ingredients": [
+                    {
+                        "name": "dried farfalle pasta",
+                        "proportion": "8 ounces"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "small onion, diced",
+                        "proportion": "1, about 1 cup"
+                    },
+                    {
+                        "name": "large zucchini, diced",
+                        "proportion": "1, about 1 1/2 cups"
+                    },
+                    {
+                        "name": "cooked Italian chicken sausage, cut into 1/4-inch-thick rounds",
+                        "proportion": "1 12-ounce package"
+                    },
+                    {
+                        "name": "cherry tomatoes, halved",
+                        "proportion": "1 1/2 cups"
+                    },
+                    {
+                        "name": "grated Parmesan cheese, plus more for serving",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "roughly chopped fresh basil, plus more for garnish",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "lemon zest",
+                        "proportion": "zest of 1/2 lemon"
+                    },
+                    {
+                        "name": "salt and pepper",
+                        "proportion": "to taste"
+                    }
+                ],
+                "instructions": [
+                    "Bring a large pot of salted water to a boil, and cook the pasta according to package directions. Before draining, reserve about 1 cup of the cooking water.",
+                    "While the pasta cooks, heat the oil in a large nonstick skillet over medium heat. Add the onion and zucchini and cook, stirring often, until golden brown and tender, about 5 minutes. If the veggies brown too quickly, reduce the heat to low.",
+                    "Add the sausage to the skillet and cook, stirring often, until heated through and lightly browned, 3 to 4 minutes.",
+                    "Add the drained pasta and tomatoes. Gradually stir in 1/4 cup of the reserved pasta water until the pasta mixture is silky and lightly sauced and the tomatoes are warmed through. Add another 1/4 cup or more of the water as needed to loosen the sauce.",
+                    "Remove the skillet from the heat. Stir in the Parmesan, basil, and lemon zest. Season to taste with salt and pepper. Serve in bowls and top with more Parmesan and basil, as desired."
+                ],
+                "copper_per_serving_mg": 0.04
+            }
+        ]
+    }
+]
