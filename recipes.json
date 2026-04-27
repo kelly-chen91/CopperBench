@@ -780,7 +780,700 @@
                     "Remove the skillet from the heat. Stir in the Parmesan, basil, and lemon zest. Season to taste with salt and pepper. Serve in bowls and top with more Parmesan and basil, as desired."
                 ],
                 "copper_per_serving_mg": 0.04
+            },
+            {
+                "name": "Roasted Cauliflower Power Salad",
+                "servings": 4,
+                "ingredients": [
+                    {
+                        "name": "cauliflower",
+                        "proportion": "1 medium (about 8 cups florets)"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "dried oregano",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "arugula",
+                        "proportion": "6 packed cups"
+                    },
+                    {
+                        "name": "hard-cooked large eggs",
+                        "proportion": "4, halved lengthwise"
+                    },
+                    {
+                        "name": "cherry or grape tomatoes",
+                        "proportion": "1 cup, halved"
+                    },
+                    {
+                        "name": "pitted green olives",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "crumbled feta cheese",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "toasted sliced almonds",
+                        "proportion": "1/4 cup (optional)"
+                    },
+                    {
+                        "name": "extra virgin olive oil (for dressing)",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "lemon juice",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "fresh basil, finely chopped",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "Dijon mustard",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "honey",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "garlic clove, minced",
+                        "proportion": "1 small"
+                    },
+                    {
+                        "name": "salt and pepper (for dressing)",
+                        "proportion": "to taste"
+                    }
+                ],
+                "instructions": [
+                    "Arrange a rack in the middle of the oven and preheat to 425°F. Line a rimmed baking sheet with aluminum foil and lightly coat with nonstick spray.",
+                    "Place the cauliflower florets in a large bowl. Add olive oil, oregano, salt, and pepper, and toss to coat. Spread in a single layer on the prepared baking sheet and roast, turning halfway through, until golden and tender, 23 to 25 minutes.",
+                    "To make the dressing, combine olive oil, lemon juice, basil, Dijon mustard, honey, and garlic in a bowl and whisk until blended. Season with salt and pepper to taste.",
+                    "To assemble the salad, arrange the arugula in a large shallow bowl. Drizzle with 2 tablespoons of dressing and toss to combine. Top with eggs, tomatoes, olives, feta cheese, and warm cauliflower. Serve with remaining dressing on the side and garnish with almonds if desired."
+                ],
+                "copper_per_serving_mg": 0.12
+            },
+            {
+                "name": "Simple Greek Salad",
+                "servings": 4,
+                "ingredients": [
+                    {
+                        "name": "red onion",
+                        "proportion": "1/4 medium, thinly sliced"
+                    },
+                    {
+                        "name": "red wine vinegar",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "small tomatoes",
+                        "proportion": "4, cut into quarters"
+                    },
+                    {
+                        "name": "English cucumber",
+                        "proportion": "1, halved and cut into thin half moons"
+                    },
+                    {
+                        "name": "bell pepper (orange or green)",
+                        "proportion": "1, cut into 3/4-inch pieces"
+                    },
+                    {
+                        "name": "pitted kalamata olives",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "fresh dill, roughly chopped",
+                        "proportion": "1/4 cup, plus more for garnish"
+                    },
+                    {
+                        "name": "feta cheese, cubed",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "mixed salad greens",
+                        "proportion": "4 cups"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "3 tablespoons"
+                    },
+                    {
+                        "name": "red wine vinegar (for dressing)",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "honey",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "Dijon mustard",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "dried oregano",
+                        "proportion": "1/2 teaspoon, plus more for garnish"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "to taste"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "to taste"
+                    }
+                ],
+                "instructions": [
+                    "Place the red onion in a bowl with 1 cup ice water and 2 tablespoons red wine vinegar. Soak for about 15 minutes to mellow the flavor, then drain.",
+                    "In a large bowl, combine the tomatoes, cucumber, bell pepper, olives, dill, and drained red onion. Stir until well combined.",
+                    "To make the dressing, whisk together the olive oil, red wine vinegar, honey, Dijon mustard, and dried oregano. Season with salt and pepper to taste.",
+                    "Arrange the salad greens in a large bowl and drizzle with 1 tablespoon of dressing. Add the vegetable mixture and toss gently with the remaining dressing. Top with feta cheese and garnish with additional dill and oregano as desired."
+                ],
+                "copper_per_serving_mg": 0.12
+            },
+            {
+                "name": "Apple-Celery Chicken Salad",
+                "servings": 2,
+                "ingredients": [
+                    {
+                        "name": "cooked boneless, skinless chicken breast (or rotisserie chicken)",
+                        "proportion": "4 ounces, finely chopped"
+                    },
+                    {
+                        "name": "celery stalk",
+                        "proportion": "1 large, cut into 1/4-inch pieces (about 1/2 cup)"
+                    },
+                    {
+                        "name": "unpeeled apple",
+                        "proportion": "1/2 cup, chopped"
+                    },
+                    {
+                        "name": "green onion",
+                        "proportion": "1, trimmed and thinly sliced"
+                    },
+                    {
+                        "name": "lemon zest",
+                        "proportion": "zest of 1/2 lemon"
+                    },
+                    {
+                        "name": "fresh dill, chopped",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "mayonnaise",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "low-fat plain Greek yogurt",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "apple cider vinegar",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "to taste"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "to taste"
+                    }
+                ],
+                "instructions": [
+                    "Place the chicken, celery, apple, green onion, dill, and lemon zest in a large bowl and stir to combine.",
+                    "Add the mayonnaise, Greek yogurt, and apple cider vinegar, and mix until evenly coated.",
+                    "Season with salt and pepper to taste and serve as desired."
+                ],
+                "copper_per_serving_mg": 0.10
+            },
+            {
+                "name": "Harvest Crunch Kale & Chicken Salad",
+                "servings": 4,
+                "ingredients": [
+                    {
+                        "name": "kale, chopped (stems removed)",
+                        "proportion": "6 cups"
+                    },
+                    {
+                        "name": "extra virgin olive oil",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "kosher salt",
+                        "proportion": "pinch"
+                    },
+                    {
+                        "name": "Brussels sprouts, trimmed and thinly sliced",
+                        "proportion": "8 ounces (about 3 cups)"
+                    },
+                    {
+                        "name": "cooked boneless, skinless chicken breast",
+                        "proportion": "8 ounces, cut into bite-size pieces"
+                    },
+                    {
+                        "name": "seedless grapes",
+                        "proportion": "1/2 cup, halved"
+                    },
+                    {
+                        "name": "crumbled feta cheese",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "macadamia nuts, toasted and chopped",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "extra virgin olive oil (for dressing)",
+                        "proportion": "1/3 cup"
+                    },
+                    {
+                        "name": "balsamic vinegar",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "shallot, finely chopped",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "maple syrup",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "Dijon mustard",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "to taste"
+                    },
+                    {
+                        "name": "pepper",
+                        "proportion": "to taste"
+                    }
+                ],
+                "instructions": [
+                    "Place the kale in a large bowl. Add the olive oil and a pinch of kosher salt, and massage with your hands until the leaves soften, about 1 minute.",
+                    "Add the Brussels sprouts, chicken, and grapes, and toss to combine.",
+                    "In a separate bowl, whisk together the olive oil, balsamic vinegar, shallot, maple syrup, and Dijon mustard to make the dressing. Season with salt and pepper to taste.",
+                    "Drizzle the dressing over the salad and toss to coat evenly. Divide among four bowls and top with feta cheese and macadamia nuts."
+                ],
+                "copper_per_serving_mg": 0.19
             }
+        ]
+    },
+    {
+        "recipe_type": "desserts",
+        "recipes": [
+            {
+                "name": "Citrus-Berry Ricotta Parfaits",
+                "servings": 4,
+                "ingredients": [
+                    {
+                        "name": "part-skim ricotta cheese",
+                        "proportion": "16-ounce container"
+                    },
+                    {
+                        "name": "maple syrup",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "orange juice",
+                        "proportion": "1 tablespoon"
+                    },
+                    {
+                        "name": "orange zest",
+                        "proportion": "1/2 teaspoon, plus more for garnish"
+                    },
+                    {
+                        "name": "gingersnap cookies",
+                        "proportion": "8"
+                    },
+                    {
+                        "name": "fresh blueberries and/or strawberries",
+                        "proportion": "1 cup"
+                    }
+                ],
+                "instructions": [
+                    "Place the ricotta, maple syrup, orange juice, and orange zest in a food processor. Process until smooth and creamy, scraping down the sides as needed.",
+                    "To assemble the parfaits, place 1 crushed gingersnap cookie in the bottom of each of 4 glasses. Add about 1/4 cup ricotta mixture, then layer with about 1/4 cup berries. Top with another 1/4 cup ricotta, followed by a second crushed gingersnap cookie and a sprinkle of orange zest.",
+                    "Serve immediately or chill until ready to serve."
+                ],
+                "copper_per_serving_mg": 0.10
+            },
+            {
+                "name": "Crispy Rice Cereal Treats",
+                "servings": 12,
+                "ingredients": [
+                    {
+                        "name": "unsweetened coconut flakes",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "unsalted butter",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "mini marshmallows",
+                        "proportion": "2 1/2 cups (5 ounces)"
+                    },
+                    {
+                        "name": "puffed rice cereal",
+                        "proportion": "3 cups"
+                    },
+                    {
+                        "name": "white chocolate chips",
+                        "proportion": "1/2 cup, divided"
+                    },
+                    {
+                        "name": "canola or other neutral oil",
+                        "proportion": "1/2 teaspoon"
+                    }
+                ],
+                "instructions": [
+                    "Spray an 8x8-inch baking dish or pan with nonstick cooking spray and set aside.",
+                    "Heat a medium saucepan over low heat. Add the coconut flakes and toast, stirring constantly, until golden and fragrant, 2 to 3 minutes. Transfer to a small bowl to cool.",
+                    "Add the butter to the same saucepan and melt over low heat. Add the marshmallows and stir until completely melted.",
+                    "Remove from heat and stir in the puffed rice cereal until well coated. Stir in 1/4 cup of the white chocolate chips and the toasted coconut until combined.",
+                    "Transfer the mixture to the prepared pan and press gently and evenly into the pan using a buttered spatula or wax paper.",
+                    "Place the remaining 1/4 cup white chocolate chips and the oil in a microwave-safe bowl. Heat in 30-second intervals, stirring between each, until melted. Drizzle over the bars.",
+                    "Let cool completely, then cut into squares and serve."
+                ],
+                "copper_per_serving_mg": 0.02
+            },
+            {
+                "name": "Carob Chip Cranberry Cookies",
+                "servings": 20,
+                "ingredients": [
+                    {
+                        "name": "all-purpose white flour",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "whole wheat flour",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "baking soda",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/2 teaspoon"
+                    },
+                    {
+                        "name": "unsalted butter, softened",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "canola or other neutral oil",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "granulated sugar",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "brown sugar",
+                        "proportion": "2 tablespoons"
+                    },
+                    {
+                        "name": "egg",
+                        "proportion": "1 large, beaten"
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "carob chips",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "dried cranberries",
+                        "proportion": "1/2 cup"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 375°F. Line two baking sheets with parchment paper or foil and lightly coat with nonstick spray.",
+                    "In a medium bowl, whisk together the all-purpose flour, whole wheat flour, baking soda, and salt.",
+                    "In a large bowl, beat the butter and oil until creamy. Add the granulated sugar and brown sugar and beat until well combined. Add the egg and vanilla extract and beat until smooth.",
+                    "Gradually mix in the flour mixture until fully incorporated. Stir in the carob chips and dried cranberries.",
+                    "Roll the dough into 1 1/2-inch balls and place 2 inches apart on the prepared baking sheets. For flatter cookies, gently press down the dough balls.",
+                    "Bake one sheet at a time for 10 to 12 minutes, until edges are lightly golden and centers are set. Cool on the baking sheet briefly, then transfer to a wire rack to cool completely."
+                ],
+                "copper_per_serving_mg": 0.03
+            },
+            {
+                "name": "Pumpkin Cinnamon Bars",
+                "servings": 12,
+                "ingredients": [
+                    {
+                        "name": "eggs",
+                        "proportion": "2 large, beaten"
+                    },
+                    {
+                        "name": "pumpkin purée",
+                        "proportion": "1/2 of a 15-ounce can"
+                    },
+                    {
+                        "name": "granulated sugar",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "brown sugar",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "canola or other neutral oil",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "all-purpose white flour",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "baking powder",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "ground cinnamon",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "baking soda",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "powdered sugar",
+                        "proportion": "1 tablespoon (optional)"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 350°F. Lightly coat an 8x8-inch baking dish or pan with nonstick cooking spray.",
+                    "In a large bowl, whisk together the eggs, pumpkin purée, granulated sugar, brown sugar, oil, and vanilla extract until well combined.",
+                    "In a separate bowl, whisk together the flour, baking powder, cinnamon, salt, and baking soda.",
+                    "Add the dry ingredients to the wet ingredients and stir until just combined.",
+                    "Pour the batter into the prepared baking dish and spread evenly.",
+                    "Bake for 23 to 25 minutes, until a toothpick inserted in the center comes out clean. Let cool completely before slicing and dust with powdered sugar if desired."
+                ],
+                "copper_per_serving_mg": 0.06
+            },
+            {
+                "name": "Carob Cupcakes with Cream Cheese Frosting",
+                "servings": 12,
+                "ingredients": [
+                    {
+                        "name": "eggs",
+                        "proportion": "2 large"
+                    },
+                    {
+                        "name": "granulated sugar",
+                        "proportion": "3/4 cup"
+                    },
+                    {
+                        "name": "unsweetened applesauce",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "canola or other neutral oil",
+                        "proportion": "1/2 cup"
+                    },
+                    {
+                        "name": "2% reduced-fat milk",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "vanilla extract",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "all-purpose white flour",
+                        "proportion": "1 cup"
+                    },
+                    {
+                        "name": "carob powder",
+                        "proportion": "3 tablespoons"
+                    },
+                    {
+                        "name": "baking powder",
+                        "proportion": "1 teaspoon"
+                    },
+                    {
+                        "name": "baking soda",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "salt",
+                        "proportion": "1/4 teaspoon"
+                    },
+                    {
+                        "name": "light cream cheese, room temperature",
+                        "proportion": "8 ounces"
+                    },
+                    {
+                        "name": "powdered sugar, sifted",
+                        "proportion": "1/4 cup"
+                    },
+                    {
+                        "name": "carob powder (for frosting)",
+                        "proportion": "2 teaspoons"
+                    },
+                    {
+                        "name": "vanilla extract (for frosting)",
+                        "proportion": "1/2 teaspoon"
+                    }
+                ],
+                "instructions": [
+                    "Preheat the oven to 325°F. Line 12 muffin cups with cupcake liners.",
+                    "In a large bowl, whisk together the eggs, sugar, applesauce, oil, milk, and vanilla extract until well combined.",
+                    "In a separate bowl, whisk together the flour, carob powder, baking powder, baking soda, and salt.",
+                    "Add the dry ingredients to the wet ingredients and mix until just combined.",
+                    "Divide the batter evenly among the prepared muffin cups. Bake for 18 to 20 minutes, or until a toothpick inserted in the center comes out clean. Let cool slightly, then transfer to a wire rack to cool completely.",
+                    "To make the frosting, beat together the cream cheese, powdered sugar, carob powder, and vanilla extract until smooth. Chill briefly if needed to firm up.",
+                    "Spread the frosting evenly over the cooled cupcakes and serve."
+                ],
+                "copper_per_serving_mg": 0.03
+            }
+        ]
+    },
+    {
+        "recipe_type": "snacks",
+        "recipes": [
+            [
+                {
+                    "name": "Rice Cakes with Peanut Butter and Strawberries",
+                    "servings": 1,
+                    "ingredients": [
+                        {
+                            "name": "white rice cakes",
+                            "proportion": "2"
+                        },
+                        {
+                            "name": "peanut butter",
+                            "proportion": "2 tablespoons"
+                        },
+                        {
+                            "name": "strawberries, sliced",
+                            "proportion": "as desired"
+                        }
+                    ],
+                    "instructions": [
+                        "Spread peanut butter evenly over the rice cakes.",
+                        "Top with sliced strawberries and serve."
+                    ],
+                    "copper_per_serving_mg": 0.16
+                },
+                {
+                    "name": "Avocado Toast with Feta",
+                    "servings": 1,
+                    "ingredients": [
+                        {
+                            "name": "avocado",
+                            "proportion": "1/4"
+                        },
+                        {
+                            "name": "white toast",
+                            "proportion": "1 slice"
+                        },
+                        {
+                            "name": "feta cheese, crumbled",
+                            "proportion": "as desired"
+                        }
+                    ],
+                    "instructions": [
+                        "Toast the bread.",
+                        "Mash and spread avocado over the toast.",
+                        "Top with crumbled feta and serve."
+                    ],
+                    "copper_per_serving_mg": 0.23
+                },
+                {
+                    "name": "Trail Mix Snack",
+                    "servings": 1,
+                    "ingredients": [
+                        {
+                            "name": "corn or rice cereal",
+                            "proportion": "1/2 cup"
+                        },
+                        {
+                            "name": "dried cranberries",
+                            "proportion": "2 tablespoons"
+                        },
+                        {
+                            "name": "mini pretzels",
+                            "proportion": "1/4 cup"
+                        },
+                        {
+                            "name": "pumpkin seeds",
+                            "proportion": "1 tablespoon"
+                        }
+                    ],
+                    "instructions": [
+                        "Combine all ingredients in a bowl.",
+                        "Mix well and serve."
+                    ],
+                    "copper_per_serving_mg": 0.10
+                },
+                {
+                    "name": "Almond Butter Apple Snack",
+                    "servings": 1,
+                    "ingredients": [
+                        {
+                            "name": "almond butter",
+                            "proportion": "1 tablespoon"
+                        },
+                        {
+                            "name": "apple, sliced",
+                            "proportion": "1"
+                        }
+                    ],
+                    "instructions": [
+                        "Slice the apple.",
+                        "Serve with almond butter for dipping."
+                    ],
+                    "copper_per_serving_mg": 0.14
+                },
+                {
+                    "name": "Hummus with Bell Pepper",
+                    "servings": 1,
+                    "ingredients": [
+                        {
+                            "name": "chickpea hummus",
+                            "proportion": "2 tablespoons"
+                        },
+                        {
+                            "name": "bell pepper, sliced",
+                            "proportion": "1 medium"
+                        }
+                    ],
+                    "instructions": [
+                        "Slice the bell pepper.",
+                        "Serve with hummus for dipping."
+                    ],
+                    "copper_per_serving_mg": 0.14
+                }
+            ]
         ]
     }
 ]
