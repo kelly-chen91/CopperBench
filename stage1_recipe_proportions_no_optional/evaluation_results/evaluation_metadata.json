@@ -1,5 +1,32 @@
 {
   "accuracy_relative_tolerance": 0.1,
+  "excluded_recipe_count": 4,
+  "excluded_recipes": [
+    {
+      "ground_truth_copper_mg_per_serving": 0.17,
+      "recipe_index": 4,
+      "recipe_name": "Glorious Green Smoothie Bowl",
+      "recipe_type": "breakfast"
+    },
+    {
+      "ground_truth_copper_mg_per_serving": 0.14,
+      "recipe_index": 10,
+      "recipe_name": "Fish Tacos with Crunchy Slaw",
+      "recipe_type": "anytime_meals"
+    },
+    {
+      "ground_truth_copper_mg_per_serving": 0.12,
+      "recipe_index": 12,
+      "recipe_name": "Roasted Cauliflower Power Salad",
+      "recipe_type": "anytime_meals"
+    },
+    {
+      "ground_truth_copper_mg_per_serving": 0.06,
+      "recipe_index": 19,
+      "recipe_name": "Pumpkin Cinnamon Bars",
+      "recipe_type": "desserts"
+    }
+  ],
   "model_file_count": 18,
   "model_files": [
     "gpt_4_1.jsonl",
@@ -203,5 +230,6 @@
       "unindexed_prediction_count": 0
     }
   ],
-  "recipe_count": 26
+  "recipe_count": 22,
+  "source_recipe_count": 26
 }

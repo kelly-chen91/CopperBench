@@ -70,6 +70,15 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Write CSV/JSON outputs but skip Matplotlib visualizations.",
     )
+    parser.add_argument(
+        "--exclude-recipe-name",
+        action="append",
+        default=[],
+        help=(
+            "Recipe name to exclude from scoring. May be passed multiple times. "
+            "Names must match recipes.json exactly."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -115,6 +124,31 @@ def load_truth(path: Path) -> list[RecipeTruth]:
     if not truths:
         raise ValueError(f"No recipes found in {path}")
     return truths
+
+
+def filter_truths_by_name(
+    truths: list[RecipeTruth],
+    excluded_recipe_names: list[str],
+) -> tuple[list[RecipeTruth], list[RecipeTruth]]:
+    excluded_names = set(excluded_recipe_names)
+    if not excluded_names:
+        return truths, []
+
+    matching_exclusions = [
+        truth for truth in truths if truth.recipe_name in excluded_names
+    ]
+    found_names = {truth.recipe_name for truth in matching_exclusions}
+    missing_names = sorted(excluded_names - found_names)
+    if missing_names:
+        raise ValueError(
+            "Excluded recipe names were not found in recipes.json: "
+            + ", ".join(missing_names)
+        )
+
+    filtered_truths = [
+        truth for truth in truths if truth.recipe_name not in excluded_names
+    ]
+    return filtered_truths, matching_exclusions
 
 
 def model_name_from_path(path: Path) -> str:
@@ -514,7 +548,11 @@ def main() -> None:
     args = parse_args()
     args.results_dir.mkdir(parents=True, exist_ok=True)
 
-    truths = load_truth(args.recipes)
+    all_truths = load_truth(args.recipes)
+    truths, excluded_truths = filter_truths_by_name(
+        all_truths,
+        args.exclude_recipe_name,
+    )
     model_files = sorted(args.model_outputs_dir.glob("*.jsonl"))
     if not model_files:
         raise SystemExit(f"No JSONL files found in {args.model_outputs_dir}")
@@ -537,7 +575,18 @@ def main() -> None:
         args.results_dir / "evaluation_metadata.json",
         {
             "accuracy_relative_tolerance": ACCURACY_RELATIVE_TOLERANCE,
+            "source_recipe_count": len(all_truths),
             "recipe_count": len(truths),
+            "excluded_recipe_count": len(excluded_truths),
+            "excluded_recipes": [
+                {
+                    "recipe_index": truth.recipe_index,
+                    "recipe_type": truth.recipe_type,
+                    "recipe_name": truth.recipe_name,
+                    "ground_truth_copper_mg_per_serving": truth.copper_per_serving_mg,
+                }
+                for truth in excluded_truths
+            ],
             "model_file_count": len(model_files),
             "model_files": [path.name for path in model_files],
             "model_output_metadata": metadata,

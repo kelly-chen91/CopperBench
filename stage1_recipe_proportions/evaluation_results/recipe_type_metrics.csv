@@ -4,14 +4,14 @@ gpt_4_1,gpt_4_1.jsonl,5,0,5,0.053000000000000005,0.0,breakfast,none,
 gpt_4_1,gpt_4_1.jsonl,5,0,5,0.0216,20.0,desserts,none,
 gpt_4_1,gpt_4_1.jsonl,5,0,5,0.17200000000000001,0.0,snacks,none,
 gpt_4_1_mini,gpt_4_1_mini.jsonl,11,0,11,0.17445454545454545,9.090909090909092,anytime_meals,none,
-gpt_4_1_mini,gpt_4_1_mini.jsonl,4,1,5,0.08374999999999999,0.0,breakfast,none,Cranberry Carrot Muffins
+gpt_4_1_mini,gpt_4_1_mini.jsonl,5,0,5,0.0686,0.0,breakfast,none,
 gpt_4_1_mini,gpt_4_1_mini.jsonl,5,0,5,0.0412,20.0,desserts,none,
 gpt_4_1_mini,gpt_4_1_mini.jsonl,5,0,5,0.227,0.0,snacks,none,
 gpt_4_1_nano,gpt_4_1_nano.jsonl,11,0,11,0.19927272727272724,9.090909090909092,anytime_meals,none,
 gpt_4_1_nano,gpt_4_1_nano.jsonl,5,0,5,0.0874,0.0,breakfast,none,
 gpt_4_1_nano,gpt_4_1_nano.jsonl,5,0,5,0.027700000000000002,0.0,desserts,none,
 gpt_4_1_nano,gpt_4_1_nano.jsonl,5,0,5,0.264,0.0,snacks,none,
-gpt_4o,gpt_4o.jsonl,10,1,11,0.178925,30.0,anytime_meals,none,Simple Greek Salad
+gpt_4o,gpt_4o.jsonl,11,0,11,0.16470454545454546,27.27272727272727,anytime_meals,none,
 gpt_4o,gpt_4o.jsonl,5,0,5,0.14416,20.0,breakfast,none,
 gpt_4o,gpt_4o.jsonl,5,0,5,0.01901,20.0,desserts,none,
 gpt_4o,gpt_4o.jsonl,5,0,5,0.141,0.0,snacks,none,
@@ -28,7 +28,7 @@ gpt_5_4__reasoning_low,gpt_5_4__reasoning_low.jsonl,5,0,5,0.033999999999999996,0
 gpt_5_4__reasoning_low,gpt_5_4__reasoning_low.jsonl,5,0,5,0.014000000000000002,0.0,desserts,low,
 gpt_5_4__reasoning_low,gpt_5_4__reasoning_low.jsonl,5,0,5,0.07999999999999999,0.0,snacks,low,
 gpt_5_4__reasoning_medium,gpt_5_4__reasoning_medium.jsonl,11,0,11,0.09454545454545454,0.0,anytime_meals,medium,
-gpt_5_4__reasoning_medium,gpt_5_4__reasoning_medium.jsonl,4,1,5,0.03075,25.0,breakfast,medium,Scrambled Egg & Black Bean Burritos
+gpt_5_4__reasoning_medium,gpt_5_4__reasoning_medium.jsonl,5,0,5,0.0426,20.0,breakfast,medium,
 gpt_5_4__reasoning_medium,gpt_5_4__reasoning_medium.jsonl,5,0,5,0.008,40.0,desserts,medium,
 gpt_5_4__reasoning_medium,gpt_5_4__reasoning_medium.jsonl,5,0,5,0.076,0.0,snacks,medium,
 gpt_5_4_mini__reasoning_high,gpt_5_4_mini__reasoning_high.jsonl,11,0,11,0.09254545454545454,9.090909090909092,anytime_meals,high,
@@ -51,8 +51,8 @@ gpt_5_4_nano__reasoning_low,gpt_5_4_nano__reasoning_low.jsonl,11,0,11,0.76681818
 gpt_5_4_nano__reasoning_low,gpt_5_4_nano__reasoning_low.jsonl,5,0,5,0.0792,0.0,breakfast,low,
 gpt_5_4_nano__reasoning_low,gpt_5_4_nano__reasoning_low.jsonl,5,0,5,0.16920000000000002,20.0,desserts,low,
 gpt_5_4_nano__reasoning_low,gpt_5_4_nano__reasoning_low.jsonl,5,0,5,0.10800000000000001,0.0,snacks,low,
-gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,9,2,11,0.18555555555555556,11.11111111111111,anytime_meals,medium,Pork Tenderloin with Dijon Gravy; Harvest Crunch Kale & Chicken Salad
-gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,2,3,5,0.10500000000000001,0.0,breakfast,medium,"Cranberry Carrot Muffins; Blueberry Banana Pancakes; Cheesy Egg, Bacon & Broccoli Muffins"
+gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,11,0,11,0.17272727272727273,18.181818181818183,anytime_meals,medium,
+gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,5,0,5,0.066,0.0,breakfast,medium,
 gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,5,0,5,0.0202,0.0,desserts,medium,
 gpt_5_4_nano__reasoning_medium,gpt_5_4_nano__reasoning_medium.jsonl,5,0,5,0.13599999999999998,0.0,snacks,medium,
 gpt_5_4_pro__reasoning_high,gpt_5_4_pro__reasoning_high.jsonl,11,0,11,0.09772727272727272,9.090909090909092,anytime_meals,high,
@@ -67,11 +67,7 @@ gpt_5_5__reasoning_low,gpt_5_5__reasoning_low.jsonl,11,0,11,0.10090909090909092,
 gpt_5_5__reasoning_low,gpt_5_5__reasoning_low.jsonl,5,0,5,0.029999999999999992,0.0,breakfast,low,
 gpt_5_5__reasoning_low,gpt_5_5__reasoning_low.jsonl,5,0,5,0.010600000000000002,20.0,desserts,low,
 gpt_5_5__reasoning_low,gpt_5_5__reasoning_low.jsonl,5,0,5,0.066,0.0,snacks,low,
-gpt_5_5__reasoning_medium,gpt_5_5__reasoning_medium.jsonl,10,1,11,0.11399999999999999,10.0,anytime_meals,medium,Simple Greek Salad
+gpt_5_5__reasoning_medium,gpt_5_5__reasoning_medium.jsonl,11,0,11,0.10727272727272727,9.090909090909092,anytime_meals,medium,
 gpt_5_5__reasoning_medium,gpt_5_5__reasoning_medium.jsonl,5,0,5,0.027999999999999997,20.0,breakfast,medium,
 gpt_5_5__reasoning_medium,gpt_5_5__reasoning_medium.jsonl,5,0,5,0.018000000000000002,0.0,desserts,medium,
 gpt_5_5__reasoning_medium,gpt_5_5__reasoning_medium.jsonl,5,0,5,0.092,0.0,snacks,medium,
-gpt_5_5_pro__reasoning_high,gpt_5_5_pro__reasoning_high.jsonl,0,11,11,,,anytime_meals,high,Sesame-Ginger Turkey Meatballs; Chicken and Broccoli Piccata; Chicken Fajitas with Lime Sauce; One-Pot Beef & Mushroom Lasagna; Pork Tenderloin with Dijon Gravy; Fish Tacos with Crunchy Slaw; Chicken Sausage Garden Pasta; Roasted Cauliflower Power Salad; Simple Greek Salad; Apple-Celery Chicken Salad; Harvest Crunch Kale & Chicken Salad
-gpt_5_5_pro__reasoning_high,gpt_5_5_pro__reasoning_high.jsonl,0,5,5,,,breakfast,high,"Scrambled Egg & Black Bean Burritos; Cranberry Carrot Muffins; Blueberry Banana Pancakes; Cheesy Egg, Bacon & Broccoli Muffins; Glorious Green Smoothie Bowl"
-gpt_5_5_pro__reasoning_high,gpt_5_5_pro__reasoning_high.jsonl,0,5,5,,,desserts,high,Citrus-Berry Ricotta Parfaits; Crispy Rice Cereal Treats; Carob Chip Cranberry Cookies; Pumpkin Cinnamon Bars; Carob Cupcakes with Cream Cheese Frosting
-gpt_5_5_pro__reasoning_high,gpt_5_5_pro__reasoning_high.jsonl,0,5,5,,,snacks,high,Rice Cakes with Peanut Butter and Strawberries; Avocado Toast with Feta; Trail Mix Snack; Almond Butter Apple Snack; Hummus with Bell Pepper

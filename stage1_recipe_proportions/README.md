@@ -38,7 +38,7 @@ Run results are written to `stage1_recipe_proportions/evaluation_results/`:
 
 ## Current Results
 
-The current dataset contains 26 recipes and 19 discovered model output files.
+The current dataset contains 26 recipes and 18 discovered model output files.
 
 Top three models by MAE:
 
@@ -57,10 +57,10 @@ all 26 recipes, `gpt_5_4_mini__reasoning_medium` has better +/-10% accuracy. The
 
 Reasoning effort did not monotonically improve MAE in the current outputs:
 
-- `gpt_5_4`: low 0.065385, medium 0.063320, high 0.067038.
+- `gpt_5_4`: low 0.065385, medium 0.064346, high 0.067038.
 - `gpt_5_4_mini`: low 0.049615, medium 0.054962, high 0.060308.
 - `gpt_5_4_nano`: low 0.392962, medium 0.126714, high 0.158615.
-- `gpt_5_5`: low 0.063192, medium 0.073200, high 0.065462.
+- `gpt_5_5`: low 0.063192, medium 0.071923, high 0.065462.
 
 The lowest-reasoning `gpt_5_4_mini` run is currently the best MAE result.
 
