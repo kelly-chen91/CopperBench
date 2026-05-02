@@ -5,7 +5,7 @@ Analyze Chain-of-Thought (CoT) reasoning across all 17 models to identify failur
 
 ### Design Decisions
 - **Clustering Scope**: Global clustering across all models + recipes (identify universal failure patterns)
-- **Feature Extraction**: Custom NLP features extracted from CoT text (reasoning depth, confidence signals, ingredient coverage, calculation method)
+- **Feature Extraction**: Custom NLP features extracted from CoT text (reasoning depth, confidence signals, ingredient coverage, calculation method, systematic over/underestimators)
 - **Clustering Algorithm**: HDBSCAN with auto-detection (data-driven cluster count, no manual tuning)
 - **Error Metrics**: Both absolute error (MAE in mg) and relative error (%) for comprehensive cross-validation
 - **LLM Labeling**: OpenAI GPT API (consistent with run_copper_estimates.py)
@@ -27,6 +27,8 @@ Analyze Chain-of-Thought (CoT) reasoning across all 17 models to identify failur
    - **Ingredient Coverage**: % of recipe ingredients with explicit individual estimates vs. grouped/skipped
    - **Calculation Method**: text patterns (weight-based "per 100g" vs. portion-based, USDA lookup vs. approximation)
    - **Recipe Complexity Response**: how model handles multi-ingredient recipes
+   - **Systematic overestimators**: models that consistently include optional ingredients or use high copper reference values
+   - **Systematic underestimators**: models that miss ingredients or use low reference values
 3. Create `features_extracted.csv` with: recipe_name, model_name, predicted_copper_mg, ground_truth_copper_mg, absolute_error, relative_error_percent, and all extracted features
 
 ### Phase 2: HDBSCAN Clustering

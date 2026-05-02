@@ -1,0 +1,1298 @@
+{
+  "-1": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content in ingredients, often due to using high or imprecise copper values from nutritional databases without accounting for variability or negligible amounts. This leads to inflated total copper estimates and high relative errors, as reflected by the high overestimate rate and positive signed error in the cluster statistics.",
+    "label": "systematic ingredient copper content overestimation",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.72,\n  \"copper_mg_per_serving\": 0.06\n}\n```\n\n**Estimation Breakdown:**\n\n- **Eggs (2 large):** ~0.08 mg copper\n- **Pumpkin pur\u00e9e (1/2 of 15 oz can \u2248 213g):** ~0.34 mg copper\n- **Granulated sugar (1/4 cup):** ~0 mg copper\n- **Brown sugar (1/4 cup):** ~0.02 mg copper\n- **Canola oil (1/4 cup):** ~0 mg copper\n- **Vanilla extract (1 tsp):** ~0.01 mg copper\n- **All-purpose flour (1 cup \u2248 120g):** ~0.18 mg copper\n- **Baking powder, cinnamon, salt, baking soda, powdered sugar:** Trace amounts, combined ~0.09 mg copper\n\n**Total copper:**  \n0.08 + 0.34 + 0.02 + 0.01 + 0.18 + 0.09 \u2248 **0.72 mg**\n\n**Per serving:**  \n0.72 mg / 12 \u2248 **0.06 mg**",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 0.0
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Harvest Crunch Kale & Chicken Salad\",\"servings\":4,\"total_copper_mg\":1.0,\"copper_mg_per_serving\":0.25}",
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 31.57894736842105
+      },
+      {
+        "absolute_error": 0.535,
+        "model_name": "gpt_4_1_mini",
+        "raw_output_excerpt": "To estimate the copper content in the Roasted Cauliflower Power Salad, I will approximate the copper content for each ingredient based on typical values from nutritional databases.\n\n### Copper content estimates per ingredient:\n- **Cauliflower (1 medium, ~600g):** ~0.2 mg copper per 100g \u2192 600g \u2192 1.2 mg\n- **Extra virgin olive oil (2 tbsp + 1/4 cup = ~6 tbsp total):** negligible copper\n- **Dried oregano (1/2 tsp ~0.5g):** ~0.1 mg copper per 1g \u2192 0.05 mg\n- **Salt, pepper:** negligible copper\n- **Arugula (6 cups ~120g):** ~0.1 mg copper per 100g \u2192 0.12 mg\n- **Hard-cooked eggs (4 large):** ~0.07 mg copper per egg \u2192 0.28 mg\n- **Cherry tomatoes (1 cup ~150g):** ~0.05 mg copper per 100g \u2192 0.075 mg\n- **Green olives (1/2 cup ~65g):** ~0.1 mg copper per 100g \u2192 0.065 mg\n- **Feta cheese (1/3 cup ~50g):** ~0.02 mg copper per 100g \u2192 0.01 mg\n- **Toasted sliced almonds (1/4 cup ~23g):** ~1.0 mg copper per 28g \u2192 ~0.82 mg\n- **Lemon juice, basil, Dijon mustard, honey, garlic:** negligible copper\n\n### Total copper:\n1.2 + 0.05 + 0.12 + 0.28 + 0.075 + 0.065 + 0.01 + 0.82 = 2.62 mg copper total\n\n### Per serving (4 servings):\n2.62 mg / 4 = 0.655 mg copper per serving\n\n```json\n{\n  \"dish_name\": \"Roasted Caul",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 445.83333333333337
+      },
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_4_1_mini",
+        "raw_output_excerpt": "To estimate the copper content, I will look up average copper values for each ingredient and calculate the total copper content for the entire recipe, then divide by the number of servings.\n\nIngredients and approximate copper content:\n\n- Olive oil (2 teaspoons \u2248 8.5 g): Olive oil has very little copper, about 0.01 mg per 100 g, so 8.5 g \u2248 0.00085 mg copper (negligible)\n- Pork tenderloin (1 pound \u2248 454 g): Pork contains about 0.1 mg copper per 100 g, so 454 g \u2248 0.454 mg copper\n- Dried rosemary (1/2 teaspoon \u2248 0.5 g): Rosemary has about 0.3 mg copper per 100 g, so 0.5 g \u2248 0.0015 mg copper\n- Salt (1/4 teaspoon \u2248 1.5 g): No copper\n- Pepper (1/8 teaspoon \u2248 0.3 g): Black pepper has about 0.6 mg copper per 100 g, so 0.3 g \u2248 0.0018 mg copper\n- Chicken broth (1/2 cup \u2248 120 ml): Copper content varies, but about 0.02 mg per 100 ml, so 120 ml \u2248 0.024 mg copper\n- Dijon mustard (2 tablespoons \u2248 30 g): Mustard has about 0.2 mg copper per 100 g, so 30 g \u2248 0.06 mg copper\n- Minced garlic (1 teaspoon \u2248 3 g): Garlic has about 0.3 mg copper per 100 g, so 3 g \u2248 0.009 mg copper\n- Dried thyme (1/4 teaspoon \u2248 0.25 g): Thyme has about 0.3 mg copper per 100 g, so 0.25 g \u2248 0.00075 mg copper\n- Butter (2 tables",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 0.0
+      },
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_4o",
+        "raw_output_excerpt": "To estimate the copper content, we need to consider the copper content of each ingredient. Here's an approximate breakdown:\n\n- **Chicken breast**: 4 ounces (113g) contains about 0.04 mg of copper.\n- **Celery**: 1 large stalk (about 40g) contains about 0.04 mg of copper.\n- **Apple**: 1/2 cup chopped (about 75g) contains about 0.05 mg of copper.\n- **Green onion**: 1 medium (about 15g) contains about 0.01 mg of copper.\n- **Lemon zest**: Minimal contribution, approximately 0.01 mg.\n- **Dill**: 2 teaspoons (about 2g) contains about 0.01 mg of copper.\n- **Mayonnaise**: 1/4 cup (about 56g) contains about 0.02 mg of copper.\n- **Greek yogurt**: 2 tablespoons (about 30g) contains about 0.01 mg of copper.\n- **Apple cider vinegar, salt, pepper**: Minimal contribution, approximately 0.01 mg.\n\nTotal copper content for the entire recipe is approximately 0.20 mg.\n\nHere's the JSON output:\n\n```json\n{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.20,\n  \"copper_mg_per_serving\": 0.10\n}\n```",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 0.0
+      }
+    ]
+  },
+  "0": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation bias in copper content calculations, where ingredient copper values are cumulatively summed without sufficient adjustment for variability or uncertainty, leading to inflated total copper estimates. This pattern reflects a reasoning flaw in handling ingredient-level copper data, causing all samples to overpredict copper amounts.",
+    "label": "systematic overestimation of copper content",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.009999999999999998,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.32,\n  \"copper_mg_per_serving\": 0.03\n}\n```\n\n**Estimation details:**\n\n- **Unsweetened coconut flakes (1/4 cup, ~15g):** ~0.13 mg copper\n- **Unsalted butter (2 tbsp, ~28g):** ~0.01 mg copper\n- **Mini marshmallows (2.5 cups, ~140g):** ~0.01 mg copper\n- **Puffed rice cereal (3 cups, ~24g):** ~0.04 mg copper\n- **White chocolate chips (1/2 cup, ~85g):** ~0.13 mg copper\n- **Canola oil (1/2 tsp, ~2g):** ~0 mg copper\n\n**Total copper:** ~0.32 mg  \n**Per serving (12 servings):** ~0.03 mg\n\n*Values are based on USDA and standard nutrition databases. Actual values may vary slightly by brand and preparation.*",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 49.999999999999986
+      },
+      {
+        "absolute_error": 0.06999999999999998,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "Here is an estimate of the copper content for the \"Glorious Green Smoothie Bowl\" recipe. Copper values are based on USDA and standard nutrition databases for each ingredient, using average values for typical serving sizes.\n\n**Ingredient Copper Estimates:**\n- **1/4 cup 100% orange juice**: ~0.02 mg\n- **1 medium banana (118g)**: ~0.09 mg\n- **1/2 packed cup baby spinach (~15g)**: ~0.06 mg\n- **1/2 cup low-fat vanilla Greek yogurt (~120g)**: ~0.02 mg\n- **1-inch piece English cucumber (~15g)**: ~0.01 mg\n- **Optional toppings (estimate for 1/4 cup mixed, e.g., 1 Tbsp oat cereal, 1 Tbsp chopped apple, 1 Tbsp dried cranberries, 1 Tbsp blueberries):**\n  - O-shaped oat cereal (1 Tbsp): ~0.01 mg\n  - Chopped apple (1 Tbsp): ~0.01 mg\n  - Dried cranberries (1 Tbsp): ~0.01 mg\n  - Blueberries (1 Tbsp): ~0.01 mg\n  - Fresh mint: negligible\n\n**Total from toppings (if all included):** ~0.04 mg\n\n**Total copper estimate:**\n0.02 (OJ) + 0.09 (banana) + 0.06 (spinach) + 0.02 (yogurt) + 0.01 (cucumber) + 0.04 (toppings) = **0.24 mg**\n\n---\n\n```json\n{\n  \"dish_name\": \"Glorious Green Smoothie Bowl\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.24,\n  \"copper_mg_per_serving\": 0.24\n}\n```\n\n**Note:**  \n- If you use fewer ",
+        "recipe_name": "Glorious Green Smoothie Bowl",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 41.17647058823528
+      },
+      {
+        "absolute_error": 0.38,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "Here is the estimated copper content for the \"Trail Mix Snack\" recipe:\n\n**Copper content estimates per ingredient (USDA FoodData Central, typical values):**\n- Corn or rice cereal (1/2 cup \u2248 15g): ~0.02 mg\n- Dried cranberries (2 tbsp \u2248 16g): ~0.02 mg\n- Mini pretzels (1/4 cup \u2248 15g): ~0.03 mg\n- Pumpkin seeds (1 tbsp \u2248 9g): ~0.41 mg\n\n**Total copper content:**\n0.02 + 0.02 + 0.03 + 0.41 = **0.48 mg**\n\n**JSON Output:**\n```json\n{\n  \"dish_name\": \"Trail Mix Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.48,\n  \"copper_mg_per_serving\": 0.48\n}\n```\n\nLet me know if you need sources or a breakdown for each ingredient!",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 380.0
+      },
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "Let's estimate the copper content for each ingredient (values are approximate, based on USDA and other nutrition databases):\n\n### Ingredient Copper Content Estimates (per total recipe amount)\n- **All-purpose white flour (1 cup, ~120g):** ~0.14 mg\n- **Whole wheat flour (1/2 cup, ~60g):** ~0.18 mg\n- **Baking soda (1 tsp):** 0 mg\n- **Salt (1/2 tsp):** 0 mg\n- **Unsalted butter (1/2 cup, ~113g):** ~0.03 mg\n- **Canola oil (1/4 cup, ~54g):** ~0.01 mg\n- **Granulated sugar (1/2 cup, ~100g):** ~0 mg\n- **Brown sugar (2 tbsp, ~25g):** ~0.01 mg\n- **Egg (1 large):** ~0.04 mg\n- **Vanilla extract (1 tsp):** ~0 mg\n- **Carob chips (1/2 cup, ~85g):** ~0.51 mg\n- **Dried cranberries (1/2 cup, ~60g):** ~0.09 mg\n\n### Total Copper Calculation\nSum of all copper sources:\n- 0.14 (white flour)\n- 0.18 (whole wheat flour)\n- 0.03 (butter)\n- 0.01 (canola oil)\n- 0.01 (brown sugar)\n- 0.04 (egg)\n- 0.51 (carob chips)\n- 0.09 (dried cranberries)\n\n**Total copper \u2248 1.01 mg**\n\n### Per Serving\n- **Servings:** 20\n- **Copper per serving:** 1.01 mg / 20 \u2248 0.05 mg\n\n---\n\n```json\n{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 1.01,\n  \"copper_mg_per_serving\": 0.05\n}\n```\n\n**Note:** These ar",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 66.66666666666669
+      },
+      {
+        "absolute_error": 0.04999999999999999,
+        "model_name": "gpt_4_1",
+        "raw_output_excerpt": "Here\u2019s an estimate of the copper content for the **Chicken and Broccoli Piccata** recipe, based on typical copper values for each ingredient:\n\n### Copper Content Estimates (per ingredient, total for recipe):\n\n- **Cornstarch (3 tbsp + 2 tsp \u2248 30g):** ~0.01 mg  \n- **Garlic powder (0.75 tsp \u2248 2.5g):** ~0.02 mg  \n- **Salt, pepper:** Negligible  \n- **Chicken breast (1 lb \u2248 454g):** ~0.18 mg  \n- **Olive oil (2 tbsp \u2248 27g):** ~0.02 mg  \n- **Butter (1 tbsp \u2248 14g):** ~0.01 mg  \n- **Red onion (1/3 medium \u2248 40g):** ~0.03 mg  \n- **Water:** 0 mg  \n- **Broccoli florets (5 cups \u2248 450g):** ~0.36 mg  \n- **Chicken broth (1 cup \u2248 240g):** ~0.03 mg  \n- **Lemon juice (2 tbsp \u2248 30g):** ~0.01 mg  \n- **Capers (2 tbsp \u2248 16g):** ~0.04 mg  \n- **Lemon zest (zest of 1/2 lemon \u2248 1g):** ~0.01 mg  \n\n### Total Copper Calculation\n\nSum of all above:  \n0.01 + 0.02 + 0.18 + 0.02 + 0.01 + 0.03 + 0.36 + 0.03 + 0.01 + 0.04 + 0.01 = **0.72 mg** (rounded to two decimal places)\n\n### Per Serving\n\n0.72 mg / 4 servings = **0.18 mg per serving**\n\n---\n\n```json\n{\n  \"dish_name\": \"Chicken and Broccoli Piccata\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.72,\n  \"copper_mg_per_serving\": 0.18\n}\n```\n\n**Note:** These are estimates based on ",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 38.46153846153845
+      }
+    ]
+  },
+  "1": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content caused by inflating or inaccurately summing the copper values of individual ingredients, often without accounting for realistic serving sizes or bioavailability. This leads to high relative errors and a strong bias toward overestimation across samples.",
+    "label": "systematic overestimation due to ingredient copper content inflation",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.009999999999999981,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\"dish_name\":\"Hummus with Bell Pepper\",\"servings\":1,\"total_copper_mg\":0.15,\"copper_mg_per_serving\":0.15}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 7.142857142857128
+      },
+      {
+        "absolute_error": 0.1,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\"dish_name\":\"Avocado Toast with Feta\",\"servings\":1,\"total_copper_mg\":0.13,\"copper_mg_per_serving\":0.13}",
+        "recipe_name": "Avocado Toast with Feta",
+        "recipe_type": "snacks",
+        "relative_error_percent": 43.47826086956522
+      },
+      {
+        "absolute_error": 0.62,
+        "model_name": "gpt_4_1_nano",
+        "raw_output_excerpt": "To estimate the copper content per serving for the Trail Mix Snack, I'll analyze each ingredient's typical copper content and sum them up.\n\n**Ingredients and approximate copper content:**\n\n- **Corn or rice cereal (1/2 cup):** ~0.2 mg copper\n- **Dried cranberries (2 tbsp):** ~0.02 mg copper\n- **Mini pretzels (1/4 cup):** ~0.1 mg copper\n- **Pumpkin seeds (1 tbsp):** ~0.4 mg copper\n\n**Total copper content:** 0.2 + 0.02 + 0.1 + 0.4 = **0.72 mg**\n\nSince the recipe is for 1 serving, the per-serving copper content is approximately 0.72 mg.\n\nHere's the JSON output:\n\n```json\n{\n  \"dish_name\": \"Trail Mix Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.72,\n  \"copper_mg_per_serving\": 0.72\n}\n```",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 619.9999999999999
+      },
+      {
+        "absolute_error": 0.015000000000000003,
+        "model_name": "gpt_4o_mini",
+        "raw_output_excerpt": "To estimate the copper content in the recipe, we can look at the copper content of each ingredient:\n\n1. **Unsweetened Coconut Flakes**: Approximately 0.2 mg of copper per 1/4 cup.\n2. **Unsalted Butter**: Approximately 0.01 mg of copper per 2 tablespoons.\n3. **Mini Marshmallows**: Approximately 0.01 mg of copper per 5 ounces.\n4. **Puffed Rice Cereal**: Approximately 0.1 mg of copper per 3 cups.\n5. **White Chocolate Chips**: Approximately 0.1 mg of copper per 1/2 cup.\n6. **Canola Oil**: Approximately 0.0 mg of copper per 1/2 teaspoon.\n\nNow, let's calculate the total copper content:\n\n- Coconut Flakes: 0.2 mg\n- Unsalted Butter: 0.01 mg\n- Mini Marshmallows: 0.01 mg\n- Puffed Rice Cereal: 0.1 mg\n- White Chocolate Chips: 0.1 mg\n- Canola Oil: 0.0 mg\n\n**Total Copper Content**:\n\\[ \n0.2 + 0.01 + 0.01 + 0.1 + 0.1 + 0.0 = 0.42 \\text{ mg} \n\\]\n\n**Copper Content per Serving**:\n\\[ \n\\text{Copper per serving} = \\frac{0.42 \\text{ mg}}{12} \\approx 0.035 \\text{ mg} \n\\]\n\nNow, let's format this information in JSON:\n\n```json\n{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.42,\n  \"copper_mg_per_serving\": 0.035\n}\n```",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 75.00000000000001
+      },
+      {
+        "absolute_error": 0.01999999999999999,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\"dish_name\":\"Hummus with Bell Pepper\",\"servings\":1,\"total_copper_mg\":0.16,\"copper_mg_per_serving\":0.16}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 14.285714285714276
+      }
+    ]
+  },
+  "10": {
+    "confidence": "high",
+    "description": "All models consistently overestimate copper content, indicating a shared reasoning pattern of upward bias in copper estimation. This failure mode likely stems from an over-reliance on high-copper ingredients or incorrect aggregation assumptions, causing copper values to be inflated across samples.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Rice Cakes with Peanut Butter and Strawberries\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.2,\n  \"copper_mg_per_serving\": 0.2\n}",
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "recipe_type": "snacks",
+        "relative_error_percent": 25.000000000000007
+      },
+      {
+        "absolute_error": 0.07999999999999999,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Rice Cakes with Peanut Butter and Strawberries\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.24,\n  \"copper_mg_per_serving\": 0.24\n}",
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "recipe_type": "snacks",
+        "relative_error_percent": 49.999999999999986
+      },
+      {
+        "absolute_error": 0.31999999999999995,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Rice Cakes with Peanut Butter and Strawberries\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.48,\n  \"copper_mg_per_serving\": 0.48\n}\n```",
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "recipe_type": "snacks",
+        "relative_error_percent": 199.99999999999994
+      },
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Rice Cakes with Peanut Butter and Strawberries\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.2,\n  \"copper_mg_per_serving\": 0.2\n}",
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "recipe_type": "snacks",
+        "relative_error_percent": 25.000000000000007
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Rice Cakes with Peanut Butter and Strawberries\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.22,\n  \"copper_mg_per_serving\": 0.22\n}",
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "recipe_type": "snacks",
+        "relative_error_percent": 37.5
+      }
+    ]
+  },
+  "11": {
+    "confidence": "high",
+    "description": "All samples consistently overestimate copper content, indicating a shared failure mode where the models apply an upward bias in copper estimation. This leads to a 100% overestimate rate and inflated absolute and relative errors.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.009999999999999981,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.15,\n  \"copper_mg_per_serving\": 0.15\n}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 7.142857142857128
+      },
+      {
+        "absolute_error": 0.06999999999999998,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Almond Butter Apple Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.21,\n  \"copper_mg_per_serving\": 0.21\n}\n```",
+        "recipe_name": "Almond Butter Apple Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 49.99999999999998
+      },
+      {
+        "absolute_error": 0.26,
+        "model_name": "gpt_4_1_nano",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.4,\n  \"copper_mg_per_serving\": 0.4\n}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 185.7142857142857
+      },
+      {
+        "absolute_error": 0.01999999999999999,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.16,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 14.285714285714276
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.17,\n  \"copper_mg_per_serving\": 0.17\n}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 21.428571428571423
+      }
+    ]
+  },
+  "12": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content in the snack recipes, as evidenced by a 100% overestimate rate and positive signed errors across all samples. This suggests a reasoning pattern where the models tend to inflate copper values, possibly due to cumulative rounding errors or over-attribution of copper content from ingredients.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\"dish_name\":\"Trail Mix Snack\",\"servings\":1,\"total_copper_mg\":0.14,\"copper_mg_per_serving\":0.14}",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 40.00000000000001
+      },
+      {
+        "absolute_error": 0.09,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Trail Mix Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.19,\n  \"copper_mg_per_serving\": 0.19\n}",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 89.99999999999999
+      },
+      {
+        "absolute_error": 0.24000000000000002,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Trail Mix Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.34,\n  \"copper_mg_per_serving\": 0.34\n}",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 240.0
+      },
+      {
+        "absolute_error": 0.04999999999999999,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\"dish_name\":\"Trail Mix Snack\",\"servings\":1,\"total_copper_mg\":0.15,\"copper_mg_per_serving\":0.15}",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 49.999999999999986
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Trail Mix Snack\",\"servings\":1,\"total_copper_mg\":0.16,\"copper_mg_per_serving\":0.16}",
+        "recipe_name": "Trail Mix Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 60.0
+      }
+    ]
+  },
+  "13": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content across all samples, as indicated by a 100% overestimate rate and positive average signed error. This suggests a reasoning pattern where the models tend to inflate copper estimates, possibly due to cumulative rounding errors or over-attribution of copper content in ingredients.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.009999999999999981,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Glorious Green Smoothie Bowl\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.18,\n  \"copper_mg_per_serving\": 0.18\n}",
+        "recipe_name": "Glorious Green Smoothie Bowl",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 5.8823529411764595
+      },
+      {
+        "absolute_error": 0.032,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.623,\n  \"copper_mg_per_serving\": 0.052\n}\n```",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 160.0
+      },
+      {
+        "absolute_error": 0.17,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.07,\n  \"copper_mg_per_serving\": 0.27\n}\n```",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 170.0
+      },
+      {
+        "absolute_error": 0.009999999999999998,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.4,\n  \"copper_mg_per_serving\": 0.03\n}",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 49.999999999999986
+      },
+      {
+        "absolute_error": 0.011,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.37,\n  \"copper_mg_per_serving\": 0.031\n}\n```",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 54.99999999999999
+      }
+    ]
+  },
+  "14": {
+    "confidence": "high",
+    "description": "All models consistently overestimate copper content, often by large margins, indicating a shared failure mode of systematic upward bias in copper estimation. This suggests a reasoning pattern where models inflate copper values rather than underestimating or balancing errors.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.16,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken Sausage Garden Pasta\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.8,\n  \"copper_mg_per_serving\": 0.2\n}",
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 400.0
+      },
+      {
+        "absolute_error": 0.26,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken Sausage Garden Pasta\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.18,\n  \"copper_mg_per_serving\": 0.3\n}",
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 650.0
+      },
+      {
+        "absolute_error": 6.96,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Chicken Sausage Garden Pasta\",\n  \"servings\": 4,\n  \"total_copper_mg\": 28.1,\n  \"copper_mg_per_serving\": 7.0\n}\n```",
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 17400.0
+      },
+      {
+        "absolute_error": 0.21,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken Sausage Garden Pasta\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.0,\n  \"copper_mg_per_serving\": 0.25\n}",
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 525.0
+      },
+      {
+        "absolute_error": 0.21,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken Sausage Garden Pasta\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.98,\n  \"copper_mg_per_serving\": 0.25\n}",
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 525.0
+      }
+    ]
+  },
+  "15": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content across all samples, indicated by a 100% overestimate rate and positive signed errors. This suggests a reasoning pattern where the models tend to inflate copper values, possibly due to cumulative rounding up or over-attribution of copper in ingredients.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0010000000000000009,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Carob Chip Cranberry Cookies\",\"servings\":20,\"total_copper_mg\":0.62,\"copper_mg_per_serving\":0.031}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 3.3333333333333366
+      },
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\"dish_name\":\"Carob Chip Cranberry Cookies\",\"servings\":20,\"total_copper_mg\":0.9,\"copper_mg_per_serving\":0.05}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 66.66666666666669
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\"dish_name\":\"Scrambled Egg & Black Bean Burritos\",\"servings\":2,\"total_copper_mg\":0.42,\"copper_mg_per_serving\":0.21}",
+        "recipe_name": "Scrambled Egg & Black Bean Burritos",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 40.0
+      },
+      {
+        "absolute_error": 0.009000000000000001,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Carob Chip Cranberry Cookies\",\"servings\":20,\"total_copper_mg\":0.78,\"copper_mg_per_serving\":0.039}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 30.000000000000004
+      },
+      {
+        "absolute_error": 0.009000000000000001,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Carob Chip Cranberry Cookies\",\"servings\":20,\"total_copper_mg\":0.78,\"copper_mg_per_serving\":0.039}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 30.000000000000004
+      }
+    ]
+  },
+  "16": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in the dessert recipes, leading to a positive signed error and a 100% overestimate rate. This failure mode suggests a shared reasoning pattern where copper amounts are inflated, possibly due to incorrect ingredient copper values or aggregation errors.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0030000000000000027,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Cupcakes with Cream Cheese Frosting\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.39,\n  \"copper_mg_per_serving\": 0.033\n}",
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "recipe_type": "desserts",
+        "relative_error_percent": 10.000000000000009
+      },
+      {
+        "absolute_error": 0.010000000000000002,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Cupcakes with Cream Cheese Frosting\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.47,\n  \"copper_mg_per_serving\": 0.04\n}",
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "recipe_type": "desserts",
+        "relative_error_percent": 33.33333333333334
+      },
+      {
+        "absolute_error": 0.64,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Carob Cupcakes with Cream Cheese Frosting\",\n  \"servings\": 12,\n  \"total_copper_mg\": 7.99,\n  \"copper_mg_per_serving\": 0.67\n}\n```",
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "recipe_type": "desserts",
+        "relative_error_percent": 2133.3333333333335
+      },
+      {
+        "absolute_error": 0.005999999999999998,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Cupcakes with Cream Cheese Frosting\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.43,\n  \"copper_mg_per_serving\": 0.036\n}",
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "recipe_type": "desserts",
+        "relative_error_percent": 19.999999999999996
+      },
+      {
+        "absolute_error": 0.006999999999999999,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Cupcakes with Cream Cheese Frosting\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.44,\n  \"copper_mg_per_serving\": 0.037\n}",
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "recipe_type": "desserts",
+        "relative_error_percent": 23.333333333333332
+      }
+    ]
+  },
+  "17": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in the recipe, leading to a positive signed error and 100% overestimate rate. This suggests a shared reasoning pattern where copper values are inflated, possibly due to incorrect assumptions or aggregation errors in ingredient copper content estimation.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.012999999999999998,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.56,\n  \"copper_mg_per_serving\": 0.093\n}",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 16.249999999999996
+      },
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.58,\n  \"copper_mg_per_serving\": 0.10\n}",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 25.000000000000007
+      },
+      {
+        "absolute_error": 0.08,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.94,\n  \"copper_mg_per_serving\": 0.16\n}\n```",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 100.0
+      },
+      {
+        "absolute_error": 0.015,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.57,\n  \"copper_mg_per_serving\": 0.095\n}",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 18.75
+      },
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.58,\n  \"copper_mg_per_serving\": 0.1\n}",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 25.000000000000007
+      }
+    ]
+  },
+  "18": {
+    "confidence": "high",
+    "description": "All samples consistently overestimate copper content, indicating a shared failure mode where the models inflate copper values rather than underestimating. This suggests a reasoning pattern prone to upward bias in copper estimation, possibly due to misinterpretation or overaggregation of ingredient copper contributions.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken and Broccoli Piccata\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.62,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 23.076923076923077
+      },
+      {
+        "absolute_error": 0.060000000000000005,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Sesame-Ginger Turkey Meatballs\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.41,\n  \"copper_mg_per_serving\": 0.1\n}",
+        "recipe_name": "Sesame-Ginger Turkey Meatballs",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 150.0
+      },
+      {
+        "absolute_error": 0.24999999999999997,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Sesame-Ginger Turkey Meatballs\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.15,\n  \"copper_mg_per_serving\": 0.29\n}\n```",
+        "recipe_name": "Sesame-Ginger Turkey Meatballs",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 624.9999999999999
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Chicken and Broccoli Piccata\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.62,\n  \"copper_mg_per_serving\": 0.16\n}\n```",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 23.076923076923077
+      },
+      {
+        "absolute_error": 0.04,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Sesame-Ginger Turkey Meatballs\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.33,\n  \"copper_mg_per_serving\": 0.08\n}",
+        "recipe_name": "Sesame-Ginger Turkey Meatballs",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 100.0
+      }
+    ]
+  },
+  "19": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in the recipe, leading to high positive signed errors and 100% overestimate rate. This suggests a shared reasoning pattern where copper content is inflated, possibly due to incorrect assumptions about ingredient copper levels or aggregation errors.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.09,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"One-Pot Beef & Mushroom Lasagna\",\n  \"servings\": 6,\n  \"total_copper_mg\": 1.07,\n  \"copper_mg_per_serving\": 0.18\n}",
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 100.0
+      },
+      {
+        "absolute_error": 0.32999999999999996,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"One-Pot Beef & Mushroom Lasagna\",\n  \"servings\": 6,\n  \"total_copper_mg\": 2.5,\n  \"copper_mg_per_serving\": 0.42\n}",
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 366.66666666666663
+      },
+      {
+        "absolute_error": 0.38,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"One-Pot Beef & Mushroom Lasagna\",\n  \"servings\": 6,\n  \"total_copper_mg\": 2.8,\n  \"copper_mg_per_serving\": 0.47\n}",
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 422.22222222222223
+      },
+      {
+        "absolute_error": 0.11000000000000001,
+        "model_name": "gpt_4_1_nano",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"One-Pot Beef & Mushroom Lasagna\",\n  \"servings\": 6,\n  \"total_copper_mg\": 1.2,\n  \"copper_mg_per_serving\": 0.2\n}",
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 122.22222222222223
+      },
+      {
+        "absolute_error": 0.16,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"One-Pot Beef & Mushroom Lasagna\",\n  \"servings\": 6,\n  \"total_copper_mg\": 1.5,\n  \"copper_mg_per_serving\": 0.25\n}",
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 177.7777777777778
+      }
+    ]
+  },
+  "2": {
+    "confidence": "high",
+    "description": "The shared failure mode involves consistent errors in estimating ingredient quantities or copper content, leading to proportional copper-estimation errors. This often results from miscalculations or incorrect assumptions about ingredient copper values or serving sizes, causing large relative errors in some cases.",
+    "label": "systematic ingredient quantity misestimation",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken and Broccoli Piccata\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.52,\n  \"copper_mg_per_serving\": 0.13\n}",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 0.0
+      },
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.34,\n  \"copper_mg_per_serving\": 0.06\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 0.0
+      },
+      {
+        "absolute_error": "0.21999999999999997",
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Harvest Crunch Kale & Chicken Salad\",\n  \"servings\": 4,\n  \"total",
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": "115.7894736842105"
+      },
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.41,\n  \"copper_mg_per_serving\": 0.1\n}",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 0.0
+      },
+      {
+        "absolute_error": 0.0,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.24,\n  \"copper_mg_per_serving\": 0.02\n}",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 0.0
+      }
+    ]
+  },
+  "20": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content across all samples, indicated by a 100% overestimate rate and positive signed errors. This suggests a reasoning pattern where the models tend to inflate copper values, possibly due to miscalibration or over-reliance on certain ingredient assumptions.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0040000000000000036,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.77,\n  \"copper_mg_per_serving\": 0.064\n}\n```",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 6.666666666666673
+      },
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 0.95,\n  \"copper_mg_per_serving\": 0.05\n}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 66.66666666666669
+      },
+      {
+        "absolute_error": 0.031,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 1.22,\n  \"copper_mg_per_serving\": 0.061\n}\n```",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 103.33333333333334
+      },
+      {
+        "absolute_error": 0.010000000000000002,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 0.86,\n  \"copper_mg_per_serving\": 0.04\n}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 33.33333333333334
+      },
+      {
+        "absolute_error": 0.018000000000000002,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 0.96,\n  \"copper_mg_per_serving\": 0.048\n}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 60.00000000000001
+      }
+    ]
+  },
+  "21": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content across all samples, indicated by a 100% overestimate rate and positive signed errors. This suggests a reasoning pattern where the models tend to inflate copper values rather than underestimate them, possibly due to an error in ingredient copper content assumptions or aggregation logic.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Scrambled Egg & Black Bean Burritos\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.32,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Scrambled Egg & Black Bean Burritos",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 6.666666666666673
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Blueberry Banana Pancakes\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.45,\n  \"copper_mg_per_serving\": 0.23\n}",
+        "recipe_name": "Blueberry Banana Pancakes",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 35.29411764705882
+      },
+      {
+        "absolute_error": 0.11000000000000001,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Scrambled Egg & Black Bean Burritos\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.52,\n  \"copper_mg_per_serving\": 0.26\n}\n```",
+        "recipe_name": "Scrambled Egg & Black Bean Burritos",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 73.33333333333336
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Scrambled Egg & Black Bean Burritos\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.31,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Scrambled Egg & Black Bean Burritos",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 6.666666666666673
+      },
+      {
+        "absolute_error": 0.01999999999999999,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Blueberry Banana Pancakes\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.38,\n  \"copper_mg_per_serving\": 0.19\n}",
+        "recipe_name": "Blueberry Banana Pancakes",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 11.764705882352935
+      }
+    ]
+  },
+  "22": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in the recipe, leading to uniformly positive signed errors and high relative error percentages. This failure mode suggests a shared reasoning pattern where copper amounts are inflated, possibly due to incorrect assumptions or aggregation errors in ingredient copper values.",
+    "label": "systematic copper overestimation",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.07,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Roasted Cauliflower Power Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.75,\n  \"copper_mg_per_serving\": 0.19\n}\n```",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 58.333333333333336
+      },
+      {
+        "absolute_error": 0.14,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Roasted Cauliflower Power Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.04,\n  \"copper_mg_per_serving\": 0.26\n}",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 116.66666666666667
+      },
+      {
+        "absolute_error": 0.48,
+        "model_name": "gpt_4_1_nano",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Roasted Cauliflower Power Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 2.4,\n  \"copper_mg_per_serving\": 0.6\n}",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 400.0
+      },
+      {
+        "absolute_error": 0.11000000000000001,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Roasted Cauliflower Power Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.93,\n  \"copper_mg_per_serving\": 0.23\n}",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 91.66666666666669
+      },
+      {
+        "absolute_error": 0.12,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Roasted Cauliflower Power Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.95,\n  \"copper_mg_per_serving\": 0.24\n}",
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 100.0
+      }
+    ]
+  },
+  "23": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in recipes, leading to uniformly positive signed errors and high relative error percentages. This failure mode suggests a shared reasoning pattern where copper values are inflated, possibly due to cumulative rounding up or over-attribution of copper content in ingredients.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.09,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Fish Tacos with Crunchy Slaw\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.9,\n  \"copper_mg_per_serving\": 0.23\n}",
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 64.28571428571428
+      },
+      {
+        "absolute_error": 0.12,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Fish Tacos with Crunchy Slaw\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.02,\n  \"copper_mg_per_serving\": 0.26\n}",
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 85.7142857142857
+      },
+      {
+        "absolute_error": 0.35,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Fish Tacos with Crunchy Slaw\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.95,\n  \"copper_mg_per_serving\": 0.49\n}",
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 249.99999999999994
+      },
+      {
+        "absolute_error": 0.09,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Fish Tacos with Crunchy Slaw\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.9,\n  \"copper_mg_per_serving\": 0.23\n}",
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 64.28571428571428
+      },
+      {
+        "absolute_error": 0.09999999999999998,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Fish Tacos with Crunchy Slaw\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.95,\n  \"copper_mg_per_serving\": 0.24\n}",
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 71.4285714285714
+      }
+    ]
+  },
+  "24": {
+    "confidence": "high",
+    "description": "All models consistently overestimate the total copper content in the recipe, leading to positive signed errors and high relative error percentages. This failure mode suggests a shared reasoning pattern where copper values are inflated, possibly due to cumulative rounding up or over-attribution of copper content from ingredients.",
+    "label": "systematic copper overestimation",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Simple Greek Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.54,\n  \"copper_mg_per_serving\": 0.13\n}\n```",
+        "recipe_name": "Simple Greek Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 8.333333333333341
+      },
+      {
+        "absolute_error": 0.06,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Simple Greek Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.72,\n  \"copper_mg_per_serving\": 0.18\n}",
+        "recipe_name": "Simple Greek Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 50.0
+      },
+      {
+        "absolute_error": 0.31,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Simple Greek Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 1.71,\n  \"copper_mg_per_serving\": 0.43\n}\n```",
+        "recipe_name": "Simple Greek Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 258.33333333333337
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Simple Greek Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.6,\n  \"copper_mg_per_serving\": 0.15\n}",
+        "recipe_name": "Simple Greek Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 25.0
+      },
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_4_pro__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Simple Greek Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.65,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Simple Greek Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 33.33333333333334
+      }
+    ]
+  },
+  "25": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent overestimation of copper content across all samples, with no underestimations observed. This suggests a reasoning pattern where the models tend to inflate copper values, possibly due to cumulative rounding errors or misinterpretation of ingredient copper contributions.",
+    "label": "systematic overestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0030000000000000027,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.38,\n  \"copper_mg_per_serving\": 0.063\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 5.000000000000004
+      },
+      {
+        "absolute_error": 0.01999999999999999,
+        "model_name": "gpt_5_5__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Harvest Crunch Kale & Chicken Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.84,\n  \"copper_mg_per_serving\": 0.21\n}",
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 10.52631578947368
+      },
+      {
+        "absolute_error": 1.11,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Harvest Crunch Kale & Chicken Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 5.1,\n  \"copper_mg_per_serving\": 1.3\n}\n```",
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 584.2105263157896
+      },
+      {
+        "absolute_error": 0.008000000000000007,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.41,\n  \"copper_mg_per_serving\": 0.068\n}\n```",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 13.333333333333346
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.42,\n  \"copper_mg_per_serving\": 0.07\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 16.666666666666682
+      }
+    ]
+  },
+  "3": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent underestimation of copper content across all samples, as indicated by a 100% underestimate rate and negative average signed error. This suggests a reasoning pattern where the models systematically undervalue copper amounts, possibly due to conservative assumptions or incomplete ingredient copper data.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Chicken and Broccoli Piccata\",\"servings\":4,\"total_copper_mg\":0.49,\"copper_mg_per_serving\":0.12}",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 7.692307692307699
+      },
+      {
+        "absolute_error": 0.020000000000000018,
+        "model_name": "gpt_5_4__reasoning_low",
+        "raw_output_excerpt": "{\"dish_name\":\"Pork Tenderloin with Dijon Gravy\",\"servings\":4,\"total_copper_mg\":0.48,\"copper_mg_per_serving\":0.12}",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 14.285714285714295
+      },
+      {
+        "absolute_error": 0.06000000000000001,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\"dish_name\":\"Pork Tenderloin with Dijon Gravy\",\"servings\":4,\"total_copper_mg\":0.33,\"copper_mg_per_serving\":0.08}",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 42.85714285714286
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Chicken and Broccoli Piccata\",\"servings\":4,\"total_copper_mg\":0.48,\"copper_mg_per_serving\":0.12}",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 7.692307692307699
+      },
+      {
+        "absolute_error": 0.019999999999999997,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\"dish_name\":\"Pumpkin Cinnamon Bars\",\"servings\":12,\"total_copper_mg\":0.48,\"copper_mg_per_serving\":0.04}",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 33.33333333333333
+      }
+    ]
+  },
+  "4": {
+    "confidence": "high",
+    "description": "All models consistently underestimate copper content in snack recipes, leading to a 100% underestimate rate and a negative average signed error. This suggests a shared reasoning pattern where copper values are systematically estimated lower than actual, possibly due to conservative assumptions or incomplete ingredient copper data.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.10,\n  \"copper_mg_per_serving\": 0.10\n}\n```",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 28.571428571428577
+      },
+      {
+        "absolute_error": 0.11000000000000001,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Avocado Toast with Feta\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.12,\n  \"copper_mg_per_serving\": 0.12\n}\n```",
+        "recipe_name": "Avocado Toast with Feta",
+        "recipe_type": "snacks",
+        "relative_error_percent": 47.82608695652174
+      },
+      {
+        "absolute_error": 0.14,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Avocado Toast with Feta\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.09,\n  \"copper_mg_per_serving\": 0.09\n}",
+        "recipe_name": "Avocado Toast with Feta",
+        "recipe_type": "snacks",
+        "relative_error_percent": 60.86956521739131
+      },
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Hummus with Bell Pepper\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.10,\n  \"copper_mg_per_serving\": 0.10\n}",
+        "recipe_name": "Hummus with Bell Pepper",
+        "recipe_type": "snacks",
+        "relative_error_percent": 28.571428571428577
+      },
+      {
+        "absolute_error": 0.06000000000000001,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Almond Butter Apple Snack\",\n  \"servings\": 1,\n  \"total_copper_mg\": 0.08,\n  \"copper_mg_per_serving\": 0.08\n}\n```",
+        "recipe_name": "Almond Butter Apple Snack",
+        "recipe_type": "snacks",
+        "relative_error_percent": 42.85714285714286
+      }
+    ]
+  },
+  "5": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent underestimation of copper content across samples, as indicated by a 100% underestimate rate and negative average signed error. This suggests a reasoning pattern where the models systematically undervalue copper quantities, possibly due to conservative assumptions or incomplete ingredient copper data.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.004,
+        "model_name": "gpt_5_4__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Crispy Rice Cereal Treats\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.19,\n  \"copper_mg_per_serving\": 0.016\n}",
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "recipe_type": "desserts",
+        "relative_error_percent": 20.0
+      },
+      {
+        "absolute_error": 0.015,
+        "model_name": "gpt_5_4_mini__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.34,\n  \"copper_mg_per_serving\": 0.085\n}",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 15.0
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.28,\n  \"copper_mg_per_serving\": 0.07\n}\n```",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 30.0
+      },
+      {
+        "absolute_error": 0.0050000000000000044,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.38,\n  \"copper_mg_per_serving\": 0.095\n}\n```",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 5.000000000000004
+      },
+      {
+        "absolute_error": 0.0050000000000000044,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Citrus-Berry Ricotta Parfaits\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.38,\n  \"copper_mg_per_serving\": 0.095\n}",
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "recipe_type": "desserts",
+        "relative_error_percent": 5.000000000000004
+      }
+    ]
+  },
+  "6": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent underestimation of copper content across all samples, as indicated by a 100% underestimate rate and negative average signed error. This suggests a reasoning pattern where the models systematically undervalue copper quantities, possibly due to conservative assumptions or incomplete ingredient copper data.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.001999999999999995,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.35,\n  \"copper_mg_per_serving\": 0.058\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 3.333333333333325
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Chicken and Broccoli Piccata\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.47,\n  \"copper_mg_per_serving\": 0.12\n}",
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 7.692307692307699
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Harvest Crunch Kale & Chicken Salad\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.62,\n  \"copper_mg_per_serving\": 0.16\n}",
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 15.789473684210526
+      },
+      {
+        "absolute_error": 0.0029999999999999957,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.34,\n  \"copper_mg_per_serving\": 0.057\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 4.999999999999993
+      },
+      {
+        "absolute_error": 0.009999999999999995,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Cranberry Carrot Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.31,\n  \"copper_mg_per_serving\": 0.05\n}",
+        "recipe_name": "Cranberry Carrot Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 16.66666666666666
+      }
+    ]
+  },
+  "7": {
+    "confidence": "high",
+    "description": "All models consistently underestimate the total copper content in the recipes, resulting in 100% underestimation rate and negative signed errors. This failure mode suggests a shared reasoning pattern where copper values are systematically undervalued, possibly due to conservative assumptions or incomplete ingredient copper aggregation.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.020000000000000004,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.16,\n  \"copper_mg_per_serving\": 0.08\n}",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 20.000000000000004
+      },
+      {
+        "absolute_error": 0.045000000000000005,
+        "model_name": "gpt_5_4__reasoning_medium",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.11,\n  \"copper_mg_per_serving\": 0.055\n}",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 45.0
+      },
+      {
+        "absolute_error": 0.05,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.10,\n  \"copper_mg_per_serving\": 0.05\n}",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 50.0
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.14,\n  \"copper_mg_per_serving\": 0.07\n}\n```",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 30.0
+      },
+      {
+        "absolute_error": 0.03,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Apple-Celery Chicken Salad\",\n  \"servings\": 2,\n  \"total_copper_mg\": 0.13,\n  \"copper_mg_per_serving\": 0.07\n}\n```",
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 30.0
+      }
+    ]
+  },
+  "8": {
+    "confidence": "high",
+    "description": "All samples consistently underestimate the total copper content in the recipes, leading to 100% underestimation rate and negative signed errors. This failure mode suggests a shared reasoning pattern where the models undervalue copper contributions from ingredients or miscalculate cumulative copper, causing a bias toward lower copper estimates.",
+    "label": "systematic underestimation of total copper content",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.009999999999999995,
+        "model_name": "gpt_5_4_mini__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.55,\n  \"copper_mg_per_serving\": 0.05\n}",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 16.66666666666666
+      },
+      {
+        "absolute_error": 0.018999999999999996,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.50,\n  \"copper_mg_per_serving\": 0.041\n}\n```",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 31.66666666666666
+      },
+      {
+        "absolute_error": 0.024999999999999994,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.42,\n  \"copper_mg_per_serving\": 0.035\n}\n```",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 41.66666666666666
+      },
+      {
+        "absolute_error": 0.009999999999999995,
+        "model_name": "gpt_5_5__reasoning_low",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Pumpkin Cinnamon Bars\",\n  \"servings\": 12,\n  \"total_copper_mg\": 0.58,\n  \"copper_mg_per_serving\": 0.05\n}",
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "recipe_type": "desserts",
+        "relative_error_percent": 16.66666666666666
+      },
+      {
+        "absolute_error": 0.009999999999999998,
+        "model_name": "gpt_4_1_nano",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Carob Chip Cranberry Cookies\",\n  \"servings\": 20,\n  \"total_copper_mg\": 0.4,\n  \"copper_mg_per_serving\": 0.02\n}",
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "recipe_type": "desserts",
+        "relative_error_percent": 33.33333333333333
+      }
+    ]
+  },
+  "9": {
+    "confidence": "high",
+    "description": "The shared failure mode is a consistent underestimation of copper content across all samples, as indicated by a 100% underestimate rate and negative average signed error. This suggests a reasoning pattern where the models systematically undervalue copper amounts, possibly due to conservative assumptions or incomplete ingredient copper data.",
+    "label": "systematic underestimation bias",
+    "label_source": "openai:gpt-4.1-mini",
+    "representative_samples": [
+      {
+        "absolute_error": 0.0030000000000000027,
+        "model_name": "gpt_5_4_nano__reasoning_high",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Cheesy Egg, Bacon & Broccoli Muffins\",\n  \"servings\": 6,\n  \"total_copper_mg\": 0.46,\n  \"copper_mg_per_serving\": 0.077\n}\n```",
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "recipe_type": "breakfast",
+        "relative_error_percent": 3.7500000000000036
+      },
+      {
+        "absolute_error": 0.04000000000000001,
+        "model_name": "gpt_5_5__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Pork Tenderloin with Dijon Gravy\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.38,\n  \"copper_mg_per_serving\": 0.1\n}",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 28.571428571428577
+      },
+      {
+        "absolute_error": 0.07,
+        "model_name": "gpt_5_4_mini__reasoning_high",
+        "raw_output_excerpt": "{\n  \"dish_name\": \"Pork Tenderloin with Dijon Gravy\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.28,\n  \"copper_mg_per_serving\": 0.07\n}",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 50.0
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4_nano__reasoning_low",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pork Tenderloin with Dijon Gravy\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.53,\n  \"copper_mg_per_serving\": 0.13\n}\n```",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 7.142857142857148
+      },
+      {
+        "absolute_error": 0.010000000000000009,
+        "model_name": "gpt_5_4_nano__reasoning_medium",
+        "raw_output_excerpt": "```json\n{\n  \"dish_name\": \"Pork Tenderloin with Dijon Gravy\",\n  \"servings\": 4,\n  \"total_copper_mg\": 0.52,\n  \"copper_mg_per_serving\": 0.13\n}\n```",
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "recipe_type": "anytime_meals",
+        "relative_error_percent": 7.142857142857148
+      }
+    ]
+  }
+}
