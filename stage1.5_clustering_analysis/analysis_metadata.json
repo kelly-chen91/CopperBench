@@ -1,0 +1,47 @@
+{
+  "absolute_error_cutoff_mg": 0.09999999999999998,
+  "cluster_count_excluding_noise": 2,
+  "cluster_merges": [
+    {
+      "source_cluster_id": 1,
+      "target_cluster_id": 0
+    }
+  ],
+  "cluster_metadata": {
+    "algorithm": "hdbscan",
+    "metric": "euclidean",
+    "min_cluster_size": 7
+  },
+  "feature_columns": [
+    "word_count",
+    "paragraph_count",
+    "bullet_line_count",
+    "numeric_mg_mentions",
+    "calculation_operator_count",
+    "usda_reference_count",
+    "uncertainty_marker_count",
+    "correction_marker_count",
+    "grouping_marker_count",
+    "ingredient_count",
+    "ingredient_mention_count",
+    "ingredient_coverage_ratio",
+    "ingredient_coverage_gap",
+    "uses_weight_based_method",
+    "uses_portion_based_method",
+    "uses_usda_or_database_method",
+    "mentions_serving_division",
+    "recipe_complexity_response",
+    "raw_json_only"
+  ],
+  "input_filter": {
+    "reasoning_summary_candidate_rows": 335,
+    "requires_reasoning_summary_text": true,
+    "requires_top_absolute_error_fraction": true
+  },
+  "noise_count": 50,
+  "reasoning_summary_candidate_rows": 335,
+  "silhouette_score": 0.49504607817576474,
+  "top_absolute_error_count": 84,
+  "top_absolute_error_fraction": 0.25,
+  "trial_rows": 84
+}
