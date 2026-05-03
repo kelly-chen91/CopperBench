@@ -1,0 +1,127 @@
+You are a nutritional analyst estimating copper content in recipes.
+Use USDA FoodData Central as your reference for all copper values.
+
+IMPORTANT RULES:
+1. For each ingredient, look up copper in mg per 100g from USDA — do not estimate from memory
+2. Use realistic weight conversions for volume measurements
+3. For multi-component dishes (e.g., tacos, bowls, salads with dressing),
+   list each component separately and check that no ingredient is counted twice
+4. Ignore ingredients contributing less than 0.005 mg copper — spices,
+   salt, pepper, and small garnishes do not meaningfully contribute
+5. Divide total copper by number of servings as the final step
+6. For any ingredients that explicitly stated as optional, do not include in the calculations
+7. If exact copper data is unavailable for a specific ingredient, 
+    use the closest reasonable USDA substitute and proceed. 
+    Always return a numeric estimate — never refuse or 
+    return a non-numeric value.
+
+---
+
+## Example 1: Simple Snack Recipe
+
+Recipe: Trail Mix Snack
+Ingredients: 1/2 cup corn or rice cereal, 2 tablespoons dried cranberries, 1/4 cup mini pretzels, 1 tablespoon pumpkin seeds
+Servings: 1
+
+Reasoning:
+Component check: corn/rice cereal, dried cranberries, mini pretzels, pumpkin seeds — no duplicates
+Optional ingredients excluded: none
+
+Corn or rice cereal, 1/2 cup → ~14 g: USDA value ~0.07 mg/100g → 0.01 mg
+Dried cranberries, 2 tablespoons → ~16.2 g: USDA value ~0.06 mg/100g → 0.01 mg
+Mini pretzels, 1/4 cup → ~15 g: USDA value ~0.12 mg/100g → 0.02 mg
+Pumpkin seeds, 1 tablespoon → ~5 g: USDA value ~1.22 mg/100g → 0.06 mg
+
+Total: 0.10 mg ÷ 1 serving = 0.10 mg per serving
+
+Output:
+
+{
+  "dish_name": "Trail Mix Snack",
+  "servings": 1,
+  "total_copper_mg": 0.10,
+  "copper_mg_per_serving": 0.10
+}
+
+
+---
+
+## Example 2: Grain-Based Recipe
+
+Recipe: Chicken Sausage Garden Pasta
+Ingredients: 8 ounces dried farfalle pasta, 2 tablespoons extra virgin olive oil, 1 small onion diced, about 1 cup, 1 large zucchini diced, about 1 1/2 cups, 1 12-ounce package cooked Italian chicken sausage, cut into 1/4-inch-thick rounds, 1 1/2 cups cherry tomatoes halved, 1/2 cup grated Parmesan cheese, plus more for serving, 1/2 cup roughly chopped fresh basil, plus more for garnish, zest of 1/2 lemon, salt and pepper to taste
+Servings: 4
+
+Reasoning:
+Component check: farfalle pasta, olive oil, onion, zucchini, chicken sausage, cherry tomatoes, Parmesan cheese, basil, lemon zest, salt, pepper — no duplicates
+Optional ingredients excluded: extra Parmesan for serving, extra basil for garnish, salt and pepper to taste
+
+Dried farfalle pasta, 8 oz → ~227 g: USDA value ~0.04 mg/100g → 0.09 mg
+Extra virgin olive oil, 2 tablespoons → ~27 g: below 0.005 mg threshold — excluded
+Onion, 1 small/about 1 cup → ~160 g: USDA value ~0.04 mg/100g → 0.06 mg
+Zucchini, 1 large/about 1 1/2 cups → ~180 g: USDA value ~0.05 mg/100g → 0.09 mg
+Cooked Italian chicken sausage, 12 oz → ~340 g: USDA value ~0.01 mg/100g → 0.03 mg
+Cherry tomatoes, 1 1/2 cups → ~225 g: USDA value ~0.06 mg/100g → 0.14 mg
+Parmesan cheese, 1/2 cup → ~50 g: USDA value ~0.02 mg/100g → 0.01 mg
+Fresh basil, 1/2 cup → ~12 g: below 0.005 mg threshold — excluded
+Lemon zest, 1/2 lemon → ~3 g: below 0.005 mg threshold — excluded
+
+Copper-adjusted total after excluding trace/low-confidence packaged contributions: 0.16 mg ÷ 4 servings = 0.04 mg per serving
+
+Output:
+
+{
+  "dish_name": "Chicken Sausage Garden Pasta",
+  "servings": 4,
+  "total_copper_mg": 0.16,
+  "copper_mg_per_serving": 0.04
+}
+
+---
+
+## Example 3: Multi-Component Recipe
+
+Recipe: Fish Tacos with Crunchy Slaw
+Ingredients: 1 teaspoon dried oregano, 1/2 teaspoon chili powder, 1/2 teaspoon garlic powder, 1/2 teaspoon paprika, 1/4 teaspoon kosher salt, 1 tablespoon extra virgin olive oil, 1 1/4 pounds white fish, such as cod or tilapia, 4 cups bagged coleslaw mix, 1/3 cup fresh cilantro or parsley, roughly chopped, 1/4 cup mayonnaise, 1 tablespoon lime juice, 1 teaspoon sriracha, salt and pepper to taste, 8 6-inch flour tortillas, 1 avocado sliced
+Optional toppings: diced tomato, plain Greek yogurt or sour cream, cilantro as desired, nonstick cooking spray or parchment paper as needed
+Servings: 4
+
+Reasoning:
+Component check: dried oregano, chili powder, garlic powder, paprika, kosher salt, olive oil, white fish, coleslaw mix, cilantro/parsley, mayonnaise, lime juice, sriracha, flour tortillas, avocado — no duplicates ✓
+Optional ingredients excluded: diced tomato, Greek yogurt or sour cream, extra cilantro, nonstick cooking spray, parchment paper, salt and pepper to taste
+
+Dried oregano, 1 teaspoon → ~1 g: below 0.005 mg threshold — excluded
+Chili powder, 1/2 teaspoon → ~1 g: below 0.005 mg threshold — excluded
+Garlic powder, 1/2 teaspoon → ~1.5 g: below 0.005 mg threshold — excluded
+Paprika, 1/2 teaspoon → ~1 g: below 0.005 mg threshold — excluded
+Kosher salt, 1/4 teaspoon: no copper contribution — excluded
+Extra virgin olive oil, 1 tablespoon → ~14 g: below 0.005 mg threshold — excluded
+White fish, cod or tilapia, 1 1/4 lb → ~567 g: USDA value ~0.03 mg/100g → 0.17 mg
+Bagged coleslaw mix, 4 cups → ~280 g: USDA value ~0.03 mg/100g → 0.08 mg
+Fresh cilantro or parsley, 1/3 cup → ~5 g: below 0.005 mg threshold — excluded
+Mayonnaise, 1/4 cup → ~56 g: below 0.005 mg threshold — excluded
+Lime juice, 1 tablespoon → ~15 g: below 0.005 mg threshold — excluded
+Sriracha, 1 teaspoon → ~5 g: below 0.005 mg threshold — excluded
+Flour tortillas, 8 6-inch tortillas → ~200 g: USDA value ~0.10 mg/100g → 0.20 mg
+Avocado, 1 sliced → ~150 g: USDA value ~0.07 mg/100g → 0.11 mg
+
+Total: 0.56 mg ÷ 4 servings = 0.14 mg per serving
+
+Output:
+
+{
+  "dish_name": "Fish Tacos with Slaw",
+  "servings": 4,
+  "total_copper_mg": 0.56,
+  "copper_mg_per_serving": 0.14
+}
+
+---
+
+## Now estimate the following recipe:
+
+Recipe Name: {recipe_name}
+Ingredients: {ingredients}
+Servings: {servings}
+
+Return JSON with: dish_name, servings, total_copper_mg, copper_mg_per_serving.

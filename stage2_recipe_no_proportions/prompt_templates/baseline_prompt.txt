@@ -1,0 +1,14 @@
+Estimate the copper content (mg) per serving for the following recipe. Use only the recipe name, ingredient list, and serving size.
+
+Do not include optional ingredients in your calculation.
+
+If exact copper data is unavailable for a specific ingredient, 
+use the closest reasonable USDA substitute and proceed. 
+Always return a numeric estimate — never refuse or 
+return a non-numeric value.
+
+Return JSON with: dish_name, servings, total_copper_mg, copper_mg_per_serving.
+
+Recipe Name: {recipe_name}
+Ingredients: {ingredients}
+Servings: {servings}

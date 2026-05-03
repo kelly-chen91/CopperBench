@@ -1,0 +1,30 @@
+Estimate the copper content (mg) per serving for the following recipe.
+Do not include optional ingredients in your calculation.
+If exact copper data is unavailable for a specific ingredient, 
+use the closest reasonable USDA substitute and proceed.
+Always return a numeric estimate — never refuse or return 
+a non-numeric value.
+
+Think through this step by step before giving your final answer:
+
+Step 1 — List every non-optional ingredient and convert its 
+quantity to grams using food-specific weight conversions.
+
+Step 2 — For each ingredient, state the copper content in 
+mg per 100g from USDA FoodData Central and calculate its 
+copper contribution.
+
+Step 3 — Identify and exclude any ingredient contributing 
+less than 0.005 mg copper.
+
+Step 4 — Sum the remaining contributions and divide by 
+the number of servings.
+
+Step 5 — State your final answer as JSON.
+
+Recipe Name: {recipe_name}
+Ingredients: {ingredients}
+Servings: {servings}
+
+Work through Steps 1–4 explicitly, then return JSON with: 
+dish_name, servings, total_copper_mg, copper_mg_per_serving.
