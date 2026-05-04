@@ -1,0 +1,27 @@
+recipe_index,recipe_name,assigned_cluster_id,failure_mode_label,stage15_cluster_counts
+0,Scrambled Egg & Black Bean Burritos,-1,Systematic ingredient copper overestimation,"{""-1"": 2}"
+1,Cranberry Carrot Muffins,unclustered,No high-error Stage 1.5 cluster,{}
+2,Blueberry Banana Pancakes,-1,Systematic ingredient copper overestimation,"{""-1"": 1}"
+3,"Cheesy Egg, Bacon & Broccoli Muffins",unclustered,No high-error Stage 1.5 cluster,{}
+4,Glorious Green Smoothie Bowl,mixed,Mixed Stage 1.5 failure modes,"{""-1"": 1, ""0"": 1}"
+5,Sesame-Ginger Turkey Meatballs,-1,Systematic ingredient copper overestimation,"{""-1"": 3}"
+6,Chicken and Broccoli Piccata,unclustered,No high-error Stage 1.5 cluster,{}
+7,Chicken Fajitas with Lime Sauce,-1,Systematic ingredient copper overestimation,"{""-1"": 3, ""2"": 1}"
+8,One-Pot Beef & Mushroom Lasagna,-1,Systematic ingredient copper overestimation,"{""-1"": 10, ""2"": 2}"
+9,Pork Tenderloin with Dijon Gravy,unclustered,No high-error Stage 1.5 cluster,{}
+10,Fish Tacos with Crunchy Slaw,-1,Systematic ingredient copper overestimation,"{""-1"": 7, ""2"": 1}"
+11,Chicken Sausage Garden Pasta,-1,Systematic ingredient copper overestimation,"{""-1"": 9, ""2"": 4}"
+12,Roasted Cauliflower Power Salad,-1,Systematic ingredient copper overestimation,"{""-1"": 11}"
+13,Simple Greek Salad,2,Systematic copper overestimation via weight-based method,"{""2"": 1}"
+14,Apple-Celery Chicken Salad,unclustered,No high-error Stage 1.5 cluster,{}
+15,Harvest Crunch Kale & Chicken Salad,2,Systematic copper overestimation via weight-based method,"{""-1"": 1, ""2"": 2}"
+16,Citrus-Berry Ricotta Parfaits,0,Incorrect copper values for snack ingredients,"{""0"": 1}"
+17,Crispy Rice Cereal Treats,unclustered,No high-error Stage 1.5 cluster,{}
+18,Carob Chip Cranberry Cookies,unclustered,No high-error Stage 1.5 cluster,{}
+19,Pumpkin Cinnamon Bars,unclustered,No high-error Stage 1.5 cluster,{}
+20,Carob Cupcakes with Cream Cheese Frosting,2,Systematic copper overestimation via weight-based method,"{""2"": 1}"
+21,Rice Cakes with Peanut Butter and Strawberries,0,Incorrect copper values for snack ingredients,"{""0"": 3}"
+22,Avocado Toast with Feta,0,Incorrect copper values for snack ingredients,"{""-1"": 1, ""0"": 11}"
+23,Trail Mix Snack,0,Incorrect copper values for snack ingredients,"{""-1"": 1, ""0"": 5}"
+24,Almond Butter Apple Snack,unclustered,No high-error Stage 1.5 cluster,{}
+25,Hummus with Bell Pepper,0,Incorrect copper values for snack ingredients,"{""0"": 1}"

@@ -22,14 +22,33 @@ Implemented the Stage 2 no-proportions setup without modifying `README.md`.
 
 
 ## Results
-Baseline metrics:
 
-  - MAE: 0.069231
-  - Accuracy within +/-10%: 19.23%
-  - Valid predictions: 26/26
-  
 Mean signed error (prediction - ground truth):
 
-  - Baseline: +0.100846 mg per serving, 26 recipes
-  - Persona: +0.103385 mg per serving, 26 recipes
-  - Few-shot: +0.081304 mg per serving, 23 recipes
+  Baseline: +0.100846  n=26
+  Few-shot: +0.097378  n=26
+  CoT:      +0.122215  n=26
+  Persona:  +0.103385  n=26
+
+  All variants are overestimating on average.
+
+Overall with 10% accuracy threshold:
+  - Few-shot: MAE 0.111521, accuracy 7.69%, valid 26/26
+  - Baseline: MAE 0.109923, accuracy 11.54%, valid 26/26
+  - Persona: MAE 0.124692, accuracy 3.85%, valid 26/26
+  - CoT: MAE 0.132081, accuracy 11.54%, valid 26/26
+
+Overall with 20% accuracy threshold: 
+  - Few-shot: MAE 0.111521, accuracy 26.92%, valid 26/26
+  - Baseline: MAE 0.109923, accuracy 15.38%, valid 26/26
+  - Persona: MAE 0.124692, accuracy 26.92%, valid 26/26
+  - CoT: MAE 0.132081, accuracy 26.92%, valid 26/26
+
+
+## Design Decisions
+*Few Shot Prompts* Due to the absence of external ground truth recipes, we had to get manually generate few shot examples of failure modes from the recipe dataset.
+
+
+Low:    true value < 0.2 mg/serving
+Medium: 0.2 – 0.8 mg/serving
+High:   > 0.8 mg/serving

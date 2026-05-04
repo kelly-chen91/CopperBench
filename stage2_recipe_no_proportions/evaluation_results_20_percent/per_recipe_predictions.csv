@@ -1,0 +1,102 @@
+model_name,model_file,reasoning_level,recipe_index,recipe_type,recipe_name,ground_truth_copper_mg_per_serving,predicted_copper_mg_per_serving,absolute_error,relative_error_percent,valid,failure_reason,within_20_percent
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.402,0.252,168.00000000000003,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.099,0.03900000000000001,65.00000000000001,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.277,0.10700000000000001,62.94117647058823,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.08,0.0,0.0,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.278,0.10800000000000001,63.52941176470589,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.13,0.09,225.0,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.1282,0.001799999999999996,1.3846153846153815,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.198,0.07800000000000001,65.00000000000001,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.606,0.516,573.3333333333334,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.121,0.019000000000000017,13.571428571428582,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,10,anytime_meals,Fish Tacos with Crunchy Slaw,0.14,0.2245,0.08449999999999999,60.35714285714284,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,11,anytime_meals,Chicken Sausage Garden Pasta,0.04,0.306,0.266,665.0,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.259,0.139,115.83333333333334,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,13,anytime_meals,Simple Greek Salad,0.12,0.199,0.07900000000000001,65.83333333333334,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.0863,0.013700000000000004,13.700000000000005,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,0.858,0.6679999999999999,351.578947368421,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.08624,0.013760000000000008,13.760000000000009,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.0686,0.04859999999999999,242.99999999999991,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.087,0.056999999999999995,190.0,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.049,0.010999999999999996,18.333333333333325,True,,True
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.083,0.053000000000000005,176.66666666666669,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.196,0.036000000000000004,22.500000000000004,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,22,snacks,Avocado Toast with Feta,0.23,0.161,0.069,30.0,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,23,snacks,Trail Mix Snack,0.1,0.532,0.43200000000000005,432.0,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,24,snacks,Almond Butter Apple Snack,0.14,0.37874,0.23874,170.5285714285714,True,,False
+cot__gpt_5_4_mini__reasoning_medium,cot__gpt_5_4_mini__reasoning_medium.jsonl,medium,25,snacks,Hummus with Bell Pepper,0.14,0.154,0.013999999999999985,9.999999999999988,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.38162,0.23162000000000002,154.41333333333336,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.070693,0.010693000000000008,17.82166666666668,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.2766,0.1066,62.70588235294117,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.068457,0.011542999999999998,14.428749999999996,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.25048,0.08047999999999997,47.341176470588216,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.079035,0.03903499999999999,97.58749999999998,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.160558,0.030558000000000002,23.506153846153847,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.176665,0.05666499999999999,47.22083333333333,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.632167,0.5421670000000001,602.4077777777778,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.077615,0.06238500000000001,44.56071428571428,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.23455,0.11455000000000001,95.45833333333334,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,13,anytime_meals,Simple Greek Salad,0.12,0.1097525,0.010247499999999993,8.539583333333328,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.083235,0.016765000000000002,16.765,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,0.28125,0.09125,48.026315789473685,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.083105,0.016895000000000007,16.895000000000007,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.049963,0.029963,149.815,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.09398,0.06398,213.26666666666668,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.055722,0.004277999999999997,7.129999999999996,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.0732,0.0432,144.00000000000003,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.18128,0.021279999999999993,13.299999999999995,True,,True
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,22,snacks,Avocado Toast with Feta,0.23,0.16826,0.06174000000000002,26.843478260869567,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,24,snacks,Almond Butter Apple Snack,0.14,0.34762,0.20761999999999997,148.29999999999995,True,,False
+few_shot__gpt_5_4_mini__reasoning_medium,few_shot__gpt_5_4_mini__reasoning_medium.jsonl,medium,25,snacks,Hummus with Bell Pepper,0.14,0.49854,0.35853999999999997,256.09999999999997,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.48,0.32999999999999996,219.99999999999997,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.08,0.020000000000000004,33.33333333333334,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.21,0.03999999999999998,23.52941176470587,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.047,0.033,41.25,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.27,0.1,58.82352941176471,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.11,0.07,175.00000000000003,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.14,0.010000000000000009,7.692307692307699,True,,True
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.19,0.07,58.333333333333336,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.54,0.45000000000000007,500.0000000000001,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.075,0.06500000000000002,46.42857142857144,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,10,anytime_meals,Fish Tacos with Crunchy Slaw,0.14,0.25,0.10999999999999999,78.57142857142856,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,11,anytime_meals,Chicken Sausage Garden Pasta,0.04,0.27,0.23,575.0,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.26,0.14,116.66666666666667,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,13,anytime_meals,Simple Greek Salad,0.12,0.155,0.035,29.166666666666668,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.09,0.010000000000000009,10.000000000000009,True,,True
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,0.25,0.06,31.57894736842105,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.13,0.03,30.0,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.07,0.05,250.0,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.08,0.05,166.66666666666669,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.065,0.0050000000000000044,8.333333333333341,True,,True
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.06,0.03,100.0,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.21,0.04999999999999999,31.249999999999993,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,22,snacks,Avocado Toast with Feta,0.23,0.22,0.010000000000000009,4.347826086956525,True,,True
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,23,snacks,Trail Mix Snack,0.1,0.45,0.35,349.99999999999994,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,24,snacks,Almond Butter Apple Snack,0.14,0.55,0.41000000000000003,292.85714285714283,True,,False
+gpt_5_4_mini__reasoning_medium,gpt_5_4_mini__reasoning_medium.jsonl,medium,25,snacks,Hummus with Bell Pepper,0.14,0.24,0.09999999999999998,71.4285714285714,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.395,0.24500000000000002,163.33333333333334,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.053,0.006999999999999999,11.666666666666666,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.267,0.097,57.05882352941176,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.059,0.021000000000000005,26.250000000000007,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.28,0.11000000000000001,64.70588235294117,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.07,0.030000000000000006,75.00000000000001,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.115,0.015,11.538461538461538,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.13,0.010000000000000009,8.333333333333341,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.59,0.5,555.5555555555555,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.09,0.05000000000000002,35.71428571428572,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,10,anytime_meals,Fish Tacos with Crunchy Slaw,0.14,0.162,0.021999999999999992,15.714285714285706,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,11,anytime_meals,Chicken Sausage Garden Pasta,0.04,0.31,0.27,675.0,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.217,0.097,80.83333333333333,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,13,anytime_meals,Simple Greek Salad,0.12,0.156,0.036000000000000004,30.000000000000004,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.063,0.037000000000000005,37.00000000000001,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,1.07,0.8800000000000001,463.15789473684214,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.088,0.01200000000000001,12.00000000000001,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.053,0.033,165.0,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.078,0.048,160.0,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.068,0.008000000000000007,13.333333333333346,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.059,0.028999999999999998,96.66666666666667,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.19,0.03,18.75,True,,True
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,22,snacks,Avocado Toast with Feta,0.23,0.145,0.08500000000000002,36.956521739130444,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,23,snacks,Trail Mix Snack,0.1,0.44,0.33999999999999997,339.99999999999994,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,24,snacks,Almond Butter Apple Snack,0.14,0.32,0.18,128.57142857142856,True,,False
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,medium,25,snacks,Hummus with Bell Pepper,0.14,0.09,0.05000000000000002,35.71428571428572,True,,False

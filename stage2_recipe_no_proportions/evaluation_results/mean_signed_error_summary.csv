@@ -1,0 +1,5 @@
+model_name,prompt_variant,valid_predictions_count,mean_signed_error_mg_per_serving
+gpt_5_4_mini__reasoning_medium,Baseline,26,0.10084615384615384
+few_shot__gpt_5_4_mini__reasoning_medium,Few-shot,26,0.09737811538461538
+cot__gpt_5_4_mini__reasoning_medium,CoT,26,0.12221461538461538
+persona__gpt_5_4_mini__reasoning_medium,Persona,26,0.1033846153846154

@@ -4,6 +4,8 @@ Use USDA FoodData Central as your reference for all copper values.
 IMPORTANT RULES:
 1. For each ingredient, look up copper in mg per 100g from USDA — do not estimate from memory
 2. Use realistic weight conversions for volume measurements
+   (e.g., 1 cup leafy greens ≈ 20–30g, 1 cup nuts/seeds ≈ 100–140g)
+   — do not use liquid volume conversions for solid ingredients
 3. For multi-component dishes (e.g., tacos, bowls, salads with dressing),
    list each component separately and check that no ingredient is counted twice
 4. Ignore ingredients contributing less than 0.005 mg copper — spices,
@@ -19,28 +21,36 @@ IMPORTANT RULES:
 
 ## Example 1: Simple Snack Recipe
 
-Recipe: Trail Mix Snack
-Ingredients: 1/2 cup corn or rice cereal, 2 tablespoons dried cranberries, 1/4 cup mini pretzels, 1 tablespoon pumpkin seeds
-Servings: 1
+Recipe: Hummus & Carrot Sticks
+
+Ingredients: chickpeas; olive oil; lemon; small garlic clove; ground cumin; kosher salt; medium carrots
+
+Optional Ingredients: None
+
+Servings: 6
 
 Reasoning:
-Component check: corn/rice cereal, dried cranberries, mini pretzels, pumpkin seeds — no duplicates
-Optional ingredients excluded: none
+Component check: chickpeas, olive oil, lemon, small garlic clove, ground cumin, kosher salt, medium carrots — no duplicates 
 
-Corn or rice cereal, 1/2 cup → ~14 g: USDA value ~0.07 mg/100g → 0.01 mg
-Dried cranberries, 2 tablespoons → ~16.2 g: USDA value ~0.06 mg/100g → 0.01 mg
-Mini pretzels, 1/4 cup → ~15 g: USDA value ~0.12 mg/100g → 0.02 mg
-Pumpkin seeds, 1 tablespoon → ~5 g: USDA value ~1.22 mg/100g → 0.06 mg
+Optional ingredients excluded: None
 
-Total: 0.10 mg ÷ 1 serving = 0.10 mg per serving
+Chickpeas — 425 g: USDA value 0.267 mg/100g → 1.13475 mg
+Olive oil — 55 g: below 0.005 mg threshold — excluded
+Lemon — 2.5 g: USDA value 0.016 mg/100g → 0.0004 mg; below 0.005 mg threshold — excluded
+Small garlic clove — 3 g: below 0.005 mg threshold — excluded
+Ground cumin — 0.6 g: below 0.005 mg threshold — excluded
+Kosher salt — 2.4 g: below 0.005 mg threshold — excluded
+Medium carrots — 366 g: USDA value 0.061 mg/100g → 0.22326 mg
+
+Total: 1.35801 mg ÷ 6 servings = 0.226335 mg per serving
 
 Output:
 
 {
-  "dish_name": "Trail Mix Snack",
-  "servings": 1,
-  "total_copper_mg": 0.10,
-  "copper_mg_per_serving": 0.10
+  "dish_name": "Hummus & Carrot Sticks",
+  "servings": 6,
+  "total_copper_mg": 1.35801,
+  "copper_mg_per_serving": 0.226335
 }
 
 
@@ -48,72 +58,78 @@ Output:
 
 ## Example 2: Grain-Based Recipe
 
-Recipe: Chicken Sausage Garden Pasta
-Ingredients: 8 ounces dried farfalle pasta, 2 tablespoons extra virgin olive oil, 1 small onion diced, about 1 cup, 1 large zucchini diced, about 1 1/2 cups, 1 12-ounce package cooked Italian chicken sausage, cut into 1/4-inch-thick rounds, 1 1/2 cups cherry tomatoes halved, 1/2 cup grated Parmesan cheese, plus more for serving, 1/2 cup roughly chopped fresh basil, plus more for garnish, zest of 1/2 lemon, salt and pepper to taste
+Recipe: Egg Fried Rice
+
+Ingredients: Peanut oil; large eggs (4); cooked white rice; salt; green onions
+
+Optional Ingredients: None
+
 Servings: 4
 
 Reasoning:
-Component check: farfalle pasta, olive oil, onion, zucchini, chicken sausage, cherry tomatoes, Parmesan cheese, basil, lemon zest, salt, pepper — no duplicates
-Optional ingredients excluded: extra Parmesan for serving, extra basil for garnish, salt and pepper to taste
+Component check: peanut oil, large eggs (4), cooked white rice, salt, green onions — no duplicates 
 
-Dried farfalle pasta, 8 oz → ~227 g: USDA value ~0.04 mg/100g → 0.09 mg
-Extra virgin olive oil, 2 tablespoons → ~27 g: below 0.005 mg threshold — excluded
-Onion, 1 small/about 1 cup → ~160 g: USDA value ~0.04 mg/100g → 0.06 mg
-Zucchini, 1 large/about 1 1/2 cups → ~180 g: USDA value ~0.05 mg/100g → 0.09 mg
-Cooked Italian chicken sausage, 12 oz → ~340 g: USDA value ~0.01 mg/100g → 0.03 mg
-Cherry tomatoes, 1 1/2 cups → ~225 g: USDA value ~0.06 mg/100g → 0.14 mg
-Parmesan cheese, 1/2 cup → ~50 g: USDA value ~0.02 mg/100g → 0.01 mg
-Fresh basil, 1/2 cup → ~12 g: below 0.005 mg threshold — excluded
-Lemon zest, 1/2 lemon → ~3 g: below 0.005 mg threshold — excluded
+Optional ingredients excluded: None
 
-Copper-adjusted total after excluding trace/low-confidence packaged contributions: 0.16 mg ÷ 4 servings = 0.04 mg per serving
+Peanut oil — 26 g: below 0.005 mg threshold — excluded
+Large eggs (4) — 228 g: USDA value 0.05 mg/100g → 0.114 mg
+Cooked white rice — 465 g: USDA value 0.038 mg/100g → 0.1767 mg
+Salt — 1.5 g: below 0.005 mg threshold — excluded
+Green onions — 52 g: USDA value 0.035 mg/100g → 0.0182 mg
+
+Total: 0.3089 mg ÷ 4 servings = 0.077225 mg per serving
 
 Output:
 
 {
-  "dish_name": "Chicken Sausage Garden Pasta",
+  "dish_name": "Egg Fried Rice",
   "servings": 4,
-  "total_copper_mg": 0.16,
-  "copper_mg_per_serving": 0.04
+  "total_copper_mg": 0.3089,
+  "copper_mg_per_serving": 0.077225
 }
 
 ---
 
 ## Example 3: Multi-Component Recipe
 
-Recipe: Fish Tacos with Crunchy Slaw
-Ingredients: 1 teaspoon dried oregano, 1/2 teaspoon chili powder, 1/2 teaspoon garlic powder, 1/2 teaspoon paprika, 1/4 teaspoon kosher salt, 1 tablespoon extra virgin olive oil, 1 1/4 pounds white fish, such as cod or tilapia, 4 cups bagged coleslaw mix, 1/3 cup fresh cilantro or parsley, roughly chopped, 1/4 cup mayonnaise, 1 tablespoon lime juice, 1 teaspoon sriracha, salt and pepper to taste, 8 6-inch flour tortillas, 1 avocado sliced
-Optional toppings: diced tomato, plain Greek yogurt or sour cream, cilantro as desired, nonstick cooking spray or parchment paper as needed
-Servings: 4
+Recipe: Salmon Rice Bowls
+
+Ingredients: brown sugar; low sodium soy sauce; sriracha; salmon, cubed into 1/2 inch cubes, skin removed; white rice, cooked; mayonnaise
+
+Optional Ingredients: edamame; Persian cucumber, sliced into half moons; furikake; nori
+
+Servings: 2
 
 Reasoning:
-Component check: dried oregano, chili powder, garlic powder, paprika, kosher salt, olive oil, white fish, coleslaw mix, cilantro/parsley, mayonnaise, lime juice, sriracha, flour tortillas, avocado — no duplicates ✓
-Optional ingredients excluded: diced tomato, Greek yogurt or sour cream, extra cilantro, nonstick cooking spray, parchment paper, salt and pepper to taste
+Component check: 
+- Marinade: brown sugar, low sodium soy sauce, sriracha (7g), 
+- Bowl base: salmon, cooked white rice, 
+- Sauce: Sriracha (7g), mayonnaise 
 
-Dried oregano, 1 teaspoon → ~1 g: below 0.005 mg threshold — excluded
-Chili powder, 1/2 teaspoon → ~1 g: below 0.005 mg threshold — excluded
-Garlic powder, 1/2 teaspoon → ~1.5 g: below 0.005 mg threshold — excluded
-Paprika, 1/2 teaspoon → ~1 g: below 0.005 mg threshold — excluded
-Kosher salt, 1/4 teaspoon: no copper contribution — excluded
-Extra virgin olive oil, 1 tablespoon → ~14 g: below 0.005 mg threshold — excluded
-White fish, cod or tilapia, 1 1/4 lb → ~567 g: USDA value ~0.03 mg/100g → 0.17 mg
-Bagged coleslaw mix, 4 cups → ~280 g: USDA value ~0.03 mg/100g → 0.08 mg
-Fresh cilantro or parsley, 1/3 cup → ~5 g: below 0.005 mg threshold — excluded
-Mayonnaise, 1/4 cup → ~56 g: below 0.005 mg threshold — excluded
-Lime juice, 1 tablespoon → ~15 g: below 0.005 mg threshold — excluded
-Sriracha, 1 teaspoon → ~5 g: below 0.005 mg threshold — excluded
-Flour tortillas, 8 6-inch tortillas → ~200 g: USDA value ~0.10 mg/100g → 0.20 mg
-Avocado, 1 sliced → ~150 g: USDA value ~0.07 mg/100g → 0.11 mg
+Sriracha appears in both marinade and sauce.
+Combined quantity: 7g + 7g = 14g — counted once below.
 
-Total: 0.56 mg ÷ 4 servings = 0.14 mg per serving
+Optional ingredients excluded: edamame, Persian cucumber, furikake, nori
+
+Brown sugar — 13 g: USDA value 0.047 mg/100g → 0.00611 mg
+Low sodium soy sauce — 69 g: USDA value 0.049 mg/100g → 0.03381 mg
+Sriracha — 14 g total: USDA value 0.06 mg/100g → 0.0084 mg
+- 7 g from main ingredients → 0.0042 mg
+- 7 g from sauce → 0.0042 mg
+- Thus, 0.0042+0.0042 = 0.0084 mg for 14g sriracha
+Salmon, cubed, skin removed — 454 g: USDA value 0.025 mg/100g → 0.1135 mg
+White rice, cooked — 300 g: USDA value 0.038 mg/100g → 0.114 mg
+Mayonnaise — 28 g: below 0.005 mg threshold — excluded
+
+Total: 0.28002 mg ÷ 2 servings = 0.14001 mg per serving
 
 Output:
 
 {
-  "dish_name": "Fish Tacos with Slaw",
-  "servings": 4,
-  "total_copper_mg": 0.56,
-  "copper_mg_per_serving": 0.14
+  "dish_name": "Salmon Rice Bowls",
+  "servings": 2,
+  "total_copper_mg": 0.27582,
+  "copper_mg_per_serving": 0.13791
 }
 
 ---
