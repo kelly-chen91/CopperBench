@@ -12,32 +12,9 @@ STAGE2_DIR = Path(__file__).resolve().parent
 ROOT_DIR = STAGE2_DIR.parent
 RESULTS_DIR = STAGE2_DIR / "evaluation_results_20_percent"
 ACCURACY_RELATIVE_TOLERANCE = 0.20
-DEFAULT_FEW_SHOT_EXCLUSIONS = {
-    "Trail Mix Snack",
-    "Chicken Sausage Garden Pasta",
-    "Fish Tacos with Crunchy Slaw",
-}
-
 
 sys.path.insert(0, str(ROOT_DIR / "stage1_recipe_proportions"))
 import evaluate_model_outputs  # noqa: E402
-
-
-def truths_for_model(model_name: str, all_truths: list[Any]) -> tuple[list[Any], list[Any]]:
-    if not model_name.startswith("few_shot__"):
-        return all_truths, []
-
-    included = [
-        truth
-        for truth in all_truths
-        if truth.recipe_name not in DEFAULT_FEW_SHOT_EXCLUSIONS
-    ]
-    excluded = [
-        truth
-        for truth in all_truths
-        if truth.recipe_name in DEFAULT_FEW_SHOT_EXCLUSIONS
-    ]
-    return included, excluded
 
 
 def relabel_detail_rows(detail_rows: list[dict[str, Any]]) -> None:
@@ -89,34 +66,23 @@ def main() -> None:
     recipe_type_rows: list[dict[str, Any]] = []
     detail_rows: list[dict[str, Any]] = []
     metadata: list[dict[str, Any]] = []
-    exclusions_by_model: dict[str, list[dict[str, Any]]] = {}
 
     for model_file in model_files:
         model_name = evaluate_model_outputs.model_name_from_path(model_file)
         predictions, file_metadata = evaluate_model_outputs.load_model_predictions(model_file)
-        truths, excluded_truths = truths_for_model(model_name, all_truths)
         model_overall, model_recipe_types, model_details = (
             evaluate_model_outputs.summarize_predictions(
                 {model_name: predictions},
-                truths,
+                all_truths,
             )
         )
         relabel_detail_rows(model_details)
         overall_rows.extend(model_overall)
         recipe_type_rows.extend(model_recipe_types)
         detail_rows.extend(model_details)
-        file_metadata["scored_recipe_count"] = len(truths)
-        file_metadata["excluded_recipe_count"] = len(excluded_truths)
+        file_metadata["scored_recipe_count"] = len(all_truths)
+        file_metadata["excluded_recipe_count"] = 0
         metadata.append(file_metadata)
-        exclusions_by_model[model_name] = [
-            {
-                "recipe_index": truth.recipe_index,
-                "recipe_type": truth.recipe_type,
-                "recipe_name": truth.recipe_name,
-                "ground_truth_copper_mg_per_serving": truth.copper_per_serving_mg,
-            }
-            for truth in excluded_truths
-        ]
 
     overall_rows.sort(
         key=lambda row: (
@@ -133,15 +99,12 @@ def main() -> None:
         {
             "accuracy_relative_tolerance": ACCURACY_RELATIVE_TOLERANCE,
             "source_recipe_count": len(all_truths),
+            "recipe_count": len(all_truths),
+            "excluded_recipe_count": 0,
             "model_file_count": len(model_files),
             "model_files": [path.name for path in model_files],
             "model_output_metadata": metadata,
-            "exclusion_policy": (
-                "Few-shot prompt example recipes are excluded only from few-shot "
-                "model scoring. Baseline, CoT, and persona outputs are scored on all recipes."
-            ),
-            "few_shot_excluded_recipe_names": sorted(DEFAULT_FEW_SHOT_EXCLUSIONS),
-            "excluded_recipes_by_model": exclusions_by_model,
+            "exclusion_policy": "All prompt variants are scored on all Stage 2 recipes.",
         },
     )
     write_20_percent_plots(overall_rows, recipe_type_rows, RESULTS_DIR)

@@ -128,8 +128,8 @@ Output:
 {
   "dish_name": "Salmon Rice Bowls",
   "servings": 2,
-  "total_copper_mg": 0.27582,
-  "copper_mg_per_serving": 0.13791
+  "total_copper_mg": 0.28002,
+  "copper_mg_per_serving": 0.14001
 }
 
 ---
