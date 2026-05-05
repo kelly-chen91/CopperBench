@@ -1196,10 +1196,22 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
 
         fig, ax = plt.subplots(figsize=(13, 7))
         bars = ax.bar(labels, avg_abs, color=bar_colors)
-        ax.set_title("Average Absolute Error by Cluster", pad=14)
-        plt.ylabel("Average absolute error (mg)")
+        ax.set_title("Mean Absolute Error by Cluster", pad=14)
+        plt.ylabel("Mean Absolute Error (mg)")
         ax.set_xlabel("Failure mode cluster")
-        ax.bar_label(bars, labels=[f"{value:.3f}" for value in avg_abs], padding=3, fontsize=11)
+        y_max = max(avg_abs) * 1.08
+        ax.set_ylim(0, y_max)
+        for bar, value in zip(bars, avg_abs):
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                max(value - y_max * 0.035, value * 0.5),
+                f"{value:.3f}",
+                ha="center",
+                va="center",
+                color="white",
+                fontsize=11,
+                fontweight="bold",
+            )
         plt.xticks(rotation=0, ha="center")
         fig.tight_layout()
         plt.savefig(vis_dir / "average_absolute_error_by_cluster.png", dpi=180)

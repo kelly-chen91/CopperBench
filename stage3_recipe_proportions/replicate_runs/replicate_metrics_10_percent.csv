@@ -1,0 +1,7 @@
+run,stage,prompt_variant,model_name,MAE,MSE,SAE,accuracy_10_percent,valid_predictions_count,invalid_predictions_count,total_recipes
+1,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.044858185897435905,0.004985518046167735,1.1663128333333332,26.923076923076923,26,0,26
+1,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,0.04498846153846154,0.005153003461538462,1.1697000000000002,23.076923076923077,26,0,26
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,0.04482692307692308,0.005934201923076924,1.1655000000000002,38.46153846153847,26,0,26
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.04585602563846154,0.00591654478625628,1.1922566665999998,23.076923076923077,26,0,26
+3,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.04502192660384615,0.005166456458590275,1.1705700917000001,11.538461538461538,26,0,26
+3,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,0.048615384615384616,0.006149153846153847,1.264,11.538461538461538,26,0,26

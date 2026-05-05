@@ -1,0 +1,3 @@
+run,stage,prompt_variant,model_name,MAE,MSE,SAE,accuracy_10_percent,valid_predictions_count,invalid_predictions_count,total_recipes
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,0.04482692307692308,0.005934201923076924,1.1655000000000002,38.46153846153847,26,0,26
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.04585602563846154,0.00591654478625628,1.1922566665999998,23.076923076923077,26,0,26

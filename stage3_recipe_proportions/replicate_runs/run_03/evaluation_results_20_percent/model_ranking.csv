@@ -1,0 +1,3 @@
+model_name,model_file,valid_predictions_count,invalid_predictions_count,total_recipes,MAE,accuracy_percent,recipe_type,reasoning_level,failed_recipes
+combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium.jsonl,26,0,26,0.04502192660384615,46.15384615384615,all,medium,
+persona__gpt_5_4_mini__reasoning_medium,persona__gpt_5_4_mini__reasoning_medium.jsonl,26,0,26,0.048615384615384616,46.15384615384615,all,medium,

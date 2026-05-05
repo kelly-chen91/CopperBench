@@ -1,0 +1,53 @@
+run,stage,prompt_variant,model_name,recipe_index,recipe_type,recipe_name,ground_truth_copper_mg_per_serving,predicted_copper_mg_per_serving,MAE,SAE,squared_error,within_20_percent
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.15,0.0,0.0,0.0,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.053,0.006999999999999999,-0.006999999999999999,4.899999999999999e-05,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.181,0.010999999999999982,0.010999999999999982,0.00012099999999999961,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.088,0.007999999999999993,0.007999999999999993,6.399999999999989e-05,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.12,0.05000000000000002,-0.05000000000000002,0.002500000000000002,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.068,0.028000000000000004,0.028000000000000004,0.0007840000000000002,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.12,0.010000000000000009,-0.010000000000000009,0.00010000000000000018,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.16,0.04000000000000001,0.04000000000000001,0.0016000000000000007,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.37,0.28,0.28,0.07840000000000001,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.06,0.08000000000000002,-0.08000000000000002,0.006400000000000003,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,10,anytime_meals,Fish Tacos with Crunchy Slaw,0.14,0.141,0.0009999999999999731,0.0009999999999999731,9.999999999999462e-07,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,11,anytime_meals,Chicken Sausage Garden Pasta,0.04,0.21,0.16999999999999998,0.16999999999999998,0.028899999999999995,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.17,0.05000000000000002,0.05000000000000002,0.002500000000000002,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,13,anytime_meals,Simple Greek Salad,0.12,0.13,0.010000000000000009,0.010000000000000009,0.00010000000000000018,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.051,0.04900000000000001,-0.04900000000000001,0.002401000000000001,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,0.171,0.01899999999999999,-0.01899999999999999,0.0003609999999999996,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.053,0.04700000000000001,-0.04700000000000001,0.0022090000000000005,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.022,0.0019999999999999983,0.0019999999999999983,3.999999999999993e-06,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.0465,0.0165,0.0165,0.00027225000000000003,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.052,0.008,-0.008,6.4e-05,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.039,0.009000000000000001,0.009000000000000001,8.100000000000002e-05,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.15,0.010000000000000009,-0.010000000000000009,0.00010000000000000018,True
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,22,snacks,Avocado Toast with Feta,0.23,0.083,0.14700000000000002,-0.14700000000000002,0.021609000000000007,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,23,snacks,Trail Mix Snack,0.1,0.14,0.04000000000000001,0.04000000000000001,0.0016000000000000007,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,24,snacks,Almond Butter Apple Snack,0.14,0.203,0.063,0.063,0.003969,False
+2,stage3,Persona,persona__gpt_5_4_mini__reasoning_medium,25,snacks,Hummus with Bell Pepper,0.14,0.13,0.010000000000000009,-0.010000000000000009,0.00010000000000000018,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0,breakfast,Scrambled Egg & Black Bean Burritos,0.15,0.1421,0.00789999999999999,-0.00789999999999999,6.240999999999984e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,1,breakfast,Cranberry Carrot Muffins,0.06,0.070815,0.010815000000000005,0.010815000000000005,0.00011696422500000012,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,2,breakfast,Blueberry Banana Pancakes,0.17,0.196655,0.026654999999999984,0.026654999999999984,0.0007104890249999992,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,3,breakfast,"Cheesy Egg, Bacon & Broccoli Muffins",0.08,0.086422,0.006421999999999997,0.006421999999999997,4.1242083999999965e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,4,breakfast,Glorious Green Smoothie Bowl,0.17,0.12894,0.04106000000000001,-0.04106000000000001,0.001685923600000001,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,5,anytime_meals,Sesame-Ginger Turkey Meatballs,0.04,0.0717375,0.031737499999999995,0.031737499999999995,0.0010072689062499997,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,6,anytime_meals,Chicken and Broccoli Piccata,0.13,0.12647,0.0035300000000000054,-0.0035300000000000054,1.2460900000000039e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,7,anytime_meals,Chicken Fajitas with Lime Sauce,0.12,0.117535,0.002464999999999995,-0.002464999999999995,6.076224999999975e-06,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,8,anytime_meals,One-Pot Beef & Mushroom Lasagna,0.09,0.348885,0.25888500000000003,0.25888500000000003,0.06702144322500002,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,9,anytime_meals,Pork Tenderloin with Dijon Gravy,0.14,0.05515,0.08485000000000001,-0.08485000000000001,0.007199522500000001,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,10,anytime_meals,Fish Tacos with Crunchy Slaw,0.14,0.1560625,0.01606249999999998,0.01606249999999998,0.00025800390624999934,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,11,anytime_meals,Chicken Sausage Garden Pasta,0.04,0.225025,0.185025,0.185025,0.034234250625,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,12,anytime_meals,Roasted Cauliflower Power Salad,0.12,0.203298,0.08329800000000001,0.08329800000000001,0.006938556804000002,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,13,anytime_meals,Simple Greek Salad,0.12,0.1332375,0.013237500000000013,0.013237500000000013,0.00017523140625000036,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,14,anytime_meals,Apple-Celery Chicken Salad,0.1,0.051225,0.048775000000000006,-0.048775000000000006,0.0023790006250000006,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,15,anytime_meals,Harvest Crunch Kale & Chicken Salad,0.19,0.1541,0.035900000000000015,-0.035900000000000015,0.0012888100000000011,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,16,desserts,Citrus-Berry Ricotta Parfaits,0.1,0.06768,0.03232,-0.03232,0.0010445824000000002,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,17,desserts,Crispy Rice Cereal Treats,0.02,0.023225,0.0032249999999999987,0.0032249999999999987,1.0400624999999992e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,18,desserts,Carob Chip Cranberry Cookies,0.03,0.0515,0.0215,0.0215,0.00046224999999999993,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,19,desserts,Pumpkin Cinnamon Bars,0.06,0.0520491667,0.007950833299999994,-0.007950833299999994,6.32157501643888e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,20,desserts,Carob Cupcakes with Cream Cheese Frosting,0.03,0.0354333333,0.0054333333000000025,0.0054333333000000025,2.952111074888892e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,21,snacks,Rice Cakes with Peanut Butter and Strawberries,0.16,0.1656,0.005599999999999994,0.005599999999999994,3.135999999999993e-05,True
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,22,snacks,Avocado Toast with Feta,0.23,0.0746,0.1554,-0.1554,0.024149160000000003,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,23,snacks,Trail Mix Snack,0.1,0.1432,0.04319999999999999,0.04319999999999999,0.001866239999999999,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,24,snacks,Almond Butter Apple Snack,0.14,0.19474,0.05473999999999998,0.05473999999999998,0.002996467599999998,False
+2,stage3,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,25,snacks,Hummus with Bell Pepper,0.14,0.13373,0.0062700000000000256,-0.0062700000000000256,3.931290000000032e-05,True

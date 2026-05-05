@@ -1,0 +1,22 @@
+{
+  "accuracy_relative_tolerance": 0.2,
+  "finished_at_utc": "2026-05-05T02:02:17.986175+00:00",
+  "prompt_variants": [
+    {
+      "model_name": "persona__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Persona",
+      "script": "/Users/kellychen/repos/CopperBench/stage3_recipe_proportions/run_stage3_persona.py",
+      "stage": "stage3"
+    },
+    {
+      "model_name": "combined_persona_few_shot__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Combined persona + few-shot",
+      "script": "/Users/kellychen/repos/CopperBench/stage3_recipe_proportions/run_stage3_combined_persona_few_shot.py",
+      "stage": "stage3"
+    }
+  ],
+  "recipe_path": "recipes.json",
+  "run_count": 3,
+  "runs_dir": "stage3_recipe_proportions/replicate_runs",
+  "started_at_utc": "2026-05-05T00:37:44.787740+00:00"
+}
