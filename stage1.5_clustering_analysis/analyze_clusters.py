@@ -1189,6 +1189,10 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
             return f'Cluster {row["cluster_id"]}\n{wrapped}'
 
         labels = [cluster_label(row) for row in analysis]
+        label_by_cluster_id = {
+            int(row["cluster_id"]): cluster_label(row)
+            for row in analysis
+        }
         avg_abs = [float(row["avg_absolute_error"]) for row in analysis]
         sizes = [int(row["cluster_size"]) for row in analysis]
         rel = [float(row["avg_relative_error_percent"]) for row in analysis]
@@ -1239,7 +1243,7 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
         plt.close()
 
         fig, ax = plt.subplots(figsize=(9, 5.5))
-        size_labels = [f'Cluster {row["cluster_id"]}' for row in analysis]
+        size_labels = [cluster_label(row) for row in analysis]
         bars = ax.bar(size_labels, sizes, color=bar_colors)
         total = sum(sizes) or 1
         ax.set_title("Cluster Sizes", pad=14)
@@ -1269,7 +1273,7 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
                 y_values,
                 s=32,
                 alpha=0.78,
-                label=f"Cluster {cluster_id}",
+                label=label_by_cluster_id[cluster_id].replace("\n", ": ", 1),
                 color=cluster_colors[cluster_id],
                 edgecolors="white",
                 linewidths=0.4,
@@ -1290,7 +1294,7 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
         fig, ax = plt.subplots(figsize=(10, 6.5))
         box = ax.boxplot(
             box_data,
-            tick_labels=[f"Cluster {cluster_id}" for cluster_id in clusters],
+            tick_labels=[label_by_cluster_id[cluster_id] for cluster_id in clusters],
             patch_artist=True,
             showfliers=False,
         )
@@ -1314,6 +1318,7 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
         ax.set_xlabel("Cluster")
         ax.set_ylabel("Absolute error (mg, log scale)")
         ax.grid(axis="y", which="both", alpha=0.25)
+        ax.tick_params(axis="x", labelsize=10)
         fig.tight_layout()
         plt.savefig(vis_dir / "error_distribution_by_cluster.png", dpi=180)
         plt.close()
@@ -1347,7 +1352,7 @@ def generate_visualizations(rows: list[dict[str, Any]], analysis: list[dict[str,
         plt.colorbar(image, ax=ax, label="Average absolute error (mg)")
         ax.set_title("Average Absolute Error by Cluster and Recipe Type", pad=14)
         ax.set_xticks(range(len(recipe_types)), recipe_types, rotation=30, ha="right")
-        ax.set_yticks(range(len(clusters)), [f"Cluster {cluster_id}" for cluster_id in clusters])
+        ax.set_yticks(range(len(clusters)), [label_by_cluster_id[cluster_id] for cluster_id in clusters])
         ax.set_xlabel("Recipe type")
         ax.set_ylabel("Cluster")
         for row_index, annotation_row in enumerate(annotations):

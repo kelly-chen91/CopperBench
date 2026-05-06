@@ -455,11 +455,25 @@ def plot_overall_bar(
 
     fig_width = max(12, len(valid_rows) * 0.55)
     fig, ax = plt.subplots(figsize=(fig_width, 7))
-    ax.bar(labels, values, color="#4C78A8")
+    bars = ax.bar(labels, values, color="#4C78A8", edgecolor="none")
     ax.set_title(title)
     ax.set_ylabel(ylabel)
     ax.tick_params(axis="x", labelrotation=65, labelsize=8)
     ax.grid(axis="y", linestyle=":", alpha=0.45)
+    y_max = max(values) * 1.12 if values else 1.0
+    ax.set_ylim(0, y_max)
+    value_format = "{:.1f}%" if value_key == "accuracy_percent" else "{:.3f}"
+    for bar, value in zip(bars, values):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            max(value - y_max * 0.04, value * 0.5),
+            value_format.format(value),
+            ha="center",
+            va="center",
+            color="white",
+            fontsize=8,
+            fontweight="bold",
+        )
     fig.tight_layout()
     fig.savefig(output_path, dpi=180)
     plt.close(fig)
@@ -502,18 +516,55 @@ def plot_reasoning_effect(rows: list[dict[str, Any]], output_path: Path) -> None
             if "gpt_5" in base_model:
                 grouped[base_model].append(row)
 
-    fig, ax = plt.subplots(figsize=(9, 5.5))
-    for base_model, model_rows in sorted(grouped.items()):
-        sorted_rows = sorted(model_rows, key=lambda row: effort_order[row["reasoning_level"]])
-        ax.plot(
-            [row["reasoning_level"] for row in sorted_rows],
-            [row["MAE"] for row in sorted_rows],
-            marker="o",
+    efforts = ["low", "medium", "high"]
+    model_names = sorted(grouped)
+    x_positions = list(range(len(efforts)))
+    bar_width = min(0.16, 0.82 / max(len(model_names), 1))
+    center_offset = (len(model_names) - 1) * bar_width / 2
+    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"]
+    values_by_key = {
+        (base_model, row["reasoning_level"]): float(row["MAE"])
+        for base_model, model_rows in grouped.items()
+        for row in model_rows
+    }
+    y_max = max(values_by_key.values()) * 1.12 if values_by_key else 1.0
+
+    fig, ax = plt.subplots(figsize=(10.5, 6))
+    for model_index, base_model in enumerate(model_names):
+        bar_x = [
+            position - center_offset + model_index * bar_width
+            for position in x_positions
+        ]
+        bar_values = [
+            values_by_key.get((base_model, effort), 0.0)
+            for effort in efforts
+        ]
+        bars = ax.bar(
+            bar_x,
+            bar_values,
+            width=bar_width,
+            color=colors[model_index % len(colors)],
+            edgecolor="none",
             label=short_model_label(base_model),
         )
-    ax.set_title("GPT-5 Reasoning Effort Effect")
+        for bar, value in zip(bars, bar_values):
+            if value <= 0:
+                continue
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                max(value - y_max * 0.035, value * 0.5),
+                f"{value:.3f}",
+                ha="center",
+                va="center",
+                color="white",
+                fontsize=8,
+                fontweight="bold",
+            )
+    ax.set_title("Stage 1 GPT-5 Reasoning Effort Effect")
     ax.set_xlabel("Reasoning effort")
     ax.set_ylabel("MAE")
+    ax.set_xticks(x_positions, efforts)
+    ax.set_ylim(0, y_max)
     ax.grid(axis="y", linestyle=":", alpha=0.45)
     ax.legend(fontsize=8)
     fig.tight_layout()
@@ -536,7 +587,7 @@ def write_plots(
     plot_overall_bar(
         overall_rows,
         "accuracy_percent",
-        "Accuracy Within +/-10% Across Models",
+        "Stage 1 Accuracy Within +/-10% Across Models",
         "Accuracy (%)",
         results_dir / "accuracy_comparison.png",
     )

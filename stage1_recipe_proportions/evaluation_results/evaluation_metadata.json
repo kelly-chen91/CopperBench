@@ -1,5 +1,7 @@
 {
   "accuracy_relative_tolerance": 0.1,
+  "excluded_recipe_count": 0,
+  "excluded_recipes": [],
   "model_file_count": 18,
   "model_files": [
     "gpt_4_1.jsonl",
@@ -203,5 +205,6 @@
       "unindexed_prediction_count": 0
     }
   ],
-  "recipe_count": 26
+  "recipe_count": 26,
+  "source_recipe_count": 26
 }
