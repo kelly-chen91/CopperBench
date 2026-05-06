@@ -1,0 +1,4 @@
+stage,input_condition,system,run_count,valid_predictions,mae_mg_per_serving,mean_signed_error_mg_per_serving,accuracy_within_20_percent,presentation_takeaway
+Stage 1,Full recipes with ingredient proportions,gpt_5_4_mini__reasoning_medium,1,26,0.054961538461538464,0.0315,42.30769230769231,Strong baseline when quantities are available.
+Stage 2,Ingredient names only; no proportions,gpt_5_4_mini__reasoning_medium,3,26,0.10226923076923077,0.0932948717948718,21.794871794871796,Removing quantities roughly doubles MAE and increases overestimation.
+Stage 3,Full recipes with targeted prompt mitigation,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,3,26,0.04524537937991454,0.010156682585042731,47.43589743589744,Failure-mode-informed prompting gives the best MAE.
