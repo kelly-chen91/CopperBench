@@ -271,6 +271,7 @@ flowchart LR
 
 - Project-level stage progression: `presentation_artifacts/stage_progression_mae.png`
 - Project-level prediction calibration: `presentation_artifacts/prediction_vs_ground_truth_by_stage.png`
+- Key-results summary: `presentation_artifacts/key_results_summary.png`
 - Project-level summary table: `presentation_artifacts/stage_progression_summary.md`
 - Stage 1 MAE chart: `stage1_recipe_proportions/evaluation_results/mae_comparison.png`
 - Stage 1 reasoning plot: `stage1_recipe_proportions/evaluation_results/reasoning_effort_effect.png`
