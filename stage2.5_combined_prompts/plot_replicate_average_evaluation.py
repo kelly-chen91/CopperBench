@@ -154,19 +154,31 @@ def plot_bar_with_error(
     plt.close(fig)
 
 
-def plot_run_trends(metric_rows: list[dict[str, str]], output_path: Path) -> None:
+def plot_run_trends(metric_rows: list[dict[str, str]], output_dir: Path) -> list[Path]:
     plt = require_matplotlib()
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
     for row in metric_rows:
         grouped[row["prompt_variant"]].append(row)
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 4.8))
     metric_specs = [
-        ("MAE", "MAE"),
-        ("mean_signed_error_mg_per_serving", "Mean Signed Error"),
-        ("accuracy_20_percent", "Accuracy Within 20%"),
+        ("MAE", "MAE per Run (lower is better)", "MAE (mg copper per serving)", "per_run_mae_trend.png"),
+        (
+            "mean_signed_error_mg_per_serving",
+            "Mean Signed Error per Run (closer to zero is better)",
+            "Mean signed error (mg copper per serving)",
+            "per_run_mean_signed_error_trend.png",
+        ),
+        (
+            "accuracy_20_percent",
+            "Accuracy Within 20% per Run (higher is better)",
+            "Accuracy within 20% (%)",
+            "per_run_accuracy_20_percent_trend.png",
+        ),
     ]
-    for ax, (metric_key, title) in zip(axes, metric_specs):
+
+    written: list[Path] = []
+    for metric_key, title, ylabel, filename in metric_specs:
+        fig, ax = plt.subplots(figsize=(8, 5))
         for prompt_variant in VARIANT_ORDER:
             rows = sorted(grouped.get(prompt_variant, []), key=lambda row: int(row["run"]))
             if not rows:
@@ -177,16 +189,19 @@ def plot_run_trends(metric_rows: list[dict[str, str]], output_path: Path) -> Non
                 marker="o",
                 label=prompt_variant,
             )
+        if metric_key == "mean_signed_error_mg_per_serving":
+            ax.axhline(0, color="black", linewidth=0.8, linestyle=":")
         ax.set_title(title)
         ax.set_xlabel("Run")
+        ax.set_ylabel(ylabel)
         ax.grid(axis="y", linestyle=":", alpha=0.45)
-    axes[0].set_ylabel("mg copper per serving")
-    axes[1].set_ylabel("mg copper per serving")
-    axes[2].set_ylabel("Accuracy (%)")
-    axes[2].legend(fontsize=7, loc="best")
-    fig.tight_layout()
-    fig.savefig(output_path, dpi=180)
-    plt.close(fig)
+        ax.legend(fontsize=8, loc="best")
+        fig.tight_layout()
+        out = output_dir / filename
+        fig.savefig(out, dpi=180)
+        plt.close(fig)
+        written.append(out)
+    return written
 
 
 def aggregate_recipe_type_rows() -> list[dict[str, Any]]:
@@ -302,7 +317,7 @@ def main() -> None:
         "Average accuracy within 20% (%)",
         OUTPUT_DIR / "average_accuracy_20_percent_comparison.png",
     )
-    plot_run_trends(metric_rows, OUTPUT_DIR / "per_run_metric_trends.png")
+    plot_run_trends(metric_rows, OUTPUT_DIR)
     plot_recipe_type_heatmap(
         recipe_type_rows,
         OUTPUT_DIR / "average_mae_by_recipe_type_heatmap.png",
