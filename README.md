@@ -91,6 +91,9 @@ Stage 2 screens five candidate prompts (baseline, persona, few-shot, chain-of-th
 | `run_stage3_replicates.py` | Drives the 3 replicate runs and aggregates 10% / 20% metrics | `run_replicate`, `aggregate_metrics`, `main` |
 | `plot_stage3_cluster_mitigation_mae.py` | Plots MAE per Stage 1.5 failure cluster, Baseline vs Persona vs Combined | `plot_cluster_mae`, `main` |
 | `plot_baseline_stage3_comparison.py` | Emits separate single-metric PNGs (MAE, ±10% accuracy, ±20% accuracy) for the Stage 1 baseline vs Stage 3 prompts | `plot_single`, `main` |
+| `plot_baseline_stage3_split.py` | Quick split script — emits `baseline_stage3_mae_bar.png` and `baseline_stage3_accuracy_20_percent_bar.png` as two separate single-metric bar charts | `read_rows`, `plot_bar`, `main` |
+| `plot_baseline_stage3_split_10_percent.py` | Parallel split script for the ±10% threshold — emits `baseline_stage3_mae_bar.png` and `baseline_stage3_accuracy_10_percent_bar.png` | `read_rows`, `plot_bar`, `main` |
+
 
 ### 2.6 Presentation artifacts (optional)
 
@@ -170,6 +173,10 @@ python3 stage3_recipe_proportions/run_stage3_replicates.py
 # Plots (one PNG per metric)
 python3 stage3_recipe_proportions/plot_stage3_cluster_mitigation_mae.py
 python3 stage3_recipe_proportions/plot_baseline_stage3_comparison.py
+
+# Quick split bar charts — MAE + accuracy as two separate single-metric figures
+python3 stage3_recipe_proportions/plot_baseline_stage3_split.py            # ±20% threshold
+python3 stage3_recipe_proportions/plot_baseline_stage3_split_10_percent.py  # ±10% threshold
 ```
 
 ### 3.5 Presentation artifacts (optional)
@@ -210,11 +217,13 @@ python3 presentation_artifacts/generate_key_results_graph.py
 
 ## 5. Prompts
 
-All prompts are stored in plain text files in the repository, organized by stage:
+**All prompts in one file:** `prompts.txt` at the repository root contains every prompt used in the project, grouped by stage, in a single readable document for grading and documentation purposes.
+
+The canonical copies that the code actually loads still live in their stage-specific `prompt_templates/` directories:
 
 | Stage | Prompt | File |
 |---|---|---|
-| Stage 1 | Baseline copper-estimation prompt | `stage1_recipe_proportions/prompt_templates/baseline.txt` (also mirrored at the repo root as `prompt_template.txt` for convenience, and embedded as the `PROMPT_TEMPLATE` constant in `run_copper_estimates.py`) |
+| Stage 1 | Baseline copper-estimation prompt | `stage1_recipe_proportions/prompt_templates/baseline.txt` (also mirrored at the repo root as `prompt_template.txt`, and embedded as the `PROMPT_TEMPLATE` constant in `run_copper_estimates.py`) |
 | Stage 2 | Baseline (no proportions) | `stage2_recipe_no_proportions/prompt_templates/baseline_prompt.txt` |
 | Stage 2 | Persona | `stage2_recipe_no_proportions/prompt_templates/persona_prompt.txt` |
 | Stage 2 | Few-shot | `stage2_recipe_no_proportions/prompt_templates/few_shot_prompt.txt` |
@@ -275,6 +284,7 @@ pip install -r stage1.5_clustering_analysis/requirements.txt
 CopperBench/
 ├── recipes.json                        # Labeled dataset (26 recipes)
 ├── prompt_template.txt                 # Stage 1 inference prompt (documentation copy)
+├── prompts.txt                         # All prompts (every stage) collected in one file
 ├── run_copper_estimates.py             # Stage 1 inference driver
 ├── analyze_copper_predictions.py       # Quick metrics
 ├── rank_models_*.py                    # Model ranking scripts
