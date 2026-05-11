@@ -1,0 +1,40 @@
+{
+  "accuracy_relative_tolerance": 0.2,
+  "finished_at_utc": "2026-05-04T08:39:48.317579+00:00",
+  "prompt_variants": [
+    {
+      "model_name": "gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Baseline",
+      "script": "/home/kelly/CopperBench/stage2_recipe_no_proportions/run_stage2_baseline.py",
+      "stage": "stage2"
+    },
+    {
+      "model_name": "persona__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Persona",
+      "script": "/home/kelly/CopperBench/stage2_recipe_no_proportions/run_stage2_persona.py",
+      "stage": "stage2"
+    },
+    {
+      "model_name": "few_shot__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Few-shot",
+      "script": "/home/kelly/CopperBench/stage2_recipe_no_proportions/run_stage2_few_shot.py",
+      "stage": "stage2"
+    },
+    {
+      "model_name": "cot__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "CoT",
+      "script": "/home/kelly/CopperBench/stage2_recipe_no_proportions/run_stage2_cot.py",
+      "stage": "stage2"
+    },
+    {
+      "model_name": "combined_persona_few_shot__gpt_5_4_mini__reasoning_medium",
+      "prompt_variant": "Combined persona + few-shot",
+      "script": "/home/kelly/CopperBench/stage2.5_combined_prompts/run_stage2_5_combined_persona_few_shot.py",
+      "stage": "stage2.5"
+    }
+  ],
+  "recipe_path": "stage2_recipe_no_proportions/recipes_no_proportions.json",
+  "run_count": 3,
+  "runs_dir": "stage2.5_combined_prompts/replicate_runs",
+  "started_at_utc": "2026-05-04T04:12:38.081918+00:00"
+}

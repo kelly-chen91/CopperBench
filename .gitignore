@@ -1,3 +1,6 @@
 __pycache__
 .cache
 .venv
+.DS_Store
+.env
+stage1.5_clustering_analysis/.matplotlib_cache

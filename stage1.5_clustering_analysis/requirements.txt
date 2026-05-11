@@ -1,0 +1,5 @@
+hdbscan>=0.8.33
+scikit-learn>=1.4
+numpy>=1.26
+matplotlib>=3.8
+openai>=1.0

@@ -1,0 +1,72 @@
+{
+  "accuracy_relative_tolerance": 0.2,
+  "excluded_recipe_count": 0,
+  "excluded_recipes": [],
+  "model_file_count": 5,
+  "model_files": [
+    "stage2.5_combined_prompts/replicate_runs/run_03/model_outputs/combined_persona_few_shot__gpt_5_4_mini__reasoning_medium.jsonl",
+    "stage2.5_combined_prompts/replicate_runs/run_03/model_outputs/cot__gpt_5_4_mini__reasoning_medium.jsonl",
+    "stage2.5_combined_prompts/replicate_runs/run_03/model_outputs/few_shot__gpt_5_4_mini__reasoning_medium.jsonl",
+    "stage2.5_combined_prompts/replicate_runs/run_03/model_outputs/gpt_5_4_mini__reasoning_medium.jsonl",
+    "stage2.5_combined_prompts/replicate_runs/run_03/model_outputs/persona__gpt_5_4_mini__reasoning_medium.jsonl"
+  ],
+  "model_output_metadata": [
+    {
+      "json_error_count": 0,
+      "json_errors": [],
+      "latest_prediction_count": 26,
+      "model_file": "combined_persona_few_shot__gpt_5_4_mini__reasoning_medium.jsonl",
+      "model_name": "combined_persona_few_shot__gpt_5_4_mini__reasoning_medium",
+      "reasoning_level": "medium",
+      "source_output_dir": "/home/kelly/CopperBench/stage2.5_combined_prompts/replicate_runs/run_03/model_outputs",
+      "trial_record_count": 26,
+      "unindexed_prediction_count": 0
+    },
+    {
+      "json_error_count": 0,
+      "json_errors": [],
+      "latest_prediction_count": 26,
+      "model_file": "cot__gpt_5_4_mini__reasoning_medium.jsonl",
+      "model_name": "cot__gpt_5_4_mini__reasoning_medium",
+      "reasoning_level": "medium",
+      "source_output_dir": "/home/kelly/CopperBench/stage2.5_combined_prompts/replicate_runs/run_03/model_outputs",
+      "trial_record_count": 26,
+      "unindexed_prediction_count": 0
+    },
+    {
+      "json_error_count": 0,
+      "json_errors": [],
+      "latest_prediction_count": 26,
+      "model_file": "few_shot__gpt_5_4_mini__reasoning_medium.jsonl",
+      "model_name": "few_shot__gpt_5_4_mini__reasoning_medium",
+      "reasoning_level": "medium",
+      "source_output_dir": "/home/kelly/CopperBench/stage2.5_combined_prompts/replicate_runs/run_03/model_outputs",
+      "trial_record_count": 26,
+      "unindexed_prediction_count": 0
+    },
+    {
+      "json_error_count": 0,
+      "json_errors": [],
+      "latest_prediction_count": 26,
+      "model_file": "gpt_5_4_mini__reasoning_medium.jsonl",
+      "model_name": "gpt_5_4_mini__reasoning_medium",
+      "reasoning_level": "medium",
+      "source_output_dir": "/home/kelly/CopperBench/stage2.5_combined_prompts/replicate_runs/run_03/model_outputs",
+      "trial_record_count": 26,
+      "unindexed_prediction_count": 0
+    },
+    {
+      "json_error_count": 0,
+      "json_errors": [],
+      "latest_prediction_count": 26,
+      "model_file": "persona__gpt_5_4_mini__reasoning_medium.jsonl",
+      "model_name": "persona__gpt_5_4_mini__reasoning_medium",
+      "reasoning_level": "medium",
+      "source_output_dir": "/home/kelly/CopperBench/stage2.5_combined_prompts/replicate_runs/run_03/model_outputs",
+      "trial_record_count": 26,
+      "unindexed_prediction_count": 0
+    }
+  ],
+  "recipe_count": 26,
+  "source_recipe_count": 26
+}

@@ -70,6 +70,15 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Write CSV/JSON outputs but skip Matplotlib visualizations.",
     )
+    parser.add_argument(
+        "--exclude-recipe-name",
+        action="append",
+        default=[],
+        help=(
+            "Recipe name to exclude from scoring. May be passed multiple times. "
+            "Names must match recipes.json exactly."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -115,6 +124,31 @@ def load_truth(path: Path) -> list[RecipeTruth]:
     if not truths:
         raise ValueError(f"No recipes found in {path}")
     return truths
+
+
+def filter_truths_by_name(
+    truths: list[RecipeTruth],
+    excluded_recipe_names: list[str],
+) -> tuple[list[RecipeTruth], list[RecipeTruth]]:
+    excluded_names = set(excluded_recipe_names)
+    if not excluded_names:
+        return truths, []
+
+    matching_exclusions = [
+        truth for truth in truths if truth.recipe_name in excluded_names
+    ]
+    found_names = {truth.recipe_name for truth in matching_exclusions}
+    missing_names = sorted(excluded_names - found_names)
+    if missing_names:
+        raise ValueError(
+            "Excluded recipe names were not found in recipes.json: "
+            + ", ".join(missing_names)
+        )
+
+    filtered_truths = [
+        truth for truth in truths if truth.recipe_name not in excluded_names
+    ]
+    return filtered_truths, matching_exclusions
 
 
 def model_name_from_path(path: Path) -> str:
@@ -421,11 +455,25 @@ def plot_overall_bar(
 
     fig_width = max(12, len(valid_rows) * 0.55)
     fig, ax = plt.subplots(figsize=(fig_width, 7))
-    ax.bar(labels, values, color="#4C78A8")
+    bars = ax.bar(labels, values, color="#4C78A8", edgecolor="none")
     ax.set_title(title)
     ax.set_ylabel(ylabel)
     ax.tick_params(axis="x", labelrotation=65, labelsize=8)
     ax.grid(axis="y", linestyle=":", alpha=0.45)
+    y_max = max(values) * 1.12 if values else 1.0
+    ax.set_ylim(0, y_max)
+    value_format = "{:.1f}%" if value_key == "accuracy_percent" else "{:.3f}"
+    for bar, value in zip(bars, values):
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,
+            max(value - y_max * 0.04, value * 0.5),
+            value_format.format(value),
+            ha="center",
+            va="center",
+            color="white",
+            fontsize=8,
+            fontweight="bold",
+        )
     fig.tight_layout()
     fig.savefig(output_path, dpi=180)
     plt.close(fig)
@@ -468,18 +516,55 @@ def plot_reasoning_effect(rows: list[dict[str, Any]], output_path: Path) -> None
             if "gpt_5" in base_model:
                 grouped[base_model].append(row)
 
-    fig, ax = plt.subplots(figsize=(9, 5.5))
-    for base_model, model_rows in sorted(grouped.items()):
-        sorted_rows = sorted(model_rows, key=lambda row: effort_order[row["reasoning_level"]])
-        ax.plot(
-            [row["reasoning_level"] for row in sorted_rows],
-            [row["MAE"] for row in sorted_rows],
-            marker="o",
+    efforts = ["low", "medium", "high"]
+    model_names = sorted(grouped)
+    x_positions = list(range(len(efforts)))
+    bar_width = min(0.16, 0.82 / max(len(model_names), 1))
+    center_offset = (len(model_names) - 1) * bar_width / 2
+    colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"]
+    values_by_key = {
+        (base_model, row["reasoning_level"]): float(row["MAE"])
+        for base_model, model_rows in grouped.items()
+        for row in model_rows
+    }
+    y_max = max(values_by_key.values()) * 1.12 if values_by_key else 1.0
+
+    fig, ax = plt.subplots(figsize=(10.5, 6))
+    for model_index, base_model in enumerate(model_names):
+        bar_x = [
+            position - center_offset + model_index * bar_width
+            for position in x_positions
+        ]
+        bar_values = [
+            values_by_key.get((base_model, effort), 0.0)
+            for effort in efforts
+        ]
+        bars = ax.bar(
+            bar_x,
+            bar_values,
+            width=bar_width,
+            color=colors[model_index % len(colors)],
+            edgecolor="none",
             label=short_model_label(base_model),
         )
-    ax.set_title("GPT-5 Reasoning Effort Effect")
+        for bar, value in zip(bars, bar_values):
+            if value <= 0:
+                continue
+            ax.text(
+                bar.get_x() + bar.get_width() / 2,
+                max(value - y_max * 0.035, value * 0.5),
+                f"{value:.3f}",
+                ha="center",
+                va="center",
+                color="white",
+                fontsize=8,
+                fontweight="bold",
+            )
+    ax.set_title("Stage 1 GPT-5 Reasoning Effort Effect")
     ax.set_xlabel("Reasoning effort")
     ax.set_ylabel("MAE")
+    ax.set_xticks(x_positions, efforts)
+    ax.set_ylim(0, y_max)
     ax.grid(axis="y", linestyle=":", alpha=0.45)
     ax.legend(fontsize=8)
     fig.tight_layout()
@@ -502,7 +587,7 @@ def write_plots(
     plot_overall_bar(
         overall_rows,
         "accuracy_percent",
-        "Accuracy Within +/-10% Across Models",
+        "Stage 1 Accuracy Within +/-10% Across Models",
         "Accuracy (%)",
         results_dir / "accuracy_comparison.png",
     )
@@ -514,7 +599,11 @@ def main() -> None:
     args = parse_args()
     args.results_dir.mkdir(parents=True, exist_ok=True)
 
-    truths = load_truth(args.recipes)
+    all_truths = load_truth(args.recipes)
+    truths, excluded_truths = filter_truths_by_name(
+        all_truths,
+        args.exclude_recipe_name,
+    )
     model_files = sorted(args.model_outputs_dir.glob("*.jsonl"))
     if not model_files:
         raise SystemExit(f"No JSONL files found in {args.model_outputs_dir}")
@@ -537,7 +626,18 @@ def main() -> None:
         args.results_dir / "evaluation_metadata.json",
         {
             "accuracy_relative_tolerance": ACCURACY_RELATIVE_TOLERANCE,
+            "source_recipe_count": len(all_truths),
             "recipe_count": len(truths),
+            "excluded_recipe_count": len(excluded_truths),
+            "excluded_recipes": [
+                {
+                    "recipe_index": truth.recipe_index,
+                    "recipe_type": truth.recipe_type,
+                    "recipe_name": truth.recipe_name,
+                    "ground_truth_copper_mg_per_serving": truth.copper_per_serving_mg,
+                }
+                for truth in excluded_truths
+            ],
             "model_file_count": len(model_files),
             "model_files": [path.name for path in model_files],
             "model_output_metadata": metadata,

@@ -1,6 +1,8 @@
 {
   "accuracy_relative_tolerance": 0.1,
-  "model_file_count": 19,
+  "excluded_recipe_count": 0,
+  "excluded_recipes": [],
+  "model_file_count": 18,
   "model_files": [
     "gpt_4_1.jsonl",
     "gpt_4_1_mini.jsonl",
@@ -19,8 +21,7 @@
     "gpt_5_4_pro__reasoning_high.jsonl",
     "gpt_5_5__reasoning_high.jsonl",
     "gpt_5_5__reasoning_low.jsonl",
-    "gpt_5_5__reasoning_medium.jsonl",
-    "gpt_5_5_pro__reasoning_high.jsonl"
+    "gpt_5_5__reasoning_medium.jsonl"
   ],
   "model_output_metadata": [
     {
@@ -40,7 +41,7 @@
       "model_file": "gpt_4_1_mini.jsonl",
       "model_name": "gpt_4_1_mini",
       "reasoning_level": "none",
-      "trial_record_count": 26,
+      "trial_record_count": 27,
       "unindexed_prediction_count": 0
     },
     {
@@ -60,7 +61,7 @@
       "model_file": "gpt_4o.jsonl",
       "model_name": "gpt_4o",
       "reasoning_level": "none",
-      "trial_record_count": 26,
+      "trial_record_count": 27,
       "unindexed_prediction_count": 0
     },
     {
@@ -80,7 +81,7 @@
       "model_file": "gpt_5_4__reasoning_high.jsonl",
       "model_name": "gpt_5_4__reasoning_high",
       "reasoning_level": "high",
-      "trial_record_count": 51,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -100,7 +101,7 @@
       "model_file": "gpt_5_4__reasoning_medium.jsonl",
       "model_name": "gpt_5_4__reasoning_medium",
       "reasoning_level": "medium",
-      "trial_record_count": 41,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -110,7 +111,7 @@
       "model_file": "gpt_5_4_mini__reasoning_high.jsonl",
       "model_name": "gpt_5_4_mini__reasoning_high",
       "reasoning_level": "high",
-      "trial_record_count": 48,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -130,7 +131,7 @@
       "model_file": "gpt_5_4_mini__reasoning_medium.jsonl",
       "model_name": "gpt_5_4_mini__reasoning_medium",
       "reasoning_level": "medium",
-      "trial_record_count": 35,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -140,7 +141,7 @@
       "model_file": "gpt_5_4_nano__reasoning_high.jsonl",
       "model_name": "gpt_5_4_nano__reasoning_high",
       "reasoning_level": "high",
-      "trial_record_count": 47,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -160,7 +161,7 @@
       "model_file": "gpt_5_4_nano__reasoning_medium.jsonl",
       "model_name": "gpt_5_4_nano__reasoning_medium",
       "reasoning_level": "medium",
-      "trial_record_count": 39,
+      "trial_record_count": 31,
       "unindexed_prediction_count": 0
     },
     {
@@ -170,7 +171,7 @@
       "model_file": "gpt_5_4_pro__reasoning_high.jsonl",
       "model_name": "gpt_5_4_pro__reasoning_high",
       "reasoning_level": "high",
-      "trial_record_count": 49,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -180,7 +181,7 @@
       "model_file": "gpt_5_5__reasoning_high.jsonl",
       "model_name": "gpt_5_5__reasoning_high",
       "reasoning_level": "high",
-      "trial_record_count": 45,
+      "trial_record_count": 26,
       "unindexed_prediction_count": 0
     },
     {
@@ -200,19 +201,10 @@
       "model_file": "gpt_5_5__reasoning_medium.jsonl",
       "model_name": "gpt_5_5__reasoning_medium",
       "reasoning_level": "medium",
-      "trial_record_count": 30,
-      "unindexed_prediction_count": 0
-    },
-    {
-      "json_error_count": 0,
-      "json_errors": [],
-      "latest_prediction_count": 9,
-      "model_file": "gpt_5_5_pro__reasoning_high.jsonl",
-      "model_name": "gpt_5_5_pro__reasoning_high",
-      "reasoning_level": "high",
-      "trial_record_count": 9,
+      "trial_record_count": 27,
       "unindexed_prediction_count": 0
     }
   ],
-  "recipe_count": 26
+  "recipe_count": 26,
+  "source_recipe_count": 26
 }

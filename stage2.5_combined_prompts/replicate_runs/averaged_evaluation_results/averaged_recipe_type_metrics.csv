@@ -1,0 +1,21 @@
+model_name,prompt_variant,recipe_type,run_count,avg_MAE,avg_accuracy_20_percent,valid_predictions_count,total_recipes
+combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,Combined persona + few-shot,anytime_meals,3,0.12203880303030303,24.242424242424246,5,5
+combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,Combined persona + few-shot,breakfast,3,0.08131888888666666,13.333333333333334,5,5
+combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,Combined persona + few-shot,desserts,3,0.027982788886666665,20.0,5,5
+combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,Combined persona + few-shot,snacks,3,0.07997599999999999,20.0,5,5
+cot__gpt_5_4_mini__reasoning_medium,CoT,anytime_meals,3,0.14420954545454548,21.212121212121215,5,5
+cot__gpt_5_4_mini__reasoning_medium,CoT,breakfast,3,0.12829133333333334,13.333333333333334,5,5
+cot__gpt_5_4_mini__reasoning_medium,CoT,desserts,3,0.04131133333333333,26.666666666666668,5,5
+cot__gpt_5_4_mini__reasoning_medium,CoT,snacks,3,0.13551066666666667,33.333333333333336,5,5
+few_shot__gpt_5_4_mini__reasoning_medium,Few-shot,anytime_meals,3,0.11980431818181818,12.121212121212123,5,5
+few_shot__gpt_5_4_mini__reasoning_medium,Few-shot,breakfast,3,0.12471564444666665,13.333333333333334,5,5
+few_shot__gpt_5_4_mini__reasoning_medium,Few-shot,desserts,3,0.03474491111333333,13.333333333333334,5,5
+few_shot__gpt_5_4_mini__reasoning_medium,Few-shot,snacks,3,0.17110266666666665,20.0,5,5
+gpt_5_4_mini__reasoning_medium,Baseline,anytime_meals,3,0.11471212121212122,24.24242424242424,5,5
+gpt_5_4_mini__reasoning_medium,Baseline,breakfast,3,0.109,6.666666666666667,5,5
+gpt_5_4_mini__reasoning_medium,Baseline,desserts,3,0.032433333333333335,26.666666666666668,5,5
+gpt_5_4_mini__reasoning_medium,Baseline,snacks,3,0.138,26.666666666666668,5,5
+persona__gpt_5_4_mini__reasoning_medium,Persona,anytime_meals,3,0.10421212121212121,30.3030303030303,5,5
+persona__gpt_5_4_mini__reasoning_medium,Persona,breakfast,3,0.08760000000000001,20.0,5,5
+persona__gpt_5_4_mini__reasoning_medium,Persona,desserts,3,0.03233333333333333,20.0,5,5
+persona__gpt_5_4_mini__reasoning_medium,Persona,snacks,3,0.13946666666666666,40.0,5,5

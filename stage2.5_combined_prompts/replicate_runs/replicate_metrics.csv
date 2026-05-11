@@ -1,0 +1,16 @@
+run,stage,prompt_variant,model_name,MAE,mean_signed_error_mg_per_serving,accuracy_20_percent,valid_predictions_count,invalid_predictions_count,total_recipes
+1,stage2,Baseline,gpt_5_4_mini__reasoning_medium,0.09967307692307692,0.08928846153846154,26.923076923076923,26,0,26
+1,stage2,CoT,cot__gpt_5_4_mini__reasoning_medium,0.10358961538461539,0.09443038461538461,26.923076923076923,26,0,26
+1,stage2.5,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.10593632692307693,0.08812078846153847,26.923076923076923,26,0,26
+1,stage2,Persona,persona__gpt_5_4_mini__reasoning_medium,0.11092307692307692,0.08907692307692307,26.923076923076923,26,0,26
+1,stage2,Few-shot,few_shot__gpt_5_4_mini__reasoning_medium,0.120837,0.10674434615384615,15.384615384615385,26,0,26
+2,stage2,Persona,persona__gpt_5_4_mini__reasoning_medium,0.0881923076923077,0.06488461538461539,26.923076923076923,26,0,26
+2,stage2.5,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.08842264743461539,0.07234799358846153,11.538461538461538,26,0,26
+2,stage2,Baseline,gpt_5_4_mini__reasoning_medium,0.10074999999999999,0.09074999999999998,23.076923076923077,26,0,26
+2,stage2,Few-shot,few_shot__gpt_5_4_mini__reasoning_medium,0.11226259615384615,0.10088221153846154,15.384615384615385,26,0,26
+2,stage2,CoT,cot__gpt_5_4_mini__reasoning_medium,0.14013673076923078,0.13482903846153846,23.076923076923077,26,0,26
+3,stage2.5,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.06973508974230769,0.05214383333461537,23.076923076923077,26,0,26
+3,stage2,Persona,persona__gpt_5_4_mini__reasoning_medium,0.0828076923076923,0.06319230769230769,30.76923076923077,26,0,26
+3,stage2,Baseline,gpt_5_4_mini__reasoning_medium,0.10638461538461538,0.09984615384615385,15.384615384615385,26,0,26
+3,stage2,Few-shot,few_shot__gpt_5_4_mini__reasoning_medium,0.10966928205384616,0.09518576923076923,11.538461538461538,26,0,26
+3,stage2,CoT,cot__gpt_5_4_mini__reasoning_medium,0.11533576923076924,0.10297423076923076,19.230769230769234,26,0,26

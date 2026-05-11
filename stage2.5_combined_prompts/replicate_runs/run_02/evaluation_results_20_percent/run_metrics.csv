@@ -1,0 +1,6 @@
+run,stage,prompt_variant,model_name,MAE,mean_signed_error_mg_per_serving,accuracy_20_percent,valid_predictions_count,invalid_predictions_count,total_recipes
+2,stage2,Persona,persona__gpt_5_4_mini__reasoning_medium,0.0881923076923077,0.06488461538461539,26.923076923076923,26,0,26
+2,stage2.5,Combined persona + few-shot,combined_persona_few_shot__gpt_5_4_mini__reasoning_medium,0.08842264743461539,0.07234799358846153,11.538461538461538,26,0,26
+2,stage2,Baseline,gpt_5_4_mini__reasoning_medium,0.10074999999999999,0.09074999999999998,23.076923076923077,26,0,26
+2,stage2,Few-shot,few_shot__gpt_5_4_mini__reasoning_medium,0.11226259615384615,0.10088221153846154,15.384615384615385,26,0,26
+2,stage2,CoT,cot__gpt_5_4_mini__reasoning_medium,0.14013673076923078,0.13482903846153846,23.076923076923077,26,0,26

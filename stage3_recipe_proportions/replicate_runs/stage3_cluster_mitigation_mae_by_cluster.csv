@@ -1,0 +1,10 @@
+cluster_id,failure_mode_label,unique_recipe_count,prompt,mean_absolute_error
+-1,Systematic ingredient copper overestimation,12,Baseline,0.09416666666666668
+-1,Systematic ingredient copper overestimation,12,Combined persona + few-shot,0.07030008564814814
+-1,Systematic ingredient copper overestimation,12,Persona,0.0715
+0,Incorrect copper values for snack ingredients,6,Baseline,0.03916666666666666
+0,Incorrect copper values for snack ingredients,6,Combined persona + few-shot,0.049009444444444446
+0,Incorrect copper values for snack ingredients,6,Persona,0.047055555555555566
+2,Systematic copper overestimation via weight-based method,7,Baseline,0.10471428571428572
+2,Systematic copper overestimation via weight-based method,7,Combined persona + few-shot,0.07176951983968254
+2,Systematic copper overestimation via weight-based method,7,Persona,0.07431904761904762

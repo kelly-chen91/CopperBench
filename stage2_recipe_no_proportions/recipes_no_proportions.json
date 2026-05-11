@@ -1,0 +1,1052 @@
+[
+  {
+    "recipe_type": "breakfast",
+    "recipes": [
+      {
+        "recipe_name": "Scrambled Egg & Black Bean Burritos",
+        "name": "Scrambled Egg & Black Bean Burritos",
+        "servings": "2 servings",
+        "ingredients": [
+          {
+            "name": "extra virgin olive oil, divided"
+          },
+          {
+            "name": "bell pepper, any color, cut into 1/2-inch dice"
+          },
+          {
+            "name": "large eggs"
+          },
+          {
+            "name": "2%-reduced fat milk"
+          },
+          {
+            "name": "canned black beans, drained and rinsed"
+          },
+          {
+            "name": "shredded reduced-fat Mexican blend or Cheddar cheese"
+          },
+          {
+            "name": "smoked paprika"
+          },
+          {
+            "name": "8-inch flour tortillas, warmed"
+          },
+          {
+            "name": "low-fat plain Greek yogurt"
+          },
+          {
+            "name": "salsa"
+          },
+          {
+            "name": "chopped fresh cilantro or parsley"
+          }
+        ],
+        "copper_per_serving_mg": 0.15
+      },
+      {
+        "recipe_name": "Cranberry Carrot Muffins",
+        "name": "Cranberry Carrot Muffins",
+        "servings": "6 muffins",
+        "ingredients": [
+          {
+            "name": "dried cranberries"
+          },
+          {
+            "name": "all-purpose white flour, divided"
+          },
+          {
+            "name": "baking powder"
+          },
+          {
+            "name": "ground cinnamon"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "large egg, beaten"
+          },
+          {
+            "name": "medium carrot, shredded"
+          },
+          {
+            "name": "unpeeled apple, shredded"
+          },
+          {
+            "name": "canola or other neutral oil"
+          },
+          {
+            "name": "2% reduced-fat milk"
+          },
+          {
+            "name": "granulated sugar"
+          },
+          {
+            "name": "brown sugar"
+          },
+          {
+            "name": "vanilla extract"
+          },
+          {
+            "name": "brown sugar, for topping"
+          },
+          {
+            "name": "ground cinnamon, for topping"
+          }
+        ],
+        "copper_per_serving_mg": 0.06
+      },
+      {
+        "recipe_name": "Blueberry Banana Pancakes",
+        "name": "Blueberry Banana Pancakes",
+        "servings": "2 servings",
+        "ingredients": [
+          {
+            "name": "all-purpose white flour"
+          },
+          {
+            "name": "quick cooking or old-fashioned oats"
+          },
+          {
+            "name": "baking powder"
+          },
+          {
+            "name": "ground cinnamon"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "large egg"
+          },
+          {
+            "name": "2% reduced-fat milk"
+          },
+          {
+            "name": "ripe medium-size banana, mashed"
+          },
+          {
+            "name": "maple syrup, plus more for drizzling"
+          },
+          {
+            "name": "fresh or frozen blueberries, plus more for topping"
+          },
+          {
+            "name": "nonstick cooking spray or oil"
+          }
+        ],
+        "copper_per_serving_mg": 0.17
+      },
+      {
+        "recipe_name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "name": "Cheesy Egg, Bacon & Broccoli Muffins",
+        "servings": "6 servings",
+        "ingredients": [
+          {
+            "name": "large eggs"
+          },
+          {
+            "name": "frozen broccoli florets, thawed, drained, squeezed dry, and finely chopped"
+          },
+          {
+            "name": "turkey bacon, cooked and finely chopped"
+          },
+          {
+            "name": "reduced-fat shredded Cheddar cheese, divided"
+          },
+          {
+            "name": "green onion, trimmed and finely chopped"
+          },
+          {
+            "name": "dried Italian seasoning or dried basil"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          },
+          {
+            "name": "cherry or grape tomatoes, halved"
+          },
+          {
+            "name": "nonstick cooking spray"
+          }
+        ],
+        "copper_per_serving_mg": 0.08
+      },
+      {
+        "recipe_name": "Glorious Green Smoothie Bowl",
+        "name": "Glorious Green Smoothie Bowl",
+        "servings": "1 serving",
+        "ingredients": [
+          {
+            "name": "100% orange juice"
+          },
+          {
+            "name": "medium-size ripe banana, sliced and frozen"
+          },
+          {
+            "name": "baby spinach"
+          },
+          {
+            "name": "low-fat vanilla Greek yogurt"
+          },
+          {
+            "name": "unpeeled English cucumber, sliced"
+          },
+          {
+            "name": "optional toppings: whole grain O-shaped oat cereal, chopped apple, dried cranberries, blueberries, or fresh mint"
+          }
+        ],
+        "copper_per_serving_mg": 0.17
+      }
+    ]
+  },
+  {
+    "recipe_type": "anytime_meals",
+    "recipes": [
+      {
+        "recipe_name": "Sesame-Ginger Turkey Meatballs",
+        "name": "Sesame-Ginger Turkey Meatballs",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "medium carrot, shredded"
+          },
+          {
+            "name": "green onions, trimmed and finely chopped"
+          },
+          {
+            "name": "finely chopped fresh cilantro or mint"
+          },
+          {
+            "name": "sesame oil"
+          },
+          {
+            "name": "grated fresh ginger"
+          },
+          {
+            "name": "large garlic clove, minced"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "crushed red pepper flakes"
+          },
+          {
+            "name": "lean ground turkey breast"
+          },
+          {
+            "name": "panko breadcrumbs, plus more if needed"
+          },
+          {
+            "name": "less-sodium teriyaki sauce or Gyoza dipping sauce"
+          },
+          {
+            "name": "cornstarch"
+          },
+          {
+            "name": "orange zest"
+          },
+          {
+            "name": "nonstick cooking spray"
+          }
+        ],
+        "copper_per_serving_mg": 0.04
+      },
+      {
+        "recipe_name": "Chicken and Broccoli Piccata",
+        "name": "Chicken and Broccoli Piccata",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "cornstarch, divided"
+          },
+          {
+            "name": "garlic powder"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          },
+          {
+            "name": "chicken breast tenderloins"
+          },
+          {
+            "name": "extra virgin olive oil, divided"
+          },
+          {
+            "name": "butter"
+          },
+          {
+            "name": "medium red onion, diced"
+          },
+          {
+            "name": "water"
+          },
+          {
+            "name": "bite-size broccoli florets"
+          },
+          {
+            "name": "chicken broth"
+          },
+          {
+            "name": "lemon juice"
+          },
+          {
+            "name": "capers, drained"
+          },
+          {
+            "name": "lemon zest"
+          }
+        ],
+        "copper_per_serving_mg": 0.13
+      },
+      {
+        "recipe_name": "Chicken Fajitas with Lime Sauce",
+        "name": "Chicken Fajitas with Lime Sauce",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "chili powder"
+          },
+          {
+            "name": "ground cumin"
+          },
+          {
+            "name": "dried oregano"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "garlic powder"
+          },
+          {
+            "name": "boneless, skinless chicken breast halves, cut into 1/2-inch strips"
+          },
+          {
+            "name": "medium bell peppers, cut into 1/2-inch strips"
+          },
+          {
+            "name": "medium red onion, cut into 1/2-inch wedges"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "6-inch flour tortillas"
+          },
+          {
+            "name": "low-fat plain Greek yogurt"
+          },
+          {
+            "name": "packed fresh cilantro, plus more for garnish"
+          },
+          {
+            "name": "olive oil"
+          },
+          {
+            "name": "honey"
+          },
+          {
+            "name": "lime juice"
+          },
+          {
+            "name": "chili powder, for sauce"
+          },
+          {
+            "name": "salt, for sauce"
+          },
+          {
+            "name": "nonstick cooking spray"
+          }
+        ],
+        "copper_per_serving_mg": 0.12
+      },
+      {
+        "recipe_name": "One-Pot Beef & Mushroom Lasagna",
+        "name": "One-Pot Beef & Mushroom Lasagna",
+        "servings": "6 servings",
+        "ingredients": [
+          {
+            "name": "extra virgin olive oil, divided"
+          },
+          {
+            "name": "shiitake mushrooms, thinly sliced"
+          },
+          {
+            "name": "large carrots, shredded"
+          },
+          {
+            "name": "lean ground beef, 90% lean or higher"
+          },
+          {
+            "name": "garlic powder"
+          },
+          {
+            "name": "onion powder"
+          },
+          {
+            "name": "marinara sauce"
+          },
+          {
+            "name": "water, divided, plus more as needed"
+          },
+          {
+            "name": "dry no-boil lasagna noodles, broken into 1-inch pieces"
+          },
+          {
+            "name": "roughly chopped fresh basil, plus more to taste"
+          },
+          {
+            "name": "red pepper flakes, plus more to taste"
+          },
+          {
+            "name": "part-skim shredded mozzarella cheese, divided"
+          },
+          {
+            "name": "grated Parmesan cheese"
+          }
+        ],
+        "copper_per_serving_mg": 0.09
+      },
+      {
+        "recipe_name": "Pork Tenderloin with Dijon Gravy",
+        "name": "Pork Tenderloin with Dijon Gravy",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "olive oil"
+          },
+          {
+            "name": "pork tenderloin"
+          },
+          {
+            "name": "dried rosemary"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          },
+          {
+            "name": "chicken broth"
+          },
+          {
+            "name": "Dijon mustard"
+          },
+          {
+            "name": "minced garlic"
+          },
+          {
+            "name": "dried thyme"
+          },
+          {
+            "name": "butter"
+          }
+        ],
+        "copper_per_serving_mg": 0.14
+      },
+      {
+        "recipe_name": "Fish Tacos with Crunchy Slaw",
+        "name": "Fish Tacos with Crunchy Slaw",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "dried oregano"
+          },
+          {
+            "name": "chili powder"
+          },
+          {
+            "name": "garlic powder"
+          },
+          {
+            "name": "paprika"
+          },
+          {
+            "name": "kosher salt"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "white fish, such as cod or tilapia"
+          },
+          {
+            "name": "bagged coleslaw mix"
+          },
+          {
+            "name": "fresh cilantro or parsley, roughly chopped"
+          },
+          {
+            "name": "mayonnaise"
+          },
+          {
+            "name": "lime juice"
+          },
+          {
+            "name": "sriracha"
+          },
+          {
+            "name": "salt and pepper"
+          },
+          {
+            "name": "6-inch flour tortillas"
+          },
+          {
+            "name": "avocado, sliced"
+          },
+          {
+            "name": "optional toppings: diced tomato, plain Greek yogurt or sour cream, cilantro"
+          },
+          {
+            "name": "nonstick cooking spray or parchment paper"
+          }
+        ],
+        "copper_per_serving_mg": 0.14
+      },
+      {
+        "recipe_name": "Chicken Sausage Garden Pasta",
+        "name": "Chicken Sausage Garden Pasta",
+        "servings": "4 servings",
+        "ingredients": [
+          {
+            "name": "dried farfalle pasta"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "small onion, diced"
+          },
+          {
+            "name": "large zucchini, diced"
+          },
+          {
+            "name": "cooked Italian chicken sausage, cut into 1/4-inch-thick rounds"
+          },
+          {
+            "name": "cherry tomatoes, halved"
+          },
+          {
+            "name": "grated Parmesan cheese, plus more for serving"
+          },
+          {
+            "name": "roughly chopped fresh basil, plus more for garnish"
+          },
+          {
+            "name": "lemon zest"
+          },
+          {
+            "name": "salt and pepper"
+          }
+        ],
+        "copper_per_serving_mg": 0.04
+      },
+      {
+        "recipe_name": "Roasted Cauliflower Power Salad",
+        "name": "Roasted Cauliflower Power Salad",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "cauliflower"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "dried oregano"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          },
+          {
+            "name": "arugula"
+          },
+          {
+            "name": "hard-cooked large eggs"
+          },
+          {
+            "name": "cherry or grape tomatoes"
+          },
+          {
+            "name": "pitted green olives"
+          },
+          {
+            "name": "crumbled feta cheese"
+          },
+          {
+            "name": "toasted sliced almonds"
+          },
+          {
+            "name": "extra virgin olive oil (for dressing)"
+          },
+          {
+            "name": "lemon juice"
+          },
+          {
+            "name": "fresh basil, finely chopped"
+          },
+          {
+            "name": "Dijon mustard"
+          },
+          {
+            "name": "honey"
+          },
+          {
+            "name": "garlic clove, minced"
+          },
+          {
+            "name": "salt and pepper (for dressing)"
+          }
+        ],
+        "copper_per_serving_mg": 0.12
+      },
+      {
+        "recipe_name": "Simple Greek Salad",
+        "name": "Simple Greek Salad",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "red onion"
+          },
+          {
+            "name": "red wine vinegar"
+          },
+          {
+            "name": "small tomatoes"
+          },
+          {
+            "name": "English cucumber"
+          },
+          {
+            "name": "bell pepper (orange or green)"
+          },
+          {
+            "name": "pitted kalamata olives"
+          },
+          {
+            "name": "fresh dill, roughly chopped"
+          },
+          {
+            "name": "feta cheese, cubed"
+          },
+          {
+            "name": "mixed salad greens"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "red wine vinegar (for dressing)"
+          },
+          {
+            "name": "honey"
+          },
+          {
+            "name": "Dijon mustard"
+          },
+          {
+            "name": "dried oregano"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          }
+        ],
+        "copper_per_serving_mg": 0.12
+      },
+      {
+        "recipe_name": "Apple-Celery Chicken Salad",
+        "name": "Apple-Celery Chicken Salad",
+        "servings": 2,
+        "ingredients": [
+          {
+            "name": "cooked boneless, skinless chicken breast (or rotisserie chicken)"
+          },
+          {
+            "name": "celery stalk"
+          },
+          {
+            "name": "unpeeled apple"
+          },
+          {
+            "name": "green onion"
+          },
+          {
+            "name": "lemon zest"
+          },
+          {
+            "name": "fresh dill, chopped"
+          },
+          {
+            "name": "mayonnaise"
+          },
+          {
+            "name": "low-fat plain Greek yogurt"
+          },
+          {
+            "name": "apple cider vinegar"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          }
+        ],
+        "copper_per_serving_mg": 0.1
+      },
+      {
+        "recipe_name": "Harvest Crunch Kale & Chicken Salad",
+        "name": "Harvest Crunch Kale & Chicken Salad",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "kale, chopped (stems removed)"
+          },
+          {
+            "name": "extra virgin olive oil"
+          },
+          {
+            "name": "kosher salt"
+          },
+          {
+            "name": "Brussels sprouts, trimmed and thinly sliced"
+          },
+          {
+            "name": "cooked boneless, skinless chicken breast"
+          },
+          {
+            "name": "seedless grapes"
+          },
+          {
+            "name": "crumbled feta cheese"
+          },
+          {
+            "name": "macadamia nuts, toasted and chopped"
+          },
+          {
+            "name": "extra virgin olive oil (for dressing)"
+          },
+          {
+            "name": "balsamic vinegar"
+          },
+          {
+            "name": "shallot, finely chopped"
+          },
+          {
+            "name": "maple syrup"
+          },
+          {
+            "name": "Dijon mustard"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "pepper"
+          }
+        ],
+        "copper_per_serving_mg": 0.19
+      }
+    ]
+  },
+  {
+    "recipe_type": "desserts",
+    "recipes": [
+      {
+        "recipe_name": "Citrus-Berry Ricotta Parfaits",
+        "name": "Citrus-Berry Ricotta Parfaits",
+        "servings": 4,
+        "ingredients": [
+          {
+            "name": "part-skim ricotta cheese"
+          },
+          {
+            "name": "maple syrup"
+          },
+          {
+            "name": "orange juice"
+          },
+          {
+            "name": "orange zest"
+          },
+          {
+            "name": "gingersnap cookies"
+          },
+          {
+            "name": "fresh blueberries and/or strawberries"
+          }
+        ],
+        "copper_per_serving_mg": 0.1
+      },
+      {
+        "recipe_name": "Crispy Rice Cereal Treats",
+        "name": "Crispy Rice Cereal Treats",
+        "servings": 12,
+        "ingredients": [
+          {
+            "name": "unsweetened coconut flakes"
+          },
+          {
+            "name": "unsalted butter"
+          },
+          {
+            "name": "mini marshmallows"
+          },
+          {
+            "name": "puffed rice cereal"
+          },
+          {
+            "name": "white chocolate chips"
+          },
+          {
+            "name": "canola or other neutral oil"
+          }
+        ],
+        "copper_per_serving_mg": 0.02
+      },
+      {
+        "recipe_name": "Carob Chip Cranberry Cookies",
+        "name": "Carob Chip Cranberry Cookies",
+        "servings": 20,
+        "ingredients": [
+          {
+            "name": "all-purpose white flour"
+          },
+          {
+            "name": "whole wheat flour"
+          },
+          {
+            "name": "baking soda"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "unsalted butter, softened"
+          },
+          {
+            "name": "canola or other neutral oil"
+          },
+          {
+            "name": "granulated sugar"
+          },
+          {
+            "name": "brown sugar"
+          },
+          {
+            "name": "egg"
+          },
+          {
+            "name": "vanilla extract"
+          },
+          {
+            "name": "carob chips"
+          },
+          {
+            "name": "dried cranberries"
+          }
+        ],
+        "copper_per_serving_mg": 0.03
+      },
+      {
+        "recipe_name": "Pumpkin Cinnamon Bars",
+        "name": "Pumpkin Cinnamon Bars",
+        "servings": 12,
+        "ingredients": [
+          {
+            "name": "eggs"
+          },
+          {
+            "name": "pumpkin pur\u00e9e"
+          },
+          {
+            "name": "granulated sugar"
+          },
+          {
+            "name": "brown sugar"
+          },
+          {
+            "name": "canola or other neutral oil"
+          },
+          {
+            "name": "vanilla extract"
+          },
+          {
+            "name": "all-purpose white flour"
+          },
+          {
+            "name": "baking powder"
+          },
+          {
+            "name": "ground cinnamon"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "baking soda"
+          },
+          {
+            "name": "powdered sugar"
+          }
+        ],
+        "copper_per_serving_mg": 0.06
+      },
+      {
+        "recipe_name": "Carob Cupcakes with Cream Cheese Frosting",
+        "name": "Carob Cupcakes with Cream Cheese Frosting",
+        "servings": 12,
+        "ingredients": [
+          {
+            "name": "eggs"
+          },
+          {
+            "name": "granulated sugar"
+          },
+          {
+            "name": "unsweetened applesauce"
+          },
+          {
+            "name": "canola or other neutral oil"
+          },
+          {
+            "name": "2% reduced-fat milk"
+          },
+          {
+            "name": "vanilla extract"
+          },
+          {
+            "name": "all-purpose white flour"
+          },
+          {
+            "name": "carob powder"
+          },
+          {
+            "name": "baking powder"
+          },
+          {
+            "name": "baking soda"
+          },
+          {
+            "name": "salt"
+          },
+          {
+            "name": "light cream cheese, room temperature"
+          },
+          {
+            "name": "powdered sugar, sifted"
+          },
+          {
+            "name": "carob powder (for frosting)"
+          },
+          {
+            "name": "vanilla extract (for frosting)"
+          }
+        ],
+        "copper_per_serving_mg": 0.03
+      }
+    ]
+  },
+  {
+    "recipe_type": "snacks",
+    "recipes": [
+      {
+        "recipe_name": "Rice Cakes with Peanut Butter and Strawberries",
+        "name": "Rice Cakes with Peanut Butter and Strawberries",
+        "servings": 1,
+        "ingredients": [
+          {
+            "name": "white rice cakes"
+          },
+          {
+            "name": "peanut butter"
+          },
+          {
+            "name": "strawberries, sliced"
+          }
+        ],
+        "copper_per_serving_mg": 0.16
+      },
+      {
+        "recipe_name": "Avocado Toast with Feta",
+        "name": "Avocado Toast with Feta",
+        "servings": 1,
+        "ingredients": [
+          {
+            "name": "avocado"
+          },
+          {
+            "name": "white toast"
+          },
+          {
+            "name": "feta cheese, crumbled"
+          }
+        ],
+        "copper_per_serving_mg": 0.23
+      },
+      {
+        "recipe_name": "Trail Mix Snack",
+        "name": "Trail Mix Snack",
+        "servings": 1,
+        "ingredients": [
+          {
+            "name": "corn or rice cereal"
+          },
+          {
+            "name": "dried cranberries"
+          },
+          {
+            "name": "mini pretzels"
+          },
+          {
+            "name": "pumpkin seeds"
+          }
+        ],
+        "copper_per_serving_mg": 0.1
+      },
+      {
+        "recipe_name": "Almond Butter Apple Snack",
+        "name": "Almond Butter Apple Snack",
+        "servings": 1,
+        "ingredients": [
+          {
+            "name": "almond butter"
+          },
+          {
+            "name": "apple, sliced"
+          }
+        ],
+        "copper_per_serving_mg": 0.14
+      },
+      {
+        "recipe_name": "Hummus with Bell Pepper",
+        "name": "Hummus with Bell Pepper",
+        "servings": 1,
+        "ingredients": [
+          {
+            "name": "chickpea hummus"
+          },
+          {
+            "name": "bell pepper, sliced"
+          }
+        ],
+        "copper_per_serving_mg": 0.14
+      }
+    ]
+  }
+]
